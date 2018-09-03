@@ -1,0 +1,60 @@
+%fontColorW {
+    color: #ffffff;
+  }
+  %font-style-ch {
+    font-family: "Microsoft Yahei","微软雅黑";
+  }
+header {
+    position: relative;
+    width: 100%;
+    height: 840px; //設定height才能完全顯示?
+    background: url(../src/images/index_01.jpg) 0 0 no-repeat;
+    background-size: contain;
+    >nav{
+        font-size: 14px;
+       @extend %fontColorW;
+       @extend %font-style-ch;
+    }
+    ul{
+      display: flex;
+      margin: 0 10%;
+      list-style: none;
+      justify-content: space-around;
+      position: absolute;
+      right: 100px;
+      width: 40%;
+    }
+    li{
+        line-height: 20px;
+        padding: 3% 2% 2% 2%;
+        text-align: center;
+        margin: 0 2%;
+        width: 28%;
+        &:hover {
+          border-top-style: solid;
+          border-top-width: 5px;
+          border-top-color: #f4cea7;
+          padding-top: 2%;
+          }
+          a{
+            text-decoration: none;
+            @extend %fontColorW;
+          }
+        }
+        >.logo{
+            position: relative; //位置關係;
+            left: 380px;
+            top: 80px;
+            >a{
+              display: inline-block;
+              width: 206px;
+              height: 165px;
+              background: url(../src/images/logo.png) 0 0 no-repeat;
+            }
+          
+          }
+    }
+    
+
+
+   
