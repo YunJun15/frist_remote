@@ -3,15 +3,19 @@ header > nav, header li a, header > .banner_txt h1, header > .banner_txt h2, hea
   color: #ffffff;
 }
 
-header > .logo .logo_right h4, header > .logo .logo_right h2 {
+header > .logo .logo_right h4, header > .logo .logo_right h2, .section1 > .block1 .block_txt {
   color: #f4cea7;
 }
 
-header > nav, header > .logo .logo_right h4, header > .logo .logo_right h2, header > .banner_txt h1, header > .banner_txt h2, header > .content {
+header > nav, header > .logo .logo_right h4, header > .logo .logo_right h2, header > .banner_txt h1, header > .banner_txt h2, header > .content, .section1 > .block1 .block_txt {
   font-family: "Microsoft Yahei","微软雅黑";
 }
 
-header > .logo .logo_right h4, header > .logo .logo_right h2, header > .banner_txt h2 {
+.section1 > .block1 .block_txt .txt_orgnb_l, .section1 > .block1 .block_txt .txt_orgnb_r {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header > .logo .logo_right h4, header > .logo .logo_right h2, header > .banner_txt h2, .section1 > .block1 .block_txt {
   letter-spacing: 2px;
 }
 
@@ -133,5 +137,69 @@ header > .content {
   font-size: 12.5px;
   letter-spacing: 4px;
   line-height: 30px;
+}
+
+.section1 {
+  position: relative;
+  width: 1920px;
+  height: 243px;
+  background: url(../src/images/section1.jpg) 0 0 no-repeat;
+  background-size: contain;
+  text-align: center;
+}
+
+.section1 > .block1 {
+  display: inline-block;
+  width: 320px;
+  height: 240px;
+}
+
+.section1 > .block1 a {
+  display: inline-block;
+  background: url(../src/images/section1_line.png) 0 0 no-repeat;
+  width: 320px;
+  height: 240px;
+  background-size: contain;
+}
+
+.section1 > .block1 .block_txt {
+  position: relative;
+  top: -150px;
+  left: 35px;
+  width: 60%;
+  height: auto;
+  line-height: 30px;
+}
+
+.section1 > .block1 .block_txt .txt_org_r {
+  width: 70%;
+  margin: 0;
+  text-align: right;
+  font-size: 15px;
+}
+
+.section1 > .block1 .block_txt .txt_org_l {
+  margin: 0;
+  padding-left: 25%;
+  text-align: left;
+}
+
+.section1 > .block1 .block_txt .txt_orgnb_l {
+  margin: 0;
+  padding-left: 25%;
+  font-size: 35px;
+  text-align: left;
+  letter-spacing: 3;
+}
+
+.section1 > .block1 .block_txt .txt_orgnb_r {
+  margin: 0;
+  font-size: 35px;
+  text-align: right;
+  letter-spacing: 3;
+}
+
+.section1 > .block1 .block_txt .unit {
+  font-size: 12px;
 }
 /*# sourceMappingURL=style.css.map */

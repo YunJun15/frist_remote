@@ -7,6 +7,9 @@
   %font-style{
     font-family: "Microsoft Yahei","微软雅黑";
   }
+  %font-style-en{
+    font-family: 'Times New Roman', Times, serif;
+  }
   %letter-space{
     letter-spacing: 2px;
   }
@@ -131,3 +134,67 @@ header {
       @extend %font-style;
     }
     }
+.section1{
+  position: relative;
+  width: 1920px;
+  height: 243px;
+  background: url(../src/images/section1.jpg) 0 0 no-repeat;
+  background-size: contain;
+  text-align: center; //在外層設定，使inline-block置中
+  >.block1{
+    display: inline-block;
+    width: 320px;
+    height: 240px;
+    a{
+    display: inline-block;
+    background: url(../src/images/section1_line.png) 0 0 no-repeat;
+    width: (1920px / 6);
+    height: 240px;
+    background-size: contain;
+    }
+    .block_txt{
+      position: relative;
+      top: -150px;
+      left: 35px;
+      width: 60%;
+      height: auto;
+      line-height: 30px;
+      @extend %font-color-2;
+      @extend %font-style;
+      @extend %letter-space;
+      .txt_org_r{
+        width: 70%;
+        margin: 0;
+        text-align: right;
+        font-size: 15px;
+      }
+      .txt_org_l{
+        margin: 0;
+        padding-left: 25%;
+        text-align: left;
+
+      }
+      .txt_orgnb_l{
+        margin: 0;
+        padding-left: 25%;
+        font-size: 35px;
+        text-align: left;
+        letter-spacing: 3;
+        @extend %font-style-en;
+      }
+      .txt_orgnb_r{
+        margin: 0;
+        font-size: 35px;
+        text-align: right;
+        letter-spacing: 3;
+        @extend %font-style-en;
+      }
+      .unit{
+        font-size: 12px;
+        
+      }
+    }
+
+    
+  }
+}
