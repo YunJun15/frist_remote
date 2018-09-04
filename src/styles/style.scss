@@ -1,19 +1,26 @@
-%fontColorW {
-    color: #ffffff;
+%font-color-1 {
+  color: #ffffff;
   }
-  %font-style-ch {
+  %font-color-2 {
+    color: #f4cea7;
+  }
+  %font-style{
     font-family: "Microsoft Yahei","微软雅黑";
+  }
+  %letter-space{
+    letter-spacing: 2px;
   }
 header {
     position: relative;
-    width: 100%;
+    width: 1920px;
     height: 840px; //設定height才能完全顯示?
     background: url(../src/images/index_01.jpg) 0 0 no-repeat;
     background-size: contain;
     >nav{
         font-size: 14px;
-       @extend %fontColorW;
-       @extend %font-style-ch;
+       @extend %font-color-1;
+       @extend %font-style;
+      
     }
     ul{
       display: flex;
@@ -21,12 +28,12 @@ header {
       list-style: none;
       justify-content: space-around;
       position: absolute;
-      right: 100px;
-      width: 40%;
+      right: 80px;
+      width: 35%;
     }
     li{
         line-height: 20px;
-        padding: 3% 2% 2% 2%;
+        padding: 3.5% 2% 2% 2%;
         text-align: center;
         margin: 0 2%;
         width: 28%;
@@ -34,27 +41,93 @@ header {
           border-top-style: solid;
           border-top-width: 5px;
           border-top-color: #f4cea7;
-          padding-top: 2%;
+          padding-top: 2.8%;
           }
           a{
             text-decoration: none;
-            @extend %fontColorW;
+            @extend %font-color-1;
+            
           }
         }
-        >.logo{
-            position: relative; //位置關係;
-            left: 380px;
-            top: 80px;
-            >a{
-              display: inline-block;
-              width: 206px;
-              height: 165px;
-              background: url(../src/images/logo.png) 0 0 no-repeat;
-            }
-          
+     >.logo{
+        position: absolute;
+        left: 370px;
+        top: 110px;
+        width: 45%;
+        height: auto;
+        display: inline-block;
+        a{
+          display: inline-block;
+          width: 180px;
+          height: 150px;
+          background: url(../src/images/logo.png) 0 0 no-repeat;
+          background-size: contain;
+        }
+        .logo_right{
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 4%;
+        padding-left: 1%;
+        width: 75%;
+        height: auto;
+        h4{
+          width: 100%;
+          height: auto;
+          margin: 0;
+          padding-left: 3;
+          font-size: 22px;
+          @extend %letter-space;
+          @extend %font-color-2;
+          @extend %font-style;
+        }
+        h2{
+          margin: 5 0;
+          font-size: 30px;
+          @extend %letter-space;
+          @extend %font-color-2;
+          @extend %font-style;
           }
+      }
     }
-    
-
-
-   
+    >.banner_txt{
+      position: absolute; //位置關係;
+      left: 370px;
+      top: 280px;
+      display: inline-block;
+      width: 40%;
+      height: 12%;
+      border-bottom: 2px solid #ffffff;
+      h1{
+        display: inline-block;
+        vertical-align: top;
+        width: 40%;
+        margin:10px;
+        font-size: 60px;
+        letter-spacing: 5;
+        @extend %font-color-1;
+        @extend %font-style;
+        
+      }
+      h2{
+        display: inline-block;
+        width: 55%;
+        margin:25px 0;
+        @extend %font-color-1;
+        @extend %font-style;
+        @extend %letter-space;
+      }
+    }
+    >.content{
+      position: absolute;
+      left: 370px;
+      top: 400px;
+      width: (45% * 3/5);
+      height: auto;
+      padding-left: 40px;
+      font-size: 12.5px;
+      letter-spacing: 4px;
+      line-height: 30px;
+      @extend %font-color-1;
+      @extend %font-style;
+    }
+    }
