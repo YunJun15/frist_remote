@@ -3,11 +3,11 @@ header > nav, header li a, header > .banner_txt h1, header > .banner_txt h2, hea
   color: #ffffff;
 }
 
-header > .logo .logo_right h4, header > .logo .logo_right h2, .section1 > .block1 .block_txt, .section2 > .EN_h2 {
+header > .logo .logo_right h4, header > .logo .logo_right h2, .section1 > .block1 .block_txt, .section2 > .EN_h2, .section3 > .picture .contact_txt .contact_en {
   color: #f4cea7;
 }
 
-header > nav, header > .logo .logo_right h4, header > .logo .logo_right h2, header > .banner_txt h1, header > .banner_txt h2, header > .content, .section1 > .block1 .block_txt {
+header > nav, header > .logo .logo_right h4, header > .logo .logo_right h2, header > .banner_txt h1, header > .banner_txt h2, header > .content, .section1 > .block1 .block_txt, .section3 > .picture .contact_txt {
   font-family: "Microsoft Yahei","微软雅黑";
 }
 
@@ -15,7 +15,7 @@ header > nav, header > .logo .logo_right h4, header > .logo .logo_right h2, head
   font-family: 'Times New Roman', Times, serif;
 }
 
-header > .logo .logo_right h4, header > .logo .logo_right h2, header > .banner_txt h2, .section1 > .block1 .block_txt, .section2 > .Tblock2 .section2_block {
+header > .logo .logo_right h4, header > .logo .logo_right h2, header > .banner_txt h2, .section1 > .block1 .block_txt, .section2 > .Tblock2 .section2_block, .section3 > .picture .contact_txt .contact_en {
   letter-spacing: 2px;
 }
 
@@ -316,5 +316,46 @@ header > .content {
   bottom: 40%;
   height: 60%;
   width: 0.15rem;
+}
+
+.section3 {
+  position: relative;
+  width: 1920px;
+  height: 304px;
+  background: url(../src/images/section3.jpg) 0 0 no-repeat;
+  background-size: contain;
+}
+
+.section3 > .picture {
+  position: absolute;
+  left: 18%;
+  top: -25%;
+  display: inline-block;
+  width: 55%;
+  height: 386px;
+  background: url(../src/images/picture.jpg) 0 0 no-repeat;
+  background-size: contain;
+}
+
+.section3 > .picture .contact_txt {
+  padding-top: 10%;
+  padding-left: 70%;
+  text-align: left;
+  font-size: 50px;
+  line-height: 75px;
+}
+
+.section3 > .picture .contact_txt .contact_en {
+  font-size: 40px;
+}
+
+.section3 > .pic_border {
+  position: absolute;
+  top: -30%;
+  left: 19%;
+  display: inline-block;
+  width: 30%;
+  height: 125%;
+  border: 3px solid #f4cea7;
 }
 /*# sourceMappingURL=style.css.map */

@@ -19,6 +19,7 @@
   %benefit-line{
     background-color: #ffffff;
   }
+  
 header {
     position: relative;
     width: 1920px;
@@ -299,4 +300,43 @@ header {
     }
   }
 }
+}
+.section3{
+  position: relative;
+  width: 1920px;
+  height: 304px; //設定height才能完全顯示?
+  background: url(../src/images/section3.jpg) 0 0 no-repeat;
+  background-size: contain;
+  >.picture{
+    position: absolute;
+    left: 18%;
+    top: -25%;
+    display: inline-block;
+    width: 55%;
+    height: 386px;
+    background: url(../src/images/picture.jpg) 0 0 no-repeat;
+    background-size: contain;
+    .contact_txt{
+      padding-top: 10%;
+      padding-left: 70%;
+      text-align: left;
+      font-size: 50px;
+      line-height: 75px;
+      @extend %font-style;
+      .contact_en{
+        font-size: 40px;
+        @extend %font-color-2;
+        @extend %letter-space;
+      }
+    }
+  }
+  >.pic_border{
+    position: absolute;
+    top: -30%;
+    left: 19%;
+    display: inline-block;
+    width: 30%;
+    height:125%;
+    border: 3px solid #f4cea7;
+  }
 }
