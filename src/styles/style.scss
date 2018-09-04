@@ -1,8 +1,5 @@
 %font-color-1 {
-  color: #ffffff;
-  }
-  %font-color-2{
-    color: #f4cea7;
+  color: #f4cea7;
   }
   %font-style{
     font-family: "Microsoft Yahei","微软雅黑";
@@ -19,6 +16,12 @@
   %benefit-line{
     background-color: #ffffff;
   }
+
+
+  $font-color-or:#f4cea7;
+  $font-color-wh:#ffffff;
+
+
   
 header {
     position: relative;
@@ -87,14 +90,14 @@ header {
           padding-left: 3;
           font-size: 22px;
           @extend %letter-space;
-          @extend %font-color-2;
+          color: $font-color-or;
           @extend %font-style;
         }
         h2{
           margin: 5 0;
           font-size: 30px;
           @extend %letter-space;
-          @extend %font-color-2;
+          color: $font-color-or;
           @extend %font-style;
           }
       }
@@ -325,7 +328,7 @@ header {
       @extend %font-style;
       .contact_en{
         font-size: 40px;
-        @extend %font-color-2;
+        color: $font-color-or;
         @extend %letter-space;
       }
     }
@@ -337,6 +340,6 @@ header {
     display: inline-block;
     width: 30%;
     height:125%;
-    border: 3px solid #f4cea7;
+    border: 3px solid $font-color-or;
   }
 }

@@ -3,7 +3,7 @@ header > nav, header li a, header > .banner_txt h1, header > .banner_txt h2, hea
   color: #ffffff;
 }
 
-header > .logo .logo_right h4, header > .logo .logo_right h2, .section1 > .block1 .block_txt, .section2 > .EN_h2, .section3 > .picture .contact_txt .contact_en {
+.section1 > .block1 .block_txt, .section2 > .EN_h2 {
   color: #f4cea7;
 }
 
@@ -103,11 +103,13 @@ header > .logo .logo_right h4 {
   margin: 0;
   padding-left: 3;
   font-size: 22px;
+  color: #f4cea7;
 }
 
 header > .logo .logo_right h2 {
   margin: 5 0;
   font-size: 30px;
+  color: #f4cea7;
 }
 
 header > .banner_txt {
@@ -347,6 +349,7 @@ header > .content {
 
 .section3 > .picture .contact_txt .contact_en {
   font-size: 40px;
+  color: #f4cea7;
 }
 
 .section3 > .pic_border {
