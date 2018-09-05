@@ -1,8 +1,5 @@
 %font-color-1 {
-  color: #ffffff;
-  }
-  %font-color-2{
-    color: #f4cea7;
+  color: #f4cea7;
   }
   %font-style{
     font-family: "Microsoft Yahei","微软雅黑";
@@ -19,11 +16,20 @@
   %benefit-line{
     background-color: #ffffff;
   }
+<<<<<<< HEAD
   %form-style{
     width: 28%;
     height: auto;
     margin-top: 20px;
   }
+=======
+
+
+  $font-color-or:#f4cea7;
+  $font-color-wh:#ffffff;
+
+
+>>>>>>> 352101edefe33ae08543c50d502b9746c16ef917
   
 header {
     position: relative;
@@ -92,14 +98,14 @@ header {
           padding-left: 3;
           font-size: 22px;
           @extend %letter-space;
-          @extend %font-color-2;
+          color: $font-color-or;
           @extend %font-style;
         }
         h2{
           margin: 5 0;
           font-size: 30px;
           @extend %letter-space;
-          @extend %font-color-2;
+          color: $font-color-or;
           @extend %font-style;
           }
       }
@@ -330,7 +336,7 @@ header {
       @extend %font-style;
       .contact_en{
         font-size: 40px;
-        @extend %font-color-2;
+        color: $font-color-or;
         @extend %letter-space;
       }
     }
@@ -342,9 +348,10 @@ header {
     display: inline-block;
     width: 30%;
     height:125%;
-    border: 3px solid #f4cea7;
+    border: 3px solid $font-color-or;
   }
 }
+<<<<<<< HEAD
 .form{
   position: relative;
   width: 1920px;
@@ -466,3 +473,5 @@ footer{
   width: 1920px;
   height: 152px;
 }
+=======
+>>>>>>> 352101edefe33ae08543c50d502b9746c16ef917
