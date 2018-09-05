@@ -103,18 +103,16 @@
         <div class="pic_border"></div>
       </section>
       <section class="form">
-        <img src="./images/div.jpg" alt="form background">
-        <div class="form_content">
         <div class="form_left">
           <form action="#" method="POST">
-            <p id="call_up">称呼</p><input type="text" name="call" style="width: 80%;"><br />
+            <input type="text" name="call" placeholder="称呼" ><br />
             <input type="text" name="call" placeholder="联系电话（选填）" ><br />
-            <span>是否做过彩票代理:</span>
-            <input id="yes1" type="radio" name="lottery" value="yes">
-            <label for="yes1"><span></span>是</label>
-            <input id="no1" type="radio" name="lottery" value="no">
-            <label for="no1"><span></span>否</label><br />
-            <span id="year"> 代理年限</span><input type="date" name="AG_data"><br />
+            <div class="form_span"><span>是否做过彩票代理:</span>
+              <input id="yes1" type="radio" name="lottery" value="yes">
+              <label for="yes1"><span></span>是</label>
+              <input id="no1" type="radio" name="lottery" value="no">
+              <label for="no1"><span></span>否</label></div><br />
+            <input type="date" name="AG_data" ><br />
             <input type="text" name="amount1" placeholder="目前的月彩票交易量：" ><br />                             
           </form>
         </div>
@@ -126,11 +124,11 @@
             <input id="female" type="radio" name="gender" value="female">
             <label for="female"><span></span>女</label><br />
             <input type="text" name="qq" placeholder="联系QQ（选填）" ><br />
-            <span>是否做过老虎机代理:</span>
-            <input id="yes2" type="radio" name="tiger" value="yes">
-            <label for="yes2"><span></span>是</label>
-            <input id="no2" type="radio" name="tiger" value="no">
-            <label for="no2"><span></span>否</label><br />
+            <div class="form_span"><span>是否做过老虎机代理:</span>
+              <input id="yes2" type="radio" name="tiger" value="yes">
+              <label for="yes2"><span></span>是</label>
+              <input id="no2" type="radio" name="tiger" value="no">
+              <label for="no2"><span></span>否</label></div><br />
             <input type="text" name="AG_name" placeholder="目前代理平台名(多个请用“|”分开)" ><br />
             <input type="text" name="amount2" placeholder="目前的月老虎机交易量：" ><br />
           </form>
@@ -138,15 +136,12 @@
         <div class="form_bottom">
           <form action="#" method="POST">
             <p>附言：</p>
-            <textarea name="message" rows="2" maxlength="50">（最多50字）</textarea>
-            <input type="submit" style="background-image: url(./images/submit.png)">
+            <textarea name="message" rows="2" maxlength="50">（最多50字）</textarea><br />
+            <input type="submit" name="SB" value="">
           </form>
         </div>
           </form>
-        </div>
         </section>
-      <footer>
-       <img src="./images/footer.jpg" alt="footer background">
-      </footer>
+      <footer></footer>
     </body>
 </html>
