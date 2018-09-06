@@ -1,32 +1,4 @@
 @charset "UTF-8";
-header > nav, header li a, header > .banner_txt h1, header > .banner_txt h2, header > .content, .section2 > .txt_h2, .section2 > .Tblock2 .section2_block {
-  color: #f4cea7;
-}
-
-.section1 > .block1 .block_txt, .section2 > .EN_h2 {
-  color: #ffffff;
-}
-
-header > nav, header > .logo .logo_right h4, header > .logo .logo_right h2, header > .banner_txt h1, header > .banner_txt h2, header > .content, .section1 > .block1 .block_txt, .section3 > .picture .contact_txt {
-  font-family: "Microsoft Yahei","微软雅黑";
-}
-
-.section1 > .block1 .block_txt .txt_orgnb_l, .section1 > .block1 .block_txt .txt_orgnb_r {
-  font-family: 'Times New Roman', Times, serif;
-}
-
-header > .logo .logo_right h4, header > .logo .logo_right h2, header > .banner_txt h2, .section1 > .block1 .block_txt, .section2 > .Tblock2 .section2_block, .section3 > .picture .contact_txt .contact_en {
-  letter-spacing: 2px;
-}
-
-.section2 > .Tblock2 .border-right1:after, .section2 > .Tblock2 .border-right2::after {
-  background-color: #f4cea7;
-}
-
-.section2 > .txt_h2:before, .section2 > .txt_h2:after {
-  background-color: #ffffff;
-}
-
 .form > .form_left, .form > .form_right {
   width: 28%;
   height: auto;
@@ -43,6 +15,8 @@ header {
 
 header > nav {
   font-size: 14px;
+  color: #ffffff;
+  font-family: "Microsoft Yahei", "微软雅黑";
 }
 
 header ul {
@@ -75,6 +49,7 @@ header li:hover {
 
 header li a {
   text-decoration: none;
+  color: #ffffff;
 }
 
 header > .logo {
@@ -109,13 +84,17 @@ header > .logo .logo_right h4 {
   margin: 0;
   padding-left: 3;
   font-size: 22px;
+  letter-spacing: 2px;
   color: #f4cea7;
+  font-family: "Microsoft Yahei", "微软雅黑";
 }
 
 header > .logo .logo_right h2 {
   margin: 5 0;
   font-size: 30px;
+  letter-spacing: 2px;
   color: #f4cea7;
+  font-family: "Microsoft Yahei", "微软雅黑";
 }
 
 header > .banner_txt {
@@ -135,12 +114,17 @@ header > .banner_txt h1 {
   margin: 10px;
   font-size: 60px;
   letter-spacing: 5;
+  color: #ffffff;
+  font-family: "Microsoft Yahei", "微软雅黑";
 }
 
 header > .banner_txt h2 {
   display: inline-block;
   width: 55%;
   margin: 25px 0;
+  color: #ffffff;
+  font-family: "Microsoft Yahei", "微软雅黑";
+  letter-spacing: 2px;
 }
 
 header > .content {
@@ -153,6 +137,8 @@ header > .content {
   font-size: 12.5px;
   letter-spacing: 4px;
   line-height: 30px;
+  color: #ffffff;
+  font-family: "Microsoft Yahei", "微软雅黑";
 }
 
 .section1 {
@@ -185,6 +171,9 @@ header > .content {
   width: 60%;
   height: auto;
   line-height: 30px;
+  color: #f4cea7;
+  font-family: "Microsoft Yahei", "微软雅黑";
+  letter-spacing: 2px;
 }
 
 .section1 > .block1 .block_txt .txt_org_r {
@@ -206,6 +195,7 @@ header > .content {
   font-size: 35px;
   text-align: left;
   letter-spacing: 3;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .section1 > .block1 .block_txt .txt_orgnb_r {
@@ -213,6 +203,7 @@ header > .content {
   font-size: 35px;
   text-align: right;
   letter-spacing: 3;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .section1 > .block1 .block_txt .unit {
@@ -238,6 +229,7 @@ header > .content {
   font-size: 50px;
   text-align: center;
   letter-spacing: 3;
+  color: #ffffff;
 }
 
 .section2 > .txt_h2:before {
@@ -250,6 +242,7 @@ header > .content {
   margin: 0px auto;
   overflow: hidden;
   /*不加，IE6以下會被拉很開*/
+  background-color: #ffffff;
 }
 
 .section2 > .txt_h2:after {
@@ -262,6 +255,7 @@ header > .content {
   margin: 0px auto;
   overflow: hidden;
   /*不加，IE6以下會被拉很開*/
+  background-color: #ffffff;
 }
 
 .section2 > .EN_h2 {
@@ -275,6 +269,7 @@ header > .content {
   font-size: 50px;
   text-align: center;
   letter-spacing: 3;
+  color: #f4cea7;
 }
 
 .section2 > .Tblock2 {
@@ -298,6 +293,8 @@ header > .content {
   font-family: 'Noto Sans TC';
   font-size: 14px;
   line-height: 30px;
+  color: #ffffff;
+  letter-spacing: 2px;
 }
 
 .section2 > .Tblock2 .border-right1 {
@@ -311,6 +308,7 @@ header > .content {
   bottom: 40%;
   height: 60%;
   width: 0.15rem;
+  background-color: #f4cea7;
 }
 
 .section2 > .Tblock2 .border-right2 {
@@ -324,6 +322,7 @@ header > .content {
   bottom: 40%;
   height: 60%;
   width: 0.15rem;
+  background-color: #f4cea7;
 }
 
 .section3 {
@@ -351,11 +350,13 @@ header > .content {
   text-align: left;
   font-size: 50px;
   line-height: 75px;
+  font-family: "Microsoft Yahei", "微软雅黑";
 }
 
 .section3 > .picture .contact_txt .contact_en {
   font-size: 40px;
   color: #f4cea7;
+  letter-spacing: 2px;
 }
 
 .section3 > .pic_border {
@@ -393,14 +394,6 @@ header > .content {
   margin-bottom: -20px;
 }
 
-.form > .form_left #year {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #000;
-  padding-bottom: 1.5px;
-  padding-right: 20px;
-}
-
 .form > .form_right {
   padding-top: 40px;
 }
@@ -421,7 +414,7 @@ header > .content {
   resize: none;
   /*取消textarea右下角預設樣式*/
   border-style: hidden hidden solid hidden;
-  border-bottom-color: #000;
+  border-color: #000;
   text-align: right;
 }
 
