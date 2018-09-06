@@ -1,10 +1,10 @@
 @charset "UTF-8";
 header > nav, header li a, header > .banner_txt h1, header > .banner_txt h2, header > .content, .section2 > .txt_h2, .section2 > .Tblock2 .section2_block {
-  color: #ffffff;
+  color: #f4cea7;
 }
 
 .section1 > .block1 .block_txt, .section2 > .EN_h2 {
-  color: #f4cea7;
+  color: #ffffff;
 }
 
 header > nav, header > .logo .logo_right h4, header > .logo .logo_right h2, header > .banner_txt h1, header > .banner_txt h2, header > .content, .section1 > .block1 .block_txt, .section3 > .picture .contact_txt {
@@ -402,7 +402,7 @@ header > .content {
 }
 
 .form > .form_right {
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 .form > .form_bottom {
