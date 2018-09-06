@@ -5,6 +5,14 @@
   margin-top: 20px;
 }
 
+.form > .form_left select, .form input {
+  border-style: hidden hidden solid hidden;
+  line-height: 20px;
+  margin-top: 35px;
+  width: 80%;
+  outline: none;
+}
+
 header {
   position: relative;
   width: 1920px;
@@ -41,9 +49,7 @@ header li {
 }
 
 header li:hover {
-  border-top-style: solid;
-  border-top-width: 5px;
-  border-top-color: #f4cea7;
+  border-top: 5px solid #f4cea7;
   padding-top: 2.8%;
 }
 
@@ -394,6 +400,46 @@ header > .content {
   margin-bottom: -20px;
 }
 
+.form > .form_left select {
+  cursor: text;
+  border-bottom-width: 2px;
+  border-color: #000;
+  color: #c8c6c6;
+  /*&::before{
+        content: "代理年限";
+        color: $font-color-gray;
+      }*/
+}
+
+.form > .form_left select:focus {
+  color: #f4cea7;
+  border-bottom-color: #f4cea7;
+}
+
+.form > .form_left select:focus::-webkit-input-placeholder {
+  color: #f4cea7;
+}
+
+.form > .form_left select:focus:-ms-input-placeholder {
+  color: #f4cea7;
+}
+
+.form > .form_left select:focus::-ms-input-placeholder {
+  color: #f4cea7;
+}
+
+.form > .form_left select:focus::placeholder {
+  color: #f4cea7;
+}
+
+.form > .form_left select:focus:checked {
+  color: #f4cea7;
+}
+
+.form > .form_left select option {
+  direction: rtl;
+}
+
 .form > .form_right {
   padding-top: 40px;
 }
@@ -423,17 +469,6 @@ header > .content {
   border-bottom-color: #f4cea7;
 }
 
-.form input {
-  border-style: hidden hidden solid hidden;
-  line-height: 20px;
-  padding-top: 35px;
-}
-
-.form input[type=text] {
-  width: 80%;
-  outline: none;
-}
-
 .form input[type=text]:focus {
   color: #f4cea7;
 }
@@ -451,41 +486,6 @@ header > .content {
 }
 
 .form input[type=text]:focus::placeholder {
-  color: #f4cea7;
-}
-
-.form input[type=date] {
-  width: 80%;
-  outline: none;
-  text-align: right;
-}
-
-.form input[type=date]::before {
-  content: "代理年限";
-  color: #c8c6c6;
-}
-
-.form input[type=date]:focus {
-  color: #f4cea7;
-}
-
-.form input[type=date]:focus::-webkit-input-placeholder {
-  color: #f4cea7;
-}
-
-.form input[type=date]:focus:-ms-input-placeholder {
-  color: #f4cea7;
-}
-
-.form input[type=date]:focus::-ms-input-placeholder {
-  color: #f4cea7;
-}
-
-.form input[type=date]:focus::placeholder {
-  color: #f4cea7;
-}
-
-.form input[type=date]:focus:checked {
   color: #f4cea7;
 }
 

@@ -1,5 +1,7 @@
 $font-color-or:#f4cea7;
 $font-color-wh:#ffffff;
+$font-color-gray:#c8c6c6;
+$font-color-black:#000;
 $font-family-ch:"Microsoft Yahei","微软雅黑";
 $font-family-en:'Times New Roman', Times, serif;
 $letter-space:2px;
@@ -9,6 +11,13 @@ $letter-space:2px;
     height: auto;
     margin-top: 20px;
   }
+%form-line-style{    //input+select
+  border-style: hidden hidden solid hidden;
+  line-height: 20px; 
+  margin-top: 35px;
+  width: 80%;
+  outline:none;
+}
 
 header {
     position: relative;
@@ -38,9 +47,7 @@ header {
         margin: 0 2%;
         width: 28%;
         &:hover {
-          border-top-style: solid;
-          border-top-width: 5px;
-          border-top-color: $font-color-or;
+          border-top:5px solid $font-color-or;
           padding-top: 2.8%;
           }
           a{
@@ -339,7 +346,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  color: #c8c6c6;
+  color: $font-color-gray;
   font-family: "Microsoft Yahei","微软雅黑";
   font-size: 14px;
   .form_span{
@@ -349,6 +356,34 @@ header {
     }
   >.form_left{
     @extend %form-style;
+    .year{
+    
+    }
+    select{
+      @extend %form-line-style;
+      cursor: text;
+      border-bottom-width: 2px;
+      border-color: $font-color-black;
+      color: $font-color-gray;
+      /*&::before{
+        content: "代理年限";
+        color: $font-color-gray;
+      }*/
+      &:focus{
+       color: $font-color-or;
+       border-bottom-color: $font-color-or;
+
+       &::placeholder{
+        color: $font-color-or;
+      }
+      &:checked{
+        color: $font-color-or;
+      }
+     }
+     option{
+       direction: rtl;
+     }
+    }
   }
   >.form_right{
     @extend %form-style;
@@ -362,49 +397,28 @@ header {
     }
     textarea{
       width: 90%;
-      color: #c8c6c6;
+      color: $font-color-gray;
       outline: none;
       resize: none;/*取消textarea右下角預設樣式*/
       border-style: hidden hidden solid hidden;
-      border-color: #000;
+      border-color: $font-color-black;
       text-align: right;
       &:focus{
-        color: #f4cea7;
-        border-bottom-color: #f4cea7;
+        color: $font-color-or;
+        border-bottom-color: $font-color-or;
        }
-    
   }
 }
+
 input{
-    border-style: hidden hidden solid hidden;
-    line-height: 20px; 
-    padding-top: 35px;
+  @extend %form-line-style;
     &[type=text]{
-      width: 80%;
-      outline:none;
      &:focus{
-       color: #f4cea7;
+       color: $font-color-or;
        &::placeholder{
-         color: #f4cea7;}
+         color: $font-color-or;}
        }
       }
-     &[type=date]{
-      width: 80%;
-      outline: none;
-      text-align: right;
-      &::before{
-        content: "代理年限";
-        color: #c8c6c6;
-      }
-      &:focus{
-       color: #f4cea7;
-       &::placeholder{
-        color: #f4cea7;
-      }
-      &:checked{
-        color: #f4cea7;}
-     }
-    }
      &[type=radio]{
        display: none;
        + label{
@@ -432,7 +446,7 @@ input{
        cursor: pointer;
      }
      &::placeholder{ 
-       color: #c8c6c6;
+       color: $font-color-gray;
       }
     }
   }
