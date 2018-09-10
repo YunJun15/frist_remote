@@ -13,29 +13,50 @@
   outline: none;
 }
 
+.prize > ul li a .prize-block .prize-block-line-left {
+  width: 60px;
+  height: 2px;
+  background-color: #f4cea7;
+  -webkit-transform: translateY(45px) rotate(-45deg);
+          transform: translateY(45px) rotate(-45deg);
+}
+
+.prize > ul li a .prize-block .prize-block-line-right {
+  width: 60px;
+  height: 2px;
+  background-color: #f4cea7;
+  -webkit-transform: translate(-10px, -45px) rotate(-45deg);
+          transform: translate(-10px, -45px) rotate(-45deg);
+}
+
+body {
+  font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体", "Noto Sans TC", sans-serif;
+  font-weight: 100;
+}
+
 header {
   position: relative;
-  height: 100vh;
+  height: 840px;
   background: url(../src/images/index_01.jpg) 0 0/100% 100% no-repeat;
 }
 
 header > nav {
   font-size: 14px;
   color: #ffffff;
-  font-family: "Microsoft Yahei", "微软雅黑";
+  font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体", "Noto Sans TC", sans-serif;
 }
 
 header > nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 10%;
-  list-style: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   position: absolute;
   right: 80px;
   width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 10%;
+  list-style: none;
 }
 
 header > nav li {
@@ -56,27 +77,27 @@ header > nav li a {
   color: #ffffff;
 }
 
-header > .logo_layout {
+header > .title-layout {
   max-width: 100%;
   height: 50%;
   padding-top: 110px;
   margin: 0 380px;
 }
 
-header > .logo_layout .logo {
+header > .title-layout .title-logo {
   width: 100%;
   height: auto;
   display: inline-block;
 }
 
-header > .logo_layout .logo a {
+header > .title-layout .title-logo a {
   display: inline-block;
   width: 18%;
   height: 37%;
   background: url(../src/images/logo.png) 0 0/contain no-repeat;
 }
 
-header > .logo_layout .logo .logo_right {
+header > .title-layout .title-logo .title-logo-txt {
   display: inline-block;
   vertical-align: top;
   padding-top: 35px;
@@ -85,7 +106,7 @@ header > .logo_layout .logo .logo_right {
   height: auto;
 }
 
-header > .logo_layout .logo .logo_right h4 {
+header > .title-layout .title-logo .title-logo-txt h4 {
   width: 100%;
   height: auto;
   margin: 0;
@@ -93,25 +114,26 @@ header > .logo_layout .logo .logo_right h4 {
   font-size: 20px;
   letter-spacing: 2px;
   color: #f4cea7;
-  font-family: "Microsoft Yahei", "微软雅黑";
+  font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体", "Noto Sans TC", sans-serif;
 }
 
-header > .logo_layout .logo .logo_right h2 {
+header > .title-layout .title-logo .title-logo-txt h2 {
   margin: 5 0;
   font-size: 25px;
   letter-spacing: 2px;
   color: #f4cea7;
-  font-family: "Microsoft Yahei", "微软雅黑";
+  font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体", "Noto Sans TC", sans-serif;
+  font-weight: 400;
 }
 
-header > .logo_layout .banner_txt {
+header > .title-layout .title-slogan {
   width: 100%;
   padding-top: 25px;
   margin-left: 5px;
   border-bottom: 2px solid #ffffff;
 }
 
-header > .logo_layout .banner_txt .txt_ch {
+header > .title-layout .title-slogan .title-slogan-txtch {
   display: inline-block;
   vertical-align: top;
   width: 30%;
@@ -124,18 +146,18 @@ header > .logo_layout .banner_txt .txt_ch {
   font-family: "Microsoft Yahei", "微软雅黑";
 }
 
-header > .logo_layout .banner_txt .txt_en {
+header > .title-layout .title-slogan .title-slogan-txten {
   display: inline-block;
   vertical-align: top;
-  width: 55%;
-  margin: 0 0 20px 0;
+  width: 35%;
+  margin: 25px 0 20px 0;
   color: #ffffff;
-  font-family: "Microsoft Yahei", "微软雅黑";
-  font-size: 35px;
+  font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体", "Noto Sans TC", sans-serif;
+  font-size: 25px;
   letter-spacing: 2px;
 }
 
-header > .logo_layout .content {
+header > .title-layout .title-content {
   width: 60%;
   height: auto;
   margin-top: 20px;
@@ -144,85 +166,89 @@ header > .logo_layout .content {
   letter-spacing: 4px;
   line-height: 30px;
   color: #ffffff;
-  font-family: "Microsoft Yahei", "微软雅黑";
+  font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体", "Noto Sans TC", sans-serif;
 }
 
-.section1 {
+.prize {
   position: relative;
-  width: 100vw;
-  height: 25vh;
+  max-width: 100vw;
+  height: 243px;
   background: url(../src/images/section1.jpg) 0 0/100% 100% no-repeat;
-  text-align: center;
 }
 
-.section1 > .block1 {
+.prize > ul {
+  margin: 0;
+  list-style: none;
+  max-width: 100%;
+  height: 100%;
+  margin: 0 15%;
+  padding: 0;
+  font-size: 0;
+}
+
+.prize > ul li {
   display: inline-block;
-  width: 320px;
-  height: 240px;
+  font-size: 16px;
+  width: 25%;
+  height: 100%;
 }
 
-.section1 > .block1 a {
-  display: inline-block;
-  background: url(../src/images/section1_line.png) 0 0 no-repeat;
-  width: 320px;
-  height: 240px;
-  background-size: contain;
-}
-
-.section1 > .block1 .block_txt {
-  position: relative;
-  top: -150px;
-  left: 35px;
-  width: 60%;
-  height: auto;
-  line-height: 30px;
+.prize > ul li a {
+  text-decoration: none;
   color: #f4cea7;
-  font-family: "Microsoft Yahei", "微软雅黑";
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.prize > ul li a .prize-block {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.prize > ul li a .prize-block .prize-block-txt {
+  width: 150px;
+  font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体", "Noto Sans TC", sans-serif;
   letter-spacing: 2px;
 }
 
-.section1 > .block1 .block_txt .txt_org_r {
-  width: 70%;
+.prize > ul li a .prize-block .prize-block-txt .prize-block-txtch {
   margin: 0;
-  text-align: right;
-  font-size: 15px;
+  font-size: 14px;
 }
 
-.section1 > .block1 .block_txt .txt_org_l {
+.prize > ul li a .prize-block .prize-block-txt .prize-block-number {
   margin: 0;
-  padding-left: 25%;
+  font-size: 50px;
+  text-align: right;
+  letter-spacing: 3px;
+}
+
+.prize > ul li a .prize-block .prize-block-txt .prizeblock2-number-align {
   text-align: left;
 }
 
-.section1 > .block1 .block_txt .txt_orgnb_l {
-  margin: 0;
-  padding-left: 25%;
-  font-size: 35px;
-  text-align: left;
-  letter-spacing: 3;
-  font-family: "Times New Roman", Times, serif;
+.prize > ul li a .prize-block .prize-block-txt .prize-block-txt-unit {
+  font-size: 10px;
 }
 
-.section1 > .block1 .block_txt .txt_orgnb_r {
-  margin: 0;
-  font-size: 35px;
-  text-align: right;
-  letter-spacing: 3;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.section1 > .block1 .block_txt .unit {
-  font-size: 12px;
-}
-
-.section2 {
+.benefit {
   position: relative;
-  width: 100vw;
-  height: 50vh;
+  max-width: 100vw;
+  height: 657px;
   background: url(../src/images/section2.jpg) 0 0/100% 100% no-repeat;
 }
 
-.section2 > .txt_h2 {
+.benefit > .benefit-title .benefit-title-txtch {
   position: absolute;
   top: 16%;
   left: 22%;
@@ -236,7 +262,7 @@ header > .logo_layout .content {
   color: #ffffff;
 }
 
-.section2 > .txt_h2:before {
+.benefit > .benefit-title .benefit-title-txtch:before {
   content: '';
   position: absolute;
   top: 50%;
@@ -249,7 +275,7 @@ header > .logo_layout .content {
   background-color: #ffffff;
 }
 
-.section2 > .txt_h2:after {
+.benefit > .benefit-title .benefit-title-txtch:after {
   content: '';
   position: absolute;
   top: 50%;
@@ -262,21 +288,21 @@ header > .logo_layout .content {
   background-color: #ffffff;
 }
 
-.section2 > .EN_h2 {
+.benefit > .benefit-title .benefit-title-txten {
   position: absolute;
   top: 25%;
   left: 22%;
   display: table;
   width: 10%;
   height: auto;
-  margin: 0.5% 0;
+  margin: 30px 0;
   font-size: 50px;
   text-align: center;
   letter-spacing: 3;
   color: #f4cea7;
 }
 
-.section2 > .Tblock2 {
+.benefit > .benefit-info {
   position: absolute;
   top: 50%;
   left: 22%;
@@ -287,7 +313,7 @@ header > .logo_layout .content {
   height: 40%;
 }
 
-.section2 > .Tblock2 .section2_block {
+.benefit > .benefit-info .benefit-info-block {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
@@ -301,11 +327,11 @@ header > .logo_layout .content {
   letter-spacing: 2px;
 }
 
-.section2 > .Tblock2 .border-right1 {
+.benefit > .benefit-info .benefit-product-border {
   border-right-width: 1px;
 }
 
-.section2 > .Tblock2 .border-right1:after {
+.benefit > .benefit-info .benefit-product-border:after {
   content: '';
   position: absolute;
   left: 30%;
@@ -315,11 +341,11 @@ header > .logo_layout .content {
   background-color: #f4cea7;
 }
 
-.section2 > .Tblock2 .border-right2 {
+.benefit > .benefit-info .benefit-support-border {
   border-right-width: 1px;
 }
 
-.section2 > .Tblock2 .border-right2::after {
+.benefit > .benefit-info .benefit-support-border::after {
   content: '';
   position: absolute;
   left: 63%;
@@ -329,14 +355,14 @@ header > .logo_layout .content {
   background-color: #f4cea7;
 }
 
-.section3 {
+.contactus {
   position: relative;
-  width: 100vw;
+  max-width: 100vw;
   height: 304px;
   background-color: #ffffff;
 }
 
-.section3 > .picture {
+.contactus > .contactus-pic {
   position: absolute;
   left: 18%;
   top: -25%;
@@ -347,22 +373,22 @@ header > .logo_layout .content {
   background-size: contain;
 }
 
-.section3 > .picture .contact_txt {
+.contactus > .contactus-pic .contactus-txtch {
   padding-top: 10%;
   padding-left: 70%;
   text-align: left;
   font-size: 50px;
   line-height: 75px;
-  font-family: "Microsoft Yahei", "微软雅黑";
+  font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体", "Noto Sans TC", sans-serif;
 }
 
-.section3 > .picture .contact_txt .contact_en {
+.contactus > .contactus-pic .contactus-txtch .contactus-txten {
   font-size: 40px;
   color: #f4cea7;
   letter-spacing: 2px;
 }
 
-.section3 > .pic_border {
+.contactus > .contactus-pic-border {
   position: absolute;
   top: -30%;
   left: 19%;
@@ -374,7 +400,7 @@ header > .logo_layout .content {
 
 .form {
   position: relative;
-  width: 100vw;
+  max-width: 100vw;
   height: 550px;
   background-color: #ffffff;
   display: -webkit-box;
@@ -544,7 +570,7 @@ header > .logo_layout .content {
 footer {
   background: url(../src/images/footer.jpg) 0 0 no-repeat;
   background-size: contain;
-  width: 100vw;
+  max-width: 100vw;
   height: 152px;
 }
 /*# sourceMappingURL=style.css.map */
