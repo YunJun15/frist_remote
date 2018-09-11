@@ -240,50 +240,48 @@ body{
   height: 657px; //60vh
   background: url(../src/images/section2.jpg) 0 0/100% 100% no-repeat;
  >.benefit-title{
-    
-  .benefit-title-txtch{
-    position: absolute;
-    top: 16%;
-    left: 22%;
-    display: table;
-    width: 10%;
-    height: auto;
-    margin: 0;
-    font-size: 50px;
-    text-align: center;
-    letter-spacing: 3;
-    color:$font-color-wh;
-    
+      display: block;
+      width: 12%;
+      height: auto;
+      margin-left: 380px;
+      padding-top: 100px;
+    .benefit-title-txtch{
+      position: relative;
+      width: 100%;
+      height: auto;
+      display: table;
+      margin: 0;
+      font-size: 55px;
+      letter-spacing: 3;
+      color:$font-color-wh;
     &:before{
-      content: '';
-      position: absolute;
-      top: 50%;
-      right: 118%;
-      width: 185%;
-      height: 1px;
-      margin: 0px auto;
-      overflow: hidden; /*不加，IE6以下會被拉很開*/
-      background-color: $font-color-wh;
-    }
-    &:after{
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 125%;
-      width: 650%;
-      height: 1px;
-      margin: 0px auto;
-      overflow: hidden;/*不加，IE6以下會被拉很開*/
-      background-color: $font-color-wh;
-    }
+       content: '';
+       position: absolute;
+       top: 36px;
+       right: 250px;
+       width: 355px;
+       height: 2px;
+       overflow: hidden; //不加，IE6以下會被拉很開
+       background-color: $font-color-or;
+     }
+     &:after{
+       content: '';
+       position: absolute;
+       top: 36px;
+       left: 300px;
+       width: 1220px;
+       height: 1px;
+       overflow: hidden; //不加，IE6以下會被拉很開
+       background-color: $font-color-wh;
+     }
   }
   .benefit-title-txten{
-    position: absolute;
-    top: 25%;
-    left: 22%;
+    //position: absolute;
+    //top: 25%;
+    //left: 22%;
     display: table;
-    width: 10%;
-    height: auto;
+    //width: 10%;
+    //height: auto;
     margin: 30px 0;
     font-size: 50px;
     text-align: center;
@@ -294,12 +292,14 @@ body{
 }
 
 >.benefit-info{
-  position: absolute;
-  top: 50%;
-  left: 22%;
+  //position: absolute;
+  //top: 50%;
+  //left: 22%;
   display: flex;
   width: 65%;
   height: 40%;
+  margin-left: 400px;
+  margin-top: 50px;
   .benefit-info-block{
     flex: auto;
     width: 35%;
@@ -325,7 +325,7 @@ body{
   }
   .benefit-support-border{
     border-right-width: 1px;
-    &::after{
+   /*&::after{
       content: '';
     position: absolute;
     left: 63%;
@@ -333,7 +333,7 @@ body{
     height: 60%;
     width: 0.15rem;
     background-color: $font-color-or;
-    }
+    }*/
   }
 }
 }
@@ -344,9 +344,9 @@ body{
   background-color: $font-color-wh;
   //background-size: contain;
   >.contactus-pic{
-    position: absolute;
-    left: 18%;
-    top: -25%;
+    position: relative;
+    margin-left: 350px;
+    margin-top: -80px;
     display: inline-block;
     width: 55%;
     height: 386px;
@@ -367,10 +367,10 @@ body{
     }
   }
   >.contactus-pic-border{
-    position: absolute;
-    top: -30%;
-    left: 19%;
+    position: relative;
     display: inline-block;
+    margin-left: 370px;
+    margin-top: -400px;
     width: 30%;
     height:125%;
     border: 3px solid $font-color-or;

@@ -248,16 +248,21 @@ header > .title-layout .title-content {
   background: url(../src/images/section2.jpg) 0 0/100% 100% no-repeat;
 }
 
-.benefit > .benefit-title .benefit-title-txtch {
-  position: absolute;
-  top: 16%;
-  left: 22%;
-  display: table;
-  width: 10%;
+.benefit > .benefit-title {
+  display: block;
+  width: 12%;
   height: auto;
+  margin-left: 380px;
+  padding-top: 100px;
+}
+
+.benefit > .benefit-title .benefit-title-txtch {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: table;
   margin: 0;
-  font-size: 50px;
-  text-align: center;
+  font-size: 55px;
   letter-spacing: 3;
   color: #ffffff;
 }
@@ -265,36 +270,27 @@ header > .title-layout .title-content {
 .benefit > .benefit-title .benefit-title-txtch:before {
   content: '';
   position: absolute;
-  top: 50%;
-  right: 118%;
-  width: 185%;
-  height: 1px;
-  margin: 0px auto;
+  top: 36px;
+  right: 250px;
+  width: 355px;
+  height: 2px;
   overflow: hidden;
-  /*不加，IE6以下會被拉很開*/
-  background-color: #ffffff;
+  background-color: #f4cea7;
 }
 
 .benefit > .benefit-title .benefit-title-txtch:after {
   content: '';
   position: absolute;
-  top: 50%;
-  left: 125%;
-  width: 650%;
+  top: 36px;
+  left: 300px;
+  width: 1220px;
   height: 1px;
-  margin: 0px auto;
   overflow: hidden;
-  /*不加，IE6以下會被拉很開*/
   background-color: #ffffff;
 }
 
 .benefit > .benefit-title .benefit-title-txten {
-  position: absolute;
-  top: 25%;
-  left: 22%;
   display: table;
-  width: 10%;
-  height: auto;
   margin: 30px 0;
   font-size: 50px;
   text-align: center;
@@ -303,14 +299,13 @@ header > .title-layout .title-content {
 }
 
 .benefit > .benefit-info {
-  position: absolute;
-  top: 50%;
-  left: 22%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 65%;
   height: 40%;
+  margin-left: 400px;
+  margin-top: 50px;
 }
 
 .benefit > .benefit-info .benefit-info-block {
@@ -343,16 +338,15 @@ header > .title-layout .title-content {
 
 .benefit > .benefit-info .benefit-support-border {
   border-right-width: 1px;
-}
-
-.benefit > .benefit-info .benefit-support-border::after {
-  content: '';
-  position: absolute;
-  left: 63%;
-  bottom: 40%;
-  height: 60%;
-  width: 0.15rem;
-  background-color: #f4cea7;
+  /*&::after{
+      content: '';
+    position: absolute;
+    left: 63%;
+    bottom: 40%;
+    height: 60%;
+    width: 0.15rem;
+    background-color: $font-color-or;
+    }*/
 }
 
 .contactus {
@@ -363,9 +357,9 @@ header > .title-layout .title-content {
 }
 
 .contactus > .contactus-pic {
-  position: absolute;
-  left: 18%;
-  top: -25%;
+  position: relative;
+  margin-left: 350px;
+  margin-top: -80px;
   display: inline-block;
   width: 55%;
   height: 386px;
@@ -389,10 +383,10 @@ header > .title-layout .title-content {
 }
 
 .contactus > .contactus-pic-border {
-  position: absolute;
-  top: -30%;
-  left: 19%;
+  position: relative;
   display: inline-block;
+  margin-left: 370px;
+  margin-top: -400px;
   width: 30%;
   height: 125%;
   border: 3px solid #f4cea7;
