@@ -2,7 +2,7 @@ $font-color-or:#f4cea7;
 $font-color-wh:#ffffff;
 $font-color-gray:#c8c6c6;
 $font-color-black:#000;
-$font-family-st: 'Michroma',GillSans, Calibri, Trebuchet,"文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", sans-serif;
+$font-family-st: GillSans, Calibri, Trebuchet,"文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", sans-serif;
 $letter-space:2px;
 $prizeblock-leftline:10px;
 $prizeblock-rightline-x:-25px;
@@ -48,7 +48,7 @@ html,body{
     width: 100vw;
     max-width: 100%;
     height: 75vh; //100vh
-    background: url(../src/images/index_01.jpg) 0 0/100% 100% no-repeat;
+    background: url(../src/images/index_01.jpg) center/cover no-repeat;
     >nav{
       display: inline-block;
       width: 99%;
@@ -124,23 +124,24 @@ html,body{
       margin-left: 15%;
       margin-top: 5%;
       .slogan-content{
-        width: 385px;
+        width: 395px;
         color: $font-color-wh;
         h2{
           width: 100%;
           padding-bottom: 10px;
           margin: 0;
           //margin-bottom: 30px;
-          border-bottom: 1px solid #ffffff;
+          border-bottom: 1px solid $font-color-wh;
           font-size: 2.5rem;
           font-weight: 100;
           text-align: center;
         }
         >p{
-          width: 100%;
-          margin-top: 15px;
+          width: 99%;
+          margin-top: 20px;
           padding-left: 15px;
           font-size: 0.9rem;
+          border-left: 2px solid $font-color-or;
           
         }
       }
@@ -285,6 +286,7 @@ html,body{
             font-size: 20px;
             text-align: right;
             letter-spacing:3px;
+            font-family: 'Michroma';
             font-weight: normal;
           }
           
@@ -307,12 +309,50 @@ html,body{
     
     }
   }
-/*.benefit{
+.benefit{
   position: relative;
-  max-width: 100vw;
-  height: 657px; //60vh
-  background: url(../src/images/section2.jpg) 0 0/100% 100% no-repeat;
- >.benefit-title{
+  width: 100vw;
+  max-width: 100%;
+  height: 800px;
+  //height: 657px; //60vh
+  background: url(../src/images/section2.jpg) center/cover no-repeat;
+  >.benefit-block{
+     width: 70%;
+     margin: 0 auto;
+     padding:100px 0;
+     .benefit-title{
+       width: 100%;
+       .benefit-title-txtch{
+         margin: 0;
+         font-size: 3rem;
+         font-weight: normal;
+         color: $font-color-wh;
+       }
+       .benefit-title-txten{
+         margin: 0;
+         font-size: 3rem;
+         font-weight: normal;
+         color: $font-color-or;
+       }
+     }
+     .benefit-container{
+       width: 100%;
+       height: auto;
+       margin-top: 5%;
+       overflow: hidden;
+       .benefit-container-block{
+         width: 48%;
+         margin-right: 1%;
+         float: left;
+       }
+     }
+     &::after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+ /*>.benefit-title{
       display: block;
       width: 12%;
       height: auto;
@@ -361,8 +401,6 @@ html,body{
     letter-spacing: 3;
     color: $font-color-or;
   }
-  
-}
  >.benefit-info{
   //position: absolute;
   //top: 50%;
@@ -408,6 +446,7 @@ html,body{
 }
  }
 }*/
+}
 /*.contactus{
   position: relative;
   max-width: 100vw;

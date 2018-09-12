@@ -16,7 +16,7 @@ html .prize > ul li a .prize-block .prize-block-line-right, body .prize > ul li 
 }
 
 html, body {
-  font-family: "Michroma", GillSans, Calibri, Trebuchet, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", sans-serif;
+  font-family: GillSans, Calibri, Trebuchet, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", sans-serif;
   font-size: 16px;
   width: 100%;
   height: 100%;
@@ -107,107 +107,6 @@ html, body {
       color: $font-color-wh;
     }
   }
-}*/
-  /*.benefit{
-  position: relative;
-  max-width: 100vw;
-  height: 657px; //60vh
-  background: url(../src/images/section2.jpg) 0 0/100% 100% no-repeat;
- >.benefit-title{
-      display: block;
-      width: 12%;
-      height: auto;
-      margin-left: 380px;
-      padding-top: 100px;
-    .benefit-title-txtch{
-      position: relative;
-      width: 100%;
-      height: auto;
-      display: block;
-      margin: 0;
-      font-size: 55px;
-      letter-spacing: 3;
-      color:$font-color-wh;
-    &:before{
-       content: '';
-       position: absolute;
-       top: 36px;
-       right: 250px;
-       width: 355px;
-       height: 2px;
-       overflow: hidden; //不加，IE6以下會被拉很開
-       background-color: $font-color-or;
-     }
-     &:after{
-       content: '';
-       position: absolute;
-       top: 36px;
-       left: 300px;
-       width: 1220px;
-       height: 1px;
-       overflow: hidden; //不加，IE6以下會被拉很開
-       background-color: $font-color-wh;
-     }
-  }
-  .benefit-title-txten{
-    //position: absolute;
-    //top: 25%;
-    //left: 22%;
-    display: table;
-    //width: 10%;
-    //height: auto;
-    margin: 30px 0;
-    font-size: 50px;
-    text-align: center;
-    letter-spacing: 3;
-    color: $font-color-or;
-  }
-  
-}
- >.benefit-info{
-  //position: absolute;
-  //top: 50%;
-  //left: 22%;
-  display: flex;
-  width: 65%;
-  height: 40%;
-  margin-left: 400px;
-  margin-top: 50px;
-  .benefit-info-block{
-    flex: auto;
-    width: 35%;
-    height: 60%;
-    padding: 1% 5% 1% 3%;
-    font-size: 14px;
-    line-height: 30px;
-    color: $font-color-wh;
-    letter-spacing: $letter-space;
-  }
-  .benefit-product-border{
-    border-right-width: 1px;
-    &:after{
-      content: '';
-    position: absolute;
-    left: 30%;
-    bottom: 40%;
-    height: 60%;
-    width: 0.15rem;
-    background-color: $font-color-or;
-    }
-  }
-  .benefit-support-border{
-    border-right-width: 1px;
-   &::after{
-      content: '';
-    position: absolute;
-    left: 63%;
-    bottom: 40%;
-    height: 60%;
-    width: 0.15rem;
-    background-color: $font-color-or;
-    }
-}
- }
 }*/
   /*.contactus{
   position: relative;
@@ -375,7 +274,7 @@ html header, body header {
   width: 100vw;
   max-width: 100%;
   height: 75vh;
-  background: url(../src/images/index_01.jpg) 0 0/100% 100% no-repeat;
+  background: url(../src/images/index_01.jpg) center/cover no-repeat;
 }
 
 html header > nav, body header > nav {
@@ -465,7 +364,7 @@ html header > .slogan, body header > .slogan {
 }
 
 html header > .slogan .slogan-content, body header > .slogan .slogan-content {
-  width: 385px;
+  width: 395px;
   color: #ffffff;
 }
 
@@ -480,10 +379,11 @@ html header > .slogan .slogan-content h2, body header > .slogan .slogan-content 
 }
 
 html header > .slogan .slogan-content > p, body header > .slogan .slogan-content > p {
-  width: 100%;
-  margin-top: 15px;
+  width: 99%;
+  margin-top: 20px;
   padding-left: 15px;
   font-size: 0.9rem;
+  border-left: 2px solid #f4cea7;
 }
 
 html .prize, body .prize {
@@ -553,6 +453,7 @@ html .prize > ul li a .prize-block .prize-block-txt .prize-block-number, body .p
   font-size: 20px;
   text-align: right;
   letter-spacing: 3px;
+  font-family: 'Michroma';
   font-weight: normal;
 }
 
@@ -566,5 +467,150 @@ html .prize > ul li a .prize-block .prize-block-txt .prize-number-position, body
 
 html .prize > ul li a .prize-block .prize-block-txt .prize-block-txt-unit, body .prize > ul li a .prize-block .prize-block-txt .prize-block-txt-unit {
   font-size: 10px;
+}
+
+html .benefit, body .benefit {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 800px;
+  background: url(../src/images/section2.jpg) center/cover no-repeat;
+  /*>.benefit-title{
+      display: block;
+      width: 12%;
+      height: auto;
+      margin-left: 380px;
+      padding-top: 100px;
+    .benefit-title-txtch{
+      position: relative;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0;
+      font-size: 55px;
+      letter-spacing: 3;
+      color:$font-color-wh;
+    &:before{
+       content: '';
+       position: absolute;
+       top: 36px;
+       right: 250px;
+       width: 355px;
+       height: 2px;
+       overflow: hidden; //不加，IE6以下會被拉很開
+       background-color: $font-color-or;
+     }
+     &:after{
+       content: '';
+       position: absolute;
+       top: 36px;
+       left: 300px;
+       width: 1220px;
+       height: 1px;
+       overflow: hidden; //不加，IE6以下會被拉很開
+       background-color: $font-color-wh;
+     }
+  }
+  .benefit-title-txten{
+    //position: absolute;
+    //top: 25%;
+    //left: 22%;
+    display: table;
+    //width: 10%;
+    //height: auto;
+    margin: 30px 0;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 3;
+    color: $font-color-or;
+  }
+ >.benefit-info{
+  //position: absolute;
+  //top: 50%;
+  //left: 22%;
+  display: flex;
+  width: 65%;
+  height: 40%;
+  margin-left: 400px;
+  margin-top: 50px;
+  .benefit-info-block{
+    flex: auto;
+    width: 35%;
+    height: 60%;
+    padding: 1% 5% 1% 3%;
+    font-size: 14px;
+    line-height: 30px;
+    color: $font-color-wh;
+    letter-spacing: $letter-space;
+  }
+  .benefit-product-border{
+    border-right-width: 1px;
+    &:after{
+      content: '';
+    position: absolute;
+    left: 30%;
+    bottom: 40%;
+    height: 60%;
+    width: 0.15rem;
+    background-color: $font-color-or;
+    }
+  }
+  .benefit-support-border{
+    border-right-width: 1px;
+   &::after{
+      content: '';
+    position: absolute;
+    left: 63%;
+    bottom: 40%;
+    height: 60%;
+    width: 0.15rem;
+    background-color: $font-color-or;
+    }
+}
+ }
+}*/
+}
+
+html .benefit > .benefit-block, body .benefit > .benefit-block {
+  width: 70%;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+html .benefit > .benefit-block .benefit-title, body .benefit > .benefit-block .benefit-title {
+  width: 100%;
+}
+
+html .benefit > .benefit-block .benefit-title .benefit-title-txtch, body .benefit > .benefit-block .benefit-title .benefit-title-txtch {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+html .benefit > .benefit-block .benefit-title .benefit-title-txten, body .benefit > .benefit-block .benefit-title .benefit-title-txten {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: normal;
+  color: #f4cea7;
+}
+
+html .benefit > .benefit-block .benefit-container, body .benefit > .benefit-block .benefit-container {
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
+  overflow: hidden;
+}
+
+html .benefit > .benefit-block .benefit-container .benefit-container-block, body .benefit > .benefit-block .benefit-container .benefit-container-block {
+  width: 48%;
+  margin-right: 1%;
+  float: left;
+}
+
+html .benefit > .benefit-block::after, body .benefit > .benefit-block::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 /*# sourceMappingURL=style.css.map */
