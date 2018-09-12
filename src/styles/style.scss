@@ -2,11 +2,11 @@ $font-color-or:#f4cea7;
 $font-color-wh:#ffffff;
 $font-color-gray:#c8c6c6;
 $font-color-black:#000;
-$font-family-st: "Open Sans",GillSans, Calibri, Trebuchet,"文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", sans-serif;
+$font-family-st: 'Michroma',GillSans, Calibri, Trebuchet,"文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", sans-serif;
 $letter-space:2px;
-$prizeblock-leftline:45px;
-$prizeblock-rightline-x:-10px;
-$prizeblock-rightline-y:-45px;
+$prizeblock-leftline:10px;
+$prizeblock-rightline-x:-25px;
+$prizeblock-rightline-y:-40px;
 $prizeblock-rotate-line:-45deg;
 
 %form-style{
@@ -22,13 +22,13 @@ $prizeblock-rotate-line:-45deg;
   outline:none;
 }
 %left-line-transform{ //prize block left-line
-  width: 60px;
+  width: 40px;
   height: 2px;
   background-color: $font-color-or;
   transform: translateY($prizeblock-leftline) rotate($prizeblock-rotate-line); 
 }
 %right-line-transform{ //prize block right-line 
-  width: 60px;
+  width: 40px;
   height: 2px;
   background-color: $font-color-or;
   transform: translate($prizeblock-rightline-x,$prizeblock-rightline-y) rotate($prizeblock-rotate-line); 
@@ -39,7 +39,6 @@ html,body{
       font-size: 16px;
       width: 100%;
       height: 100%;
-      //font-weight: 100;
 }
 
 
@@ -264,23 +263,30 @@ html,body{
           @extend %left-line-transform;
         }
         .prize-block-txt{
-          width: 150px;
+          width: 140px;
+          margin-bottom: 35px;
           letter-spacing: $letter-space;
+          
           .prize-block-txtch{
-            margin: 0;
+            margin: 5px 0;
             font-size: 14px;
-
+          }
+          .prizeblock3-txtch-position{
+            padding-left: 15px;
           }
           .prize-block-number{
             margin: 0;
-            font-size: 50px;
+            font-size: 20px;
             text-align: right;
             letter-spacing:3px;
-            font-family: 'Rajdhani', sans-serif;
             font-weight: normal;
           }
+          
           .prizeblock2-number-align{
             text-align: left;
+          }
+          .prize-number-position{
+            padding-right: 20px;
           }
           .prize-block-txt-unit{
             font-size: 10px;
