@@ -317,7 +317,8 @@ html,body{
   //height: 657px; //60vh
   background: url(../src/images/section2.jpg) center/cover no-repeat;
   >.benefit-block{
-     width: 70%;
+     width: 75%;
+     
      margin: 0 auto;
      padding:100px 0;
      .benefit-title{
@@ -341,9 +342,22 @@ html,body{
        margin-top: 5%;
        overflow: hidden;
        .benefit-container-block{
-         width: 48%;
-         margin-right: 1%;
+         width: 47%;
+         height: 30%;
+         margin-right: 2.5%;
          float: left;
+         >h2{
+           padding-bottom: 10px;
+           font-size: 2rem;
+           font-weight: normal;
+           color: $font-color-wh;
+           border-bottom: 1px solid $font-color-or;
+           //background: rgba($color: #000000, $alpha: 0.5)
+         }
+         >p{
+           line-height: 30px;
+           color: $font-color-wh;
+         }
        }
      }
      &::after{
