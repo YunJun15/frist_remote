@@ -34,116 +34,114 @@ $prizeblock-rotate-line:-45deg;
   transform: translate($prizeblock-rightline-x,$prizeblock-rightline-y) rotate($prizeblock-rotate-line); 
 }
 
-html,body{
-      font-family: $font-family-st;
-      font-size: 16px;
-      width: 100%;
-      height: 100%;
-      //box-sizing: border-box;
+html, body {
+  font-family: $font-family-st;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  //box-sizing: border-box;
+}
 
-
-
-  header {
-    position: relative;
-    width: 100vw;
-    max-width: 100%;
-    height: 75vh; //100vh
-    background: url(../src/images/index_01.jpg) center/cover no-repeat;
-    >nav{
-      display: inline-block;
-      width: 99%;
-      height: 70px;
-     font-size: 14px;
-     color:$font-color-wh;
-       ul{ //不用的話
-        position: absolute;
-        right: 10px;
-        width: 35%;
-        display: flex;
-        justify-content: flex-start;
-        margin: 0;
-        list-style: none;
-         }
-       li{
-          line-height: 20px;
-          padding: 3.5% 0 0 0;
-          text-align: center;
-          margin: 0 5%;
-          width: 20%;
-          &:hover {
-            border-top:3px solid $font-color-or;
-            padding-top: 3%;
-            }
-            a{
-              text-decoration: none;
-              color:$font-color-wh;
-              
-            }
-         }
+header {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 75vh; //100vh
+  background: url(../src/images/index_01.jpg) center/cover no-repeat;
+}
+nav {
+  display: inline-block;
+  width: 99%;
+  height: 70px;
+  font-size: 14px;
+  color:$font-color-wh;
+    ul{ //不用的話
+    position: absolute;
+    right: 10px;
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    list-style: none;
       }
-    
-    >.logo-layout{
-      position: relative;
-      display: inline-block;
-      width: 500px;
-      height: 80px;
-      margin-left: 300px;
-      //background: rgba(0,133,0,0.3);
-      >.logo{
-        display: inline-block;
-        width: 20%;
-        height: auto;
-        img{
-          width: 100px;
-          height: auto;
+    li{
+      line-height: 20px;
+      padding: 3.5% 0 0 0;
+      text-align: center;
+      margin: 0 5%;
+      width: 20%;
+      &:hover {
+        border-top:3px solid $font-color-or;
+        padding-top: 3%;
         }
-      }
-      >.logo-title{
-        display: inline-block;
-        width: 75%;
-        height: 100%;
-        //background: rgba(0,0,0,0.3);
-        vertical-align: top;
-        h4{
-          margin: 0;
-          margin-top: 20px;
-          color: $font-color-or;
-        }
-        h3{
-          margin: 0;
-          color: $font-color-or;
+        a{
+          text-decoration: none;
+          color:$font-color-wh;
           
         }
+      }
+  }
+  .logo-layout{
+    position: relative;
+    display: inline-block;
+    width: 500px;
+    height: 80px;
+    margin-left: 300px;
+    //background: rgba(0,133,0,0.3);
+    .logo{
+      display: inline-block;
+      width: 20%;
+      height: auto;
+      >img{
+        width: 100px;
+        height: auto;
       }
     }
-    >.slogan{
-      position: relative;
+    .logo-title{
       display: inline-block;
-      width: 85%;
-      height: 30%;
-      margin-left: 15%;
-      margin-top: 5%;
-      .slogan-content{
-        width: 395px;
-        color: $font-color-wh;
-        h2{
-          width: 100%;
-          padding-bottom: 10px;
-          margin: 0;
-          //margin-bottom: 30px;
-          border-bottom: 1px solid $font-color-wh;
-          font-size: 2.5rem;
-          font-weight: 100;
-          text-align: center;
-        }
-        >p{
-          width: 99%;
-          margin-top: 20px;
-          padding-left: 15px;
-          font-size: 0.9rem;
-          border-left: 2px solid $font-color-or;
-          
-        }
+      width: 75%;
+      height: 100%;
+      //background: rgba(0,0,0,0.3);
+      vertical-align: top;
+      >h4{
+        margin: 0;
+        margin-top: 20px;
+        color: $font-color-or;
+      }
+      >h3{
+        margin: 0;
+        color: $font-color-or;
+        
+      }
+    }
+  }
+  .slogan{
+    position: relative;
+    display: inline-block;
+    width: 85%;
+    height: 30%;
+    margin-left: 15%;
+    margin-top: 5%;
+    .slogan-content{
+      width: 395px;
+      color: $font-color-wh;
+      >h2{
+        width: 100%;
+        padding-bottom: 10px;
+        margin: 0;
+        //margin-bottom: 30px;
+        border-bottom: 1px solid $font-color-wh;
+        font-size: 2.5rem;
+        font-weight: 100;
+        text-align: center;
+      }
+      >p{
+        width: 99%;
+        margin-top: 20px;
+        padding-left: 15px;
+        font-size: 0.9rem;
+        border-left: 2px solid $font-color-or;
+        
       }
     }
   }
@@ -273,7 +271,6 @@ html,body{
           width: 140px;
           margin-bottom: 35px;
           letter-spacing: $letter-space;
-          
           .prize-block-txtch{
             margin: 5px 0;
             font-size: 14px;
@@ -289,7 +286,6 @@ html,body{
             font-family: 'Michroma';
             font-weight: normal;
           }
-          
           .prizeblock2-number-align{
             text-align: left;
           }
@@ -316,47 +312,46 @@ html,body{
   height: 800px;
   //height: 657px; //60vh
   background: url(../src/images/section2.jpg) center/cover no-repeat;
-  >.benefit-block{
-     width: 75%;
-     
-     margin: 0 auto;
-     padding:100px 0;
-     .benefit-title{
-       width: 100%;
-       .benefit-title-txtch{
-         margin: 0;
-         font-size: 3rem;
-         font-weight: normal;
-         color: $font-color-wh;
-       }
+  .benefit-block{
+    width: 75%;
+    margin: 0 auto;
+    padding:100px 0;
+    .benefit-title{
+      width: 100%;
+      .benefit-title-txtch{
+        margin: 0;
+        font-size: 3rem;
+        font-weight: normal;
+        color: $font-color-wh;
+        }
        .benefit-title-txten{
          margin: 0;
          font-size: 3rem;
          font-weight: normal;
          color: $font-color-or;
-       }
+        }
      }
-     .benefit-container{
-       width: 100%;
-       height: auto;
-       margin-top: 5%;
-       overflow: hidden;
-       .benefit-container-block{
-         width: 47%;
-         height: 30%;
-         margin-right: 2.5%;
-         float: left;
-         >h2{
-           padding-bottom: 10px;
-           font-size: 2rem;
-           font-weight: normal;
-           color: $font-color-wh;
-           border-bottom: 1px solid $font-color-or;
-           //background: rgba($color: #000000, $alpha: 0.5)
+    .benefit-container{
+      width: 100%;
+      height: auto;
+      margin-top: 5%;
+      overflow: hidden;
+      .benefit-container-block{
+        width: 47%;
+        height: 30%;
+        margin-right: 2.5%;
+        float: left;
+        >h2{
+          padding-bottom: 10px;
+          font-size: 2rem;
+          font-weight: normal;
+          color: $font-color-wh;
+          border-bottom: 1px solid $font-color-or;
+          //background: rgba($color: #000000, $alpha: 0.5)
          }
-         >p{
-           line-height: 30px;
-           color: $font-color-wh;
+        >p{
+          line-height: 30px;
+          color: $font-color-wh;
          }
        }
      }
@@ -461,44 +456,7 @@ html,body{
  }
 }*/
 }
-/*.contactus{
-  position: relative;
-  max-width: 100vw;
-  height: 304px;
-  background-color: $font-color-wh;
-  //background-size: contain;
-  >.contactus-pic{
-    position: relative;
-    margin-left: 350px;
-    margin-top: -80px;
-    display: inline-block;
-    width: 55%;
-    height: 386px;
-    background: url(../src/images/picture.jpg) 0 0 no-repeat;
-    background-size: contain;
-    .contactus-txtch{
-      padding-top: 10%;
-      padding-left: 70%;
-      text-align: left;
-      font-size: 50px;
-      line-height: 75px;
-      .contactus-txten{
-        font-size: 40px;
-        color: $font-color-or;
-        letter-spacing: $letter-space;
-      }
-    }
-  }
-  >.contactus-pic-border{
-    position: relative;
-    display: inline-block;
-    margin-left: 370px;
-    margin-top: -400px;
-    width: 30%;
-    height:125%;
-    border: 3px solid $font-color-or;
-  }
-}*/
+
 /*.form{
   position: relative;
   max-width: 100vw;
@@ -621,7 +579,6 @@ html,body{
   height: 152px;
  }*/
 
-}
 
 
 
