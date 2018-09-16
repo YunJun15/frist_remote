@@ -427,10 +427,37 @@ nav {
     }
   }
 }
-.form{
+.form-container{
   width: 100vw;
   max-width: 100%;
   height: 600px;
+  form{
+    width: 60%;
+    margin: 0 auto;
+    background: rgba(133,122,133,0.3);
+    .form-container-block{
+      .div-width{
+        width: 50%;
+      }
+      .option-block{
+        .option-block-width{
+          width: 50%;
+        }
+      }
+    }
+    
+    .form-textarea-width{
+      width: 100%;
+      textarea{
+        width: 100%;
+      }
+    }
+  }
+  input{
+    &[type=text]{
+      width: 50%;  
+    }
+  }
 }
 
 
