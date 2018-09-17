@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.prize > ul li a .prize-block .prize-block-line-left {
+.prize > ul li .prize-block .prize-block-line-left {
   width: 40px;
   height: 2px;
   background-color: #f4cea7;
@@ -7,7 +7,7 @@
           transform: translateY(10px) rotate(-45deg);
 }
 
-.prize > ul li a .prize-block .prize-block-line-right {
+.prize > ul li .prize-block .prize-block-line-right {
   width: 40px;
   height: 2px;
   background-color: #f4cea7;
@@ -52,7 +52,10 @@ nav ul {
   list-style: none;
 }
 
-nav li {
+nav ul a {
+  text-decoration: none;
+  display: inline-block;
+  color: #ffffff;
   line-height: 20px;
   padding: 3.5% 0 0 0;
   text-align: center;
@@ -60,14 +63,9 @@ nav li {
   width: 20%;
 }
 
-nav li:hover {
+nav ul a:hover {
   border-top: 3px solid #f4cea7;
   padding-top: 3%;
-}
-
-nav li a {
-  text-decoration: none;
-  color: #ffffff;
 }
 
 .logo-layout {
@@ -252,15 +250,7 @@ nav li a {
   height: 100%;
 }
 
-.prize > ul li a {
-  text-decoration: none;
-  color: #f4cea7;
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-}
-
-.prize > ul li a .prize-block {
+.prize > ul li .prize-block {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -274,22 +264,29 @@ nav li a {
           align-items: center;
 }
 
-.prize > ul li a .prize-block .prize-block-txt {
+.prize > ul li .prize-block a {
+  text-decoration: none;
+  color: #f4cea7;
   width: 140px;
+  height: 50%;
+}
+
+.prize > ul li .prize-block a .prize-block-txt {
+  width: 100%;
   margin-bottom: 35px;
   letter-spacing: 2px;
 }
 
-.prize > ul li a .prize-block .prize-block-txt .prize-block-txtch {
+.prize > ul li .prize-block a .prize-block-txt .prize-block-txtch {
   margin: 5px 0;
   font-size: 14px;
 }
 
-.prize > ul li a .prize-block .prize-block-txt .prizeblock3-txtch-position {
+.prize > ul li .prize-block a .prize-block-txt .prizeblock3-txtch-position {
   padding-left: 15px;
 }
 
-.prize > ul li a .prize-block .prize-block-txt .prize-block-number {
+.prize > ul li .prize-block a .prize-block-txt .prize-block-number {
   margin: 0;
   font-size: 20px;
   text-align: right;
@@ -298,15 +295,15 @@ nav li a {
   font-weight: normal;
 }
 
-.prize > ul li a .prize-block .prize-block-txt .prizeblock2-number-align {
+.prize > ul li .prize-block a .prize-block-txt .prizeblock2-number-align {
   text-align: left;
 }
 
-.prize > ul li a .prize-block .prize-block-txt .prize-number-position {
+.prize > ul li .prize-block a .prize-block-txt .prize-number-position {
   padding-right: 20px;
 }
 
-.prize > ul li a .prize-block .prize-block-txt .prize-block-txt-unit {
+.prize > ul li .prize-block a .prize-block-txt .prize-block-txt-unit {
   font-size: 10px;
 }
 

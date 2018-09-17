@@ -63,8 +63,10 @@ nav {
     justify-content: flex-start;
     margin: 0;
     list-style: none;
-      }
-    li{
+    a{
+      text-decoration: none;
+      display: inline-block;
+      color:$font-color-wh;
       line-height: 20px;
       padding: 3.5% 0 0 0;
       text-align: center;
@@ -73,13 +75,10 @@ nav {
       &:hover {
         border-top:3px solid $font-color-or;
         padding-top: 3%;
-        }
-        a{
-          text-decoration: none;
-          color:$font-color-wh;
-          
-        }
+        
       }
+      }
+    }
   }
   .logo-layout{
     position: relative;
@@ -252,59 +251,57 @@ nav {
       font-size: 16px;
       width: (100% /4);
       height: 100%;
-      a{
-        text-decoration: none;
-        color: $font-color-or;
+      .prize-block{
         width: 100%;
         height: 100%;
-        display: inline-block;
-        .prize-block{
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .prize-block-line-left{
           @extend %left-line-transform;
         }
-        .prize-block-txt{
+        a{
+          text-decoration: none;
+          color: $font-color-or;
           width: 140px;
-          margin-bottom: 35px;
-          letter-spacing: $letter-space;
-          .prize-block-txtch{
+          height: 50%;
+          .prize-block-txt{
+            width: 100%;
+            margin-bottom: 35px;
+            letter-spacing: $letter-space;
+            .prize-block-txtch{
             margin: 5px 0;
             font-size: 14px;
-          }
-          .prizeblock3-txtch-position{
+            }
+            .prizeblock3-txtch-position{
             padding-left: 15px;
-          }
-          .prize-block-number{
+            }
+            .prize-block-number{
             margin: 0;
             font-size: 20px;
             text-align: right;
             letter-spacing:3px;
             font-family: 'Michroma';
             font-weight: normal;
-          }
-          .prizeblock2-number-align{
+            }
+            .prizeblock2-number-align{
             text-align: left;
-          }
-          .prize-number-position{
+            }
+            .prize-number-position{
             padding-right: 20px;
-          }
-          .prize-block-txt-unit{
+            }
+            .prize-block-txt-unit{
             font-size: 10px;
+            }
           }
         }
         .prize-block-line-right{
           @extend %right-line-transform;
         }
       }
-      }
-      }
-    
-    }
+    } 
   }
+}
 .benefit{
   position: relative;
   width: 100vw;
