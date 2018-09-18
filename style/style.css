@@ -452,9 +452,6 @@ form {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 50px;
 }
 
@@ -462,17 +459,27 @@ form {
   width: 48%;
 }
 
-.form-radio-item .form-radio-item-option {
+.form-radio-item label:nth-of-type(1) {
+  display: inline-block;
+  line-height: 25px;
+}
+
+.form-radio-item-option {
   position: relative;
-  width: 120px;
+  width: 50%;
   float: right;
   text-align: right;
 }
 
-.form-radio-item::after {
+.form-radio-item-option::after {
   content: "";
   display: block;
   clear: both;
+}
+
+.form-checkbox-item-option {
+  position: relative;
+  line-height: 39px;
 }
 
 .select-block {
@@ -493,12 +500,6 @@ form {
 
 .form-textarea textarea {
   width: 100%;
-}
-
-.form-left-item5 > div {
-  display: inline-block;
-  width: 100%;
-  padding: 20px 0 0 10px;
 }
 
 input[type=text] {
@@ -526,28 +527,69 @@ input[type=text]::placeholder {
 }
 
 input[type=radio] {
-  opacity: 0.7;
+  opacity: 0;
 }
 
 input[type=radio] + label {
   display: inline-block;
   padding-left: 10px;
   padding-right: 5px;
+  cursor: pointer;
+}
+
+input[type=radio] + label::before {
+  content: "";
+  position: relative;
+  left: -20px;
+  top: 3px;
+  display: inline-block;
   width: 15px;
   height: 15px;
   border: 2px solid #5a5a5a;
   border-radius: 50%;
-  cursor: pointer;
+}
+
+input[type=radio]:checked + label::before {
+  content: "";
+  position: relative;
+  background: #f4cea7;
+}
+
+input[type=checkbox] {
+  opacity: 0;
 }
 
 input[type=checkbox] + label {
-  padding-right: 5%;
+  display: inline-block;
+  margin-left: -15px;
+  margin-right: 6%;
+  cursor: pointer;
 }
 
 input[type=checkbox] + label::before {
   content: "";
-  position: absolute;
+  position: relative;
+  left: -5px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
   border: 2px solid #5a5a5a;
+}
+
+input[type=checkbox]:checked + label {
+  padding-left: 7px;
+}
+
+input[type=checkbox]:checked + label::before {
+  content: "";
+  width: 10px;
+  height: 20px;
+  border: none;
+  border-right: 2px solid #f4cea7;
+  border-bottom: 2px solid #f4cea7;
+  border-bottom-width: 2px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 select {

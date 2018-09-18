@@ -426,22 +426,34 @@ form{
 .form-row{  //form的每一行
       display: flex;
       justify-content: space-between;
-      align-items: center;
       margin-bottom: 50px;
+      //background: rgba(136, 124, 124, 0.2);
 }
 .form-radio-item{
   width: 48%;
-  .form-radio-item-option{
+  label:nth-of-type(1){
+    display: inline-block;
+    line-height: 25px;
+  }
+}
+.form-radio-item-option{
     position: relative;
-    width: 120px;
+    width: 50%;
     float: right;
     text-align: right;
-  }
-  &::after{
+    &::after{
     content: "";
     display: block;
     clear: both;
   }
+}
+.form-checkbox-item-option{
+  position: relative;
+  line-height: 39px;
+  >label{
+    
+  }
+  
 }
 .select-block{
       border-top: 1px dashed $font-color-or;
@@ -451,6 +463,7 @@ form{
 }
 .item-width{ //暫時先不動
       width: 48%;
+      //background: rgba(241, 144, 17, 0.2);
   }
 .form-textarea{
       width: 100%;
@@ -458,14 +471,6 @@ form{
         width: 100%;
       }
 }
-.form-left-item5{
-      >div{
-        display: inline-block;
-        width: 100%;
-        padding: 20px 0 0 10px;
-      }
-}
-
 input{
     &[type=text]{
       width: 48%; 
@@ -478,37 +483,65 @@ input{
       }
     }
     &[type=radio]{
-      opacity: 0.7;
+      opacity: 0; //將預設的radio透明
       + label{
         display: inline-block;
         padding-left: 10px;
         padding-right: 5px;
-        //position: absolute;
-         // left: 15px;
-          //top: -2px;
+        cursor: pointer;
+        &::before{
+          content: "";
+          position: relative;
+          left: -20px;
+          top: 3px;
+          display: inline-block;
           width: 15px;
           height: 15px;
           border: 2px solid $font-color-black;
           border-radius: 50%;
-        cursor: pointer;
+        }
+      }
+      &:checked +label{ //點擊label
         &::before{
-          
-          
+        content: "";
+        position: relative;
+        background: $font-color-or;
         }
       }
     }
     &[type=checkbox]{
+      opacity: 0;
       +label{
-        padding-right: 5%;
+        display: inline-block;
+        margin-left: -15px;
+        margin-right: 6%;
+        cursor: pointer;
         &::before{
           content: "";
-          position: absolute;
+          position: relative;
+          left: -5px;
+          display: inline-block;
+          width: 15px;
+          height: 15px;
           border: 2px solid $font-color-black;
+        }
+      }
+      &:checked + label{
+        padding-left: 7px;
+        &::before{
+          content: "";
+          width: 10px;
+          height: 20px;
+          border: none;
+          border-right: 2px solid $font-color-or;
+          border-bottom: 2px solid $font-color-or;
+          border-bottom-width: 2px;
+          transform: rotate(45deg);
+
         }
       }
     }
   }
-
   select{
     width: 100%;
     outline: none;
