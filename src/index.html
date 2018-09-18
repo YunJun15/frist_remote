@@ -94,32 +94,32 @@
     </ul>
   </section>
   <section class="benefit">
-    <div class="benefit-block">
+    <div class="benefit-container">
       <div class="benefit-title">
         <h2 class="benefit-title-txtch">-{收 益}-</h2>
         <h2 class="benefit-title-txten">Benefit</h2>
       </div>
-      <div class="benefit-container">
-        <div class="benefit-container-block">
+      <div class="benefit-contain">
+        <div class="benefit-contain-block">
           <h2>‧产品：</h2>
           <p>十年信誉，品质保障，百十元玩法， 150万中奖上限，大户首选，彩种 齐全，
             在线、客户端、app应有尽有
           </p>
         </div>
-        <div class="benefit-container-block">
+        <div class="benefit-contain-block">
           <h2>‧扶持：</h2>
           <p>新代理里程碑奖励、考核奖励各类 活动层出不穷，月月都有传媒资源、 
             注册送配额等完善扶持体系美工、建 站、SEO优化服务菲律宾学习考察机会。
           </p>
         </div>
-        <div class="benefit-container-block">
+        <div class="benefit-contain-block">
           <h2>‧服务：</h2>
           <p>菲律宾办公服务<br />
              资金安全保障服务<br />
              VPN/保密手机等安全措施服务
           </p>
         </div>
-        <div class="benefit-container-block">
+        <div class="benefit-contain-block">
           <h2>‧礼金：</h2>
           <p>节日礼金<br />
              平台周年庆礼金<br />
@@ -130,147 +130,114 @@
       </div>
     </div>
   </section>
-  <section class="contactus">
-    <div class="contactus-block">
-      <div class="contactus-pic-block">
-        <div class="contactus-pic-block-border"></div>
-          <img src="../src/images/picture.jpg">
-      </div>
-      <div class="contactus-slogan">
-        <div class="contactus-title">
-            <h2 class="contactus-title-txtch">{联系我们}</h2>
-            <h2 class="contactus-title-txten">Contact Us</h2>
+  <section class="contact">
+    <div class="contact-container">
+      <div class="contact-title">
+        <div class="contact-title-pic-block">
+          <div class="contact-title-pic-border"></div>
+            <img src="../src/images/picture.jpg">
+          </div>
+          <div class="contact-title-contain">
+            <div class="contact-title-slogan">
+              <h2 class="contact-title-slogan-txtch">{联系我们}</h2>
+              <h2 class="contact-title-slogan-txten">Contact Us</h2>
+            </div>
+            <p class="contact-title-content">
+              您可以直接加招商主管QQ进行相关洽谈；如招商主管接待繁忙，也可以留下您的资料；
+              我们承诺资料不对外泄露，并在一个工作日内主动联系您。<br />
+              招商主管QQ：705874
+            </p>
         </div>
-        <p class="contactus-title-content">
-          您可以直接加招商主管QQ进行相关洽谈；如招商主管接待繁忙，也可以留下您的资料；
-          我们承诺资料不对外泄露，并在一个工作日内主动联系您。<br />
-          招商主管QQ：705874
-        </p>
-      </div>
-    </div>
-  </section>
-  <section class="form-container">
-    <form action="#" method="post">
-      <div class="form-container-block">
-        <input type="text" name="call" placeholder="称呼">
-        <div class="div-width">
-          <label for="sex">性别：</label>
-          <input type="radio" name="gender" id="man" value="男">
-          <label for="man">男</label>
-          <input type="radio" name="gender" id="female" value="女">
-          <label for="female">女</label>
+      </div> 
+      <form action="#" method="post">
+        <div class="form-row">
+          <input type="text" name="call" placeholder="称呼">
+          <div class="form-radio-item">
+            <label>性别：</label>
+            <div class="form-radio-item-option">
+              <input type="radio" name="gender" id="man" value="男">
+              <label for="man">男</label>
+              <input type="radio" name="gender" id="female" value="女">
+              <label for="female">女</label>
+            </div>
+          </div>
         </div>
-        <input type="text" name="phone" placeholder="联系电话">
-        <input type="text" name="contactqq" placeholder="联系QQ(Email必填）" class="right">
-        <div class="div-width">
-          <span>是否做过彩票代理:</span>
-          <input type="radio" name="lottery"" id="lottery-yes">
-          <label for="lottery-yes"">是</label>
-          <input type="radio" name="lottery" id="lotter-no">
-          <span>否</span>
-        </div class="div-width">
-        <div class="div-width">
-          <span>是否做过老虎机代理:</span>
-          <input type="radio" name="tiger" id="tiger-yes">
-          <label for="tiger-yes">是</label>
-          <input type="radio" name="tiger" id="tiger-no">
-          <label for="tiger-no">否</label>
+        <div class="form-row">
+          <input type="text" name="phone" placeholder="联系电话">
+          <input type="text" name="contactqq" placeholder="联系QQ(Email必填）" class="right">
         </div>
-        <div class="option-block">
-          <div class="option-block-width option-block-year">
+        <div class="form-row">
+          <div class="form-radio-item">
+            <label>是否做过彩票代理:</label>
+            <div class="form-radio-item-option">
+              <input type="radio" name="lottery" id="lottery-yes">
+              <label for="lottery-yes">是</label>
+              <input type="radio" name="lottery" id="lotter-no">
+              <label for="lotter-no">否</label>
+            </div>
+          </div>
+          <div class="form-radio-item">
+            <label>是否做过老虎机代理:</label>
+            <div class="form-radio-item-option">
+              <input type="radio" name="tiger" id="tiger-yes">
+              <label for="tiger-yes">是</label>
+              <input type="radio" name="tiger" id="tiger-no">
+              <label for="tiger-no"></label>否</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row select-block">
+          <div class="item-width">
             <p>代理年限</p>
             <select name="year" id="">
               <option value="less than one year">小于1年</option>
-              <option value="one">1年</option>
-              <option value="two">2年</option>
-              <option value="three">3年</option>
+              <option value="one">2年-3年</option>
+              <option value="two">3年-4年</option>
+              <option value="three">5年及以上</option>
             </select>
           </div>
-          <div class="option-block-width option-block-amount">
+          <div class="item-width">
             <p>平台日交易量</p>
             <select name="amount" id="">
               <option value="five">5万以下</option>
-              <option value="six">6万</option>
-              <option value="seven">7万</option>
-              <option value="eight">8万</option>
+              <option value="six">5万-15万</option>
+              <option value="eight">15万-25万</option>
+              <option value="seven">25万-50万</option>
+              <option value="seven">50万-100万</option>
+              <option value="seven">100万以上</option>
             </select>
           </div>
         </div>
-        <div class="div-width">
-          <p>发展方式(可多选)</p>
-          <div>
-            <input type="checkbox" name="dv-method"" id="seo" value="SEO">
-            <label for="seo">SEO</label>
-            <input type="checkbox" name="dv-method"" id="ground" value="地推">
-            <label for="ground">地推</label>
-            <input type="checkbox" name="dv-method"" id="qq" value="QQ">
-            <label for="qq">QQ</label>
-            <input type="checkbox" name="dv-method"" id="build" value="建站">
-            <label for="build">建站</label>
-            <input type="checkbox" name="dv-method"" id="other" value="其他">
-            <label for="other">其他</label>
+        <div class="form-row">
+          <div class="item-width form-left-item5">
+            <p>发展方式(可多选)</p>
+            <div class="checkbox-block">
+              <input type="checkbox" name="dv-method" id="seo" value="SEO">
+              <label for="seo">SEO</label>
+              <input type="checkbox" name="dv-method" id="ground" value="地推">
+              <label for="ground">地推</label>
+              <input type="checkbox" name="dv-method" id="qq" value="QQ">
+              <label for="qq">QQ</label>
+              <input type="checkbox" name="dv-method" id="build" value="建站">
+              <label for="build">建站</label>
+              <input type="checkbox" name="dv-method" id="other" value="其他">
+              <label for="other">其他</label>
+            </div>
           </div>
+            <div class="item-width">
+              <p>目前代理平台名(多个请用“|”分开):</p>
+              <textarea name="agent-name" id="agent-name" cols="75" rows="2"></textarea>
+            </div>
         </div>
-        <div class="div-width">
-          <p>目前代理平台名(多个请用“|”分开):</p>
-          <input type="text">
-        </div>
-        <div class="form-textarea-width">
+        <div class="form-textarea">
           <i></i>
-          <textarea name="" id="" cols="30" rows="10">附言：</textarea>
+          <p>附言：</p>
+          <textarea name="message" id="message" cols="30" rows="3"></textarea>
         </div>
         <input type="submit" value="发送">
-        </form>
-      </div>
+      </form>
+    </div>
   </section>
-  <!--section class="form">
-    <div class="form_left">
-      <form action="#" method="POST">
-        <input type="text" name="call" placeholder="称呼" ><br />
-        <input type="text" name="call" placeholder="联系电话（选填）"><br />
-        <div class="form_span"><span>是否做过彩票代理:</span>
-          <input id="yes1" type="radio" name="lottery" value="yes">
-          <label for="yes1"><span></span>是</label>
-          <input id="no1" type="radio" name="lottery" value="no">
-          <label for="no1"><span></span>否</label></div><br />
-          <select>
-            <option value="chose" disabled selected >如有经验请选择</option>
-            <option value="one">1年</option>
-            <option value="two">2年</option>
-            <option value="three">3年</option>
-            <option value="four">4年</option>
-            <option value="five">5年</option>
-          </select><br />
-        <input type="text" name="amount1" placeholder="目前的月彩票交易量：" ><br />                             
-      </form>
-    </div>
-    <div class="form_right">
-      <form action="#" method="POST">
-        <div class="gender_block"><span>性別:</span>
-          <input id="man" type="radio" name="gender" value="man">
-          <label for="man"><span></span>男</label>
-          <input id="female" type="radio" name="gender" value="female">
-          <label for="female"><span></span>女</label>
-        </div><br />
-        <input type="text" name="qq" placeholder="联系QQ（选填）" class="qq"><br />
-        <div class="form_span"><span>是否做过老虎机代理:</span>
-          <input id="yes2" type="radio" name="tiger" value="yes">
-          <label for="yes2"><span></span>是</label>
-          <input id="no2" type="radio" name="tiger" value="no">
-          <label for="no2"><span></span>否</label></div><br />
-        <input type="text" name="AG_name" placeholder="目前代理平台名(多个请用“|”分开)"><br />
-        <input type="text" name="amount2" placeholder="目前的月老虎机交易量：" ><br />
-      </form>
-    </div>
-    <div class="form_bottom">
-      <form action="#" method="POST">
-        <p>附言：</p>
-        <textarea name="message" rows="2" maxlength="50">（最多50字）</textarea><br />
-        <input type="submit" name="SB" value="">
-      </form>
-    </div>
-      </form>
-    </section-->
   <footer></footer>
-    </body>
+</body>
 </html>

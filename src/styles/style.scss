@@ -1,7 +1,7 @@
 $font-color-or:#f4cea7;
 $font-color-wh:#ffffff;
-$font-color-gray: #666666;
-$font-color-black:#000;
+$font-color-gray: #9e9e9e;
+$font-color-black: #5a5a5a;
 $font-family-st: GillSans, Calibri, Trebuchet,"文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", sans-serif;
 $letter-space:2px;
 $prizeblock-leftline:10px;
@@ -55,7 +55,7 @@ nav {
   height: 70px;
   font-size: 14px;
   color:$font-color-wh;
-    ul{ //不用的話
+  ul{ //不用的話
     position: absolute;
     right: 10px;
     width: 35%;
@@ -63,87 +63,85 @@ nav {
     justify-content: flex-start;
     margin: 0;
     list-style: none;
-    a{
-      text-decoration: none;
-      display: inline-block;
-      color:$font-color-wh;
-      line-height: 20px;
-      padding: 3.5% 0 0 0;
-      text-align: center;
-      margin: 0 5%;
-      width: 20%;
-      &:hover {
-        border-top:3px solid $font-color-or;
-        padding-top: 3%;
-        
-      }
-      }
-    }
-  }
-  .logo-layout{
-    position: relative;
-    display: inline-block;
-    width: 500px;
-    height: 80px;
-    margin-left: 300px;
-    //background: rgba(0,133,0,0.3);
-    .logo{
-      display: inline-block;
-      width: 20%;
-      height: auto;
-      >img{
-        width: 100px;
-        height: auto;
-      }
-    }
-    .logo-title{
-      display: inline-block;
-      width: 75%;
-      height: 100%;
-      //background: rgba(0,0,0,0.3);
-      vertical-align: top;
-      >h4{
-        margin: 0;
-        margin-top: 20px;
-        color: $font-color-or;
-      }
-      >h3{
-        margin: 0;
-        color: $font-color-or;
-        
-      }
-    }
-  }
-  .slogan{
-    position: relative;
-    display: inline-block;
-    width: 85%;
-    height: 30%;
-    margin-left: 15%;
-    margin-top: 5%;
-    .slogan-content{
-      width: 395px;
-      color: $font-color-wh;
-      >h2{
-        width: 100%;
-        padding-bottom: 10px;
-        margin: 0;
-        //margin-bottom: 30px;
-        border-bottom: 1px solid $font-color-wh;
-        font-size: 2.5rem;
-        font-weight: 100;
+      a{
+        text-decoration: none;
+        display: inline-block;
+        color:$font-color-wh;
+        line-height: 20px;
+        padding: 3.5% 0 0 0;
         text-align: center;
-      }
-      >p{
-        width: 99%;
-        margin-top: 20px;
-        padding-left: 15px;
-        font-size: 0.9rem;
-        border-left: 2px solid $font-color-or;
-        
+        margin: 0 5%;
+        width: 20%;
+        &:hover {
+          border-top:3px solid $font-color-or;
+          padding-top: 3%;
+        }
       }
     }
+}
+
+.logo-layout{
+  position: relative;
+  display: inline-block;
+  width: 500px;
+  height: 80px;
+  margin-left: 300px;
+  //background: rgba(0,133,0,0.3);
+  .logo{
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    img{
+      width: 100px;
+      height: auto;
+    }
   }
+  .logo-title{
+    display: inline-block;
+    width: 75%;
+    height: 100%;
+    //background: rgba(0,0,0,0.3);
+    vertical-align: top;
+    h4{
+      margin: 0;
+      margin-top: 20px;
+      color: $font-color-or;
+    }
+    h3{
+      margin: 0;
+      color: $font-color-or;
+      
+    }
+  }
+}
+.slogan{
+  position: relative;
+  display: inline-block;
+  width: 85%;
+  height: 30%;
+  margin-left: 15%;
+  margin-top: 5%;
+  .slogan-content{
+    width: 395px;
+    color: $font-color-wh;
+    h2{
+      padding-bottom: 10px;
+      margin: 0;
+      //margin-bottom: 30px;
+      border-bottom: 1px solid $font-color-wh;
+      font-size: 2.5rem;
+      font-weight: 100;
+      text-align: center;
+    }
+    p{
+      width: 99%;
+      margin-top: 20px;
+      padding-left: 15px;
+      font-size: 0.9rem;
+      border-left: 2px solid $font-color-or;
+    }
+  }
+}
     /*>.logo-layout{
       max-width: 100%;
       height: 50%;
@@ -238,7 +236,7 @@ nav {
   max-width: 100%;
   height: 20vh;
   background: url(../src/images/section1.jpg) 0 0/cover no-repeat;
-  >ul{
+  ul{
     margin: 0;
     list-style: none;
     width: 80%;
@@ -309,106 +307,100 @@ nav {
   height: 800px;
   //height: 657px; //60vh
   background: url(../src/images/section2.jpg) center/cover no-repeat;
-  .benefit-block{
+  .benefit-container{
     width: 75%;
     margin: 0 auto;
     padding:100px 0;
-    .benefit-title{
-      width: 100%;
-      .benefit-title-txtch{
-        margin: 0;
-        font-size: 3rem;
+  }
+  .benefit-title{
+    .benefit-title-txtch{
+      margin: 0;
+      font-size: 3rem;
+      font-weight: normal;
+      color: $font-color-wh;
+      }
+     .benefit-title-txten{
+       margin: 0;
+       font-size: 3rem;
+       font-weight: normal;
+       color: $font-color-or;
+      }
+   }
+  .benefit-contain{
+    margin-top: 5%;
+    overflow: hidden;
+    .benefit-contain-block{
+      width: 47%;
+      height: 30%;
+      margin-right: 2.5%;
+      float: left;
+      h2{
+        padding-bottom: 10px;
+        font-size: 2rem;
         font-weight: normal;
         color: $font-color-wh;
+        border-bottom: 1px solid $font-color-or;
+        //background: rgba($color: #000000, $alpha: 0.5)
+       }
+      p{
+        line-height: 30px;
+        color: $font-color-wh;
+       }
+      &::after{
+        content: "";
+        display: block;
+        clear: both;
         }
-       .benefit-title-txten{
-         margin: 0;
-         font-size: 3rem;
-         font-weight: normal;
-         color: $font-color-or;
-        }
-     }
-    .benefit-container{
+      }
+   }
+}
+.contact{
+  width: 100%;
+  height: 1200px;
+}
+.contact-container{
+  width: 60%;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+.contact-title{
+  .contact-title-pic-block{
+    width: 48%;
+    height: 35%;
+    position: relative;
+    display: inline-block;
+    .contact-title-pic-border{
       width: 100%;
       height: auto;
-      margin-top: 5%;
-      overflow: hidden;
-      .benefit-container-block{
-        width: 47%;
-        height: 30%;
-        margin-right: 2.5%;
-        float: left;
-        >h2{
-          padding-bottom: 10px;
-          font-size: 2rem;
-          font-weight: normal;
-          color: $font-color-wh;
-          border-bottom: 1px solid $font-color-or;
-          //background: rgba($color: #000000, $alpha: 0.5)
-         }
-        >p{
-          line-height: 30px;
-          color: $font-color-wh;
-         }
-        &::after{
-          content: "";
-          display: block;
-          clear: both;
-          }
-      }
-     }
-     
-  }
-}
-.contactus{
-  width: 100%;
-  height: 400px;
-  .contactus-block{
-    width: 60%;
-    height: 100%;
-    position: relative;
-    margin: 0 auto;
-    //z-index: 2;
-    //background: rgba(161, 147, 147, 0.3);
-    .contactus-pic-block{
-      width: 45%;
-      height: 80%;
-      position: relative;
-      display: inline-block;
-      //background: rgba(219, 35, 75, 0);
-      .contactus-pic-block-border{
-        width: 100%;
-        height: auto;
-        padding: 33% 0;
-        float: left;
-        position: absolute;
-        z-index: 3;
-        transform: translate(0,-30px);
-        border: 3px solid $font-color-or;
-      }
-      img{
-        width: 100%;
-        float: left;
-        position: absolute;
-        z-index: 2;
-        transform: translate(-20px,-10px);
-      }
+      padding: 33% 0;
+      float: left;
+      position: absolute;
+      z-index: 3;
+      transform: translate(0,-30px);
+      border: 2px solid $font-color-or;
     }
-    .contactus-slogan{
+    img{
+      width: 100%;
+      float: left;
+      position: absolute;
+      z-index: 2;
+      transform: translate(-15px,-15px);
+    }
+  }
+  .contact-title-contain{
       width: 50%;
       display: inline-block;
       vertical-align: top;
-      //background: rgba(190, 99, 99, 0.3);
-      .contactus-title{
-        width: 100%;
+      .contact-title-slogan{
         padding-top: 100px;
         text-align: center;
-        .contactus-title-txtch{
+        .contact-title-slogan-txtch{
           margin: 0;
           font-size: 2.5rem;
           font-weight: normal;
         }
-        .contactus-title-txten{
+        .contact-title-slogan-txten{
           margin-top: 5px;
           margin-bottom: 15px;
           font-size: 2.5rem;
@@ -416,46 +408,127 @@ nav {
           color: $font-color-or;
         }
       }
-      .contactus-title-content{
+      .contact-title-content{
         width: 450px;
         margin: 0 auto;
+        line-height: 25px;
         color: $font-color-gray;
       }
-    }
   }
 }
-.form-container{
+form{
   width: 100vw;
-  max-width: 100%;
-  height: 600px;
-  form{
-    width: 60%;
-    margin: 0 auto;
-    background: rgba(133,122,133,0.3);
-    .form-container-block{
-      .div-width{
-        width: 50%;
+  max-width: 90%;
+  height: 650px;
+  margin: 0 auto;
+  color: $font-color-gray;
+}
+.form-row{  //form的每一行
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px;
+}
+.form-radio-item{
+  width: 48%;
+  .form-radio-item-option{
+    position: relative;
+    width: 120px;
+    float: right;
+    text-align: right;
+  }
+  &::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+.select-block{
+      border-top: 1px dashed $font-color-or;
+      p{
+        font-size: 0.5rem;
       }
-      .option-block{
-        .option-block-width{
-          width: 50%;
-        }
-      }
-    }
-    
-    .form-textarea-width{
+}
+.item-width{ //暫時先不動
+      width: 48%;
+  }
+.form-textarea{
       width: 100%;
       textarea{
         width: 100%;
       }
-    }
-  }
-  input{
-    &[type=text]{
-      width: 50%;  
-    }
-  }
 }
+.form-left-item5{
+      >div{
+        display: inline-block;
+        width: 100%;
+        padding: 20px 0 0 10px;
+      }
+}
+
+input{
+    &[type=text]{
+      width: 48%; 
+      line-height: 40px;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid $font-color-gray;
+      &::placeholder{
+        color: $font-color-gray;
+      }
+    }
+    &[type=radio]{
+      opacity: 0.7;
+      + label{
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 5px;
+        //position: absolute;
+         // left: 15px;
+          //top: -2px;
+          width: 15px;
+          height: 15px;
+          border: 2px solid $font-color-black;
+          border-radius: 50%;
+        cursor: pointer;
+        &::before{
+          
+          
+        }
+      }
+    }
+    &[type=checkbox]{
+      +label{
+        padding-right: 5%;
+        &::before{
+          content: "";
+          position: absolute;
+          border: 2px solid $font-color-black;
+        }
+      }
+    }
+  }
+
+  select{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $font-color-gray;
+    height: 50px;
+ }
+ textarea{
+   outline: none;
+   resize: none;
+   border: none;
+   border-bottom: 1px solid $font-color-gray;
+ }
+ #message{
+   margin-bottom: 20px;
+ }
+
+
+
+
 
 
 /*.form{
