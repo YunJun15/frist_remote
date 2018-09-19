@@ -1,0 +1,52 @@
+@media only screen and (max-width:1024px){
+header{
+    height: 30vh;
+}
+
+.logo-layout{
+    margin-left: 165px;
+}
+.prize{
+    height: 10vh;
+    ul{
+        width: 90%;
+    }
+}
+.benefit{
+    height: 705px;
+    .benefit-container{
+        padding-top: 50px;
+    }
+    .benefit-contain{
+        margin-top: 0;
+    }
+
+}
+.contact {
+    height: 1000px;
+}
+.contact-title{
+    .contact-title-pic-block {
+        height: 25%;
+    }
+    .contact-title-contain{
+        .contact-title-slogan {
+            padding-top: 15px;
+        }
+    }
+}
+form{
+    max-width: 100%;
+    margin-top: 5%;
+    .form-checkbox-item-option{
+        width: 78%;
+    }
+}
+footer{
+    max-width: 75%;
+    height: 135px;
+    margin: 0 15%;
+    padding-left: 5%;
+}
+ 
+}

@@ -1,7 +1,8 @@
 $font-color-or:#f4cea7;
+$font-color:#f0be9d;
 $font-color-wh:#ffffff;
 $font-color-gray: #9e9e9e;
-$font-color-black: #5a5a5a;
+$font-color-black: #0f0f0f;
 $font-family-st: GillSans, Calibri, Trebuchet,"文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", sans-serif;
 $letter-space:2px;
 $prizeblock-leftline:10px;
@@ -51,7 +52,7 @@ header {
 }
 nav {
   display: inline-block;
-  width: 99%;
+  width: 100%;
   height: 70px;
   font-size: 14px;
   color:$font-color-wh;
@@ -60,21 +61,22 @@ nav {
     right: 10px;
     width: 35%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     margin: 0;
+    padding: 0;
     list-style: none;
       a{
         text-decoration: none;
         display: inline-block;
         color:$font-color-wh;
         line-height: 20px;
-        padding: 3.5% 0 0 0;
+        padding-top: 25px;
         text-align: center;
         margin: 0 5%;
         width: 20%;
         &:hover {
           border-top:3px solid $font-color-or;
-          padding-top: 3%;
+          padding-top: 22px;
         }
       }
     }
@@ -235,6 +237,7 @@ nav {
   width: 100vw;
   max-width: 100%;
   height: 20vh;
+  
   background: url(../src/images/section1.jpg) 0 0/cover no-repeat;
   ul{
     margin: 0;
@@ -310,7 +313,7 @@ nav {
   .benefit-container{
     width: 75%;
     margin: 0 auto;
-    padding:100px 0;
+    padding-top:100px;
   }
   .benefit-title{
     .benefit-title-txtch{
@@ -356,7 +359,7 @@ nav {
 }
 .contact{
   width: 100%;
-  height: 1200px;
+  height: 1250px;
 }
 .contact-container{
   width: 60%;
@@ -409,7 +412,8 @@ nav {
         }
       }
       .contact-title-content{
-        width: 450px;
+        max-width: 450px;
+        width: 75%;
         margin: 0 auto;
         line-height: 25px;
         color: $font-color-gray;
@@ -426,7 +430,7 @@ form{
 .form-row{  //form的每一行
       display: flex;
       justify-content: space-between;
-      margin-bottom: 50px;
+      margin-bottom: 6%;
       //background: rgba(136, 124, 124, 0.2);
 }
 .form-radio-item{
@@ -438,7 +442,7 @@ form{
 }
 .form-radio-item-option{
     position: relative;
-    width: 50%;
+    width: 45%;
     float: right;
     text-align: right;
     &::after{
@@ -450,12 +454,17 @@ form{
 .form-checkbox-item-option{
   position: relative;
   line-height: 39px;
-  >label{
-    
-  }
-  
+  /*&::before{
+    content: "";
+    padding-left: 3%;
+  }*/
 }
-.select-block{
+.form-agent-name-item{
+  >textarea{
+    width: 100%;
+  }
+}
+.select-block{ //暫時先不動
       border-top: 1px dashed $font-color-or;
       p{
         font-size: 0.5rem;
@@ -465,11 +474,19 @@ form{
       width: 48%;
       //background: rgba(241, 144, 17, 0.2);
   }
-.form-textarea{
-      width: 100%;
-      textarea{
-        width: 100%;
-      }
+.form-textarea{ //暫時先不動
+  width: 100%;
+  textarea{  
+    width: 100%;
+  }
+  >div{
+    >p{
+      display: inline-block;
+    }
+  }
+}
+.required-hint{
+  display: block;
 }
 input{
     &[type=text]{
@@ -481,13 +498,13 @@ input{
       &::placeholder{
         color: $font-color-gray;
       }
+
     }
     &[type=radio]{
       opacity: 0; //將預設的radio透明
       + label{
         display: inline-block;
-        padding-left: 10px;
-        padding-right: 5px;
+        padding-left: 5px;
         cursor: pointer;
         &::before{
           content: "";
@@ -505,6 +522,7 @@ input{
         &::before{
         content: "";
         position: relative;
+        border: 2px solid $font-color-or;
         background: $font-color-or;
         }
       }
@@ -512,9 +530,7 @@ input{
     &[type=checkbox]{
       opacity: 0;
       +label{
-        display: inline-block;
-        margin-left: -15px;
-        margin-right: 6%;
+        margin-right: 3%;
         cursor: pointer;
         &::before{
           content: "";
@@ -541,6 +557,18 @@ input{
         }
       }
     }
+    &[type=submit]{
+      width: 10vw;
+      max-width: 120px;
+      height: 50px;
+      outline: none;
+      background: $font-color;
+      color: $font-color-wh;
+      border-radius: 3%;
+      border-color: rgba(247, 243, 243, 0.075);
+      box-shadow: 3px 3px 15px $font-color-gray;
+      cursor: pointer;
+   }
   }
   select{
     width: 100%;
@@ -556,7 +584,15 @@ input{
    border-bottom: 1px solid $font-color-gray;
  }
  #message{
+   width: 96%;
+
    margin-bottom: 20px;
+   float: right;
+ }
+ i{
+   font-size: 20px;
+   margin-right: 15px;
+   color: $font-color-black;
  }
 
 
