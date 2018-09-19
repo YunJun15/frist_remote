@@ -8,9 +8,10 @@
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rajdhani" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Michroma|Montserrat" rel="stylesheet">
-    <link rel="stylesheet" media="screen and (max-width:1024px)" type="text/css" href="ipadPro.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen and (max-width:1024px)" type="text/css" href="../style/ipadPro.css" />
     <link rel="stylesheet" media="screen and (max-width:375px)" type="text/css" href="iphone8.css">
-     
+    
     <script src="main.js"></script>
 
     
@@ -151,7 +152,8 @@
       </div> 
       <form action="#" method="post">
         <div class="form-row">
-          <input type="text" name="call" placeholder="称呼">
+          <input type="text" name="call" placeholder="称呼" required>
+          <span class="required-hint"></span>
           <div class="form-radio-item">
             <label>性别：</label>
             <div class="form-radio-item-option">
@@ -224,15 +226,17 @@
               <label for="other">其他</label>
             </div>
           </div>
-            <div class="item-width">
+            <div class="item-width form-agent-name-item">
               <p>目前代理平台名(多个请用“|”分开):</p>
-              <textarea name="agent-name" id="agent-name" cols="75" rows="2"></textarea>
+              <textarea name="agent-name" id="agent-name"></textarea>
             </div>
         </div>
         <div class="form-textarea">
-          <i></i>
-          <p>附言：</p>
-          <textarea name="message" id="message" cols="30" rows="3"></textarea>
+          <div>
+            <i class="fas fa-pen"></i>
+            <p>附言：</p>
+          </div>
+          <textarea name="message" id="message"></textarea>
         </div>
         <input type="submit" value="发送">
       </form>
