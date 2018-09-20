@@ -11,10 +11,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" media="screen and (max-width:1024px)" type="text/css" href="../style/ipadPro.css" />
     <link rel="stylesheet" media="screen and (max-width:375px)" type="text/css" href="iphone8.css">
-    
-    <script src="main.js"></script>
-
-    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="../src/styles/select.js"></script>
 </head>
 <body>
 	<header>
@@ -191,16 +189,16 @@
         <div class="form-row select-block">
           <div class="item-width">
             <p>代理年限</p>
-            <select name="year" id="">
-              <option value="less than one year">小于1年</option>
-              <option value="one">2年-3年</option>
-              <option value="two">3年-4年</option>
-              <option value="three">5年及以上</option>
-            </select>
+            <select id="agent-year">
+              <option value="less-than-one-year">小于1年</option>
+              <option value="two-to-three">2年-3年</option>
+              <option value="three-to-four">3年-4年</option>
+              <option value="more-than-five-year">5年及以上</option>
+          </select> 
           </div>
           <div class="item-width">
             <p>平台日交易量</p>
-            <select name="amount" id="">
+            <select name="day-amount" id="day-amount">
               <option value="five">5万以下</option>
               <option value="six">5万-15万</option>
               <option value="eight">15万-25万</option>

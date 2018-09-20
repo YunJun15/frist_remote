@@ -2,7 +2,7 @@
 .prize ul li .prize-block .prize-block-line-left {
   width: 40px;
   height: 2px;
-  background-color: #f4cea7;
+  background-color: #f0be9d;
   -webkit-transform: translateY(10px) rotate(-45deg);
           transform: translateY(10px) rotate(-45deg);
 }
@@ -10,7 +10,7 @@
 .prize ul li .prize-block .prize-block-line-right {
   width: 40px;
   height: 2px;
-  background-color: #f4cea7;
+  background-color: #f0be9d;
   -webkit-transform: translate(-25px, -40px) rotate(-45deg);
           transform: translate(-25px, -40px) rotate(-45deg);
 }
@@ -65,7 +65,7 @@ nav ul a {
 }
 
 nav ul a:hover {
-  border-top: 3px solid #f4cea7;
+  border-top: 3px solid #f0be9d;
   padding-top: 22px;
 }
 
@@ -98,12 +98,12 @@ nav ul a:hover {
 .logo-layout .logo-title h4 {
   margin: 0;
   margin-top: 20px;
-  color: #f4cea7;
+  color: #f0be9d;
 }
 
 .logo-layout .logo-title h3 {
   margin: 0;
-  color: #f4cea7;
+  color: #f0be9d;
 }
 
 .slogan {
@@ -134,97 +134,9 @@ nav ul a:hover {
   margin-top: 20px;
   padding-left: 15px;
   font-size: 0.9rem;
-  border-left: 2px solid #f4cea7;
+  border-left: 2px solid #f0be9d;
 }
 
-/*>.logo-layout{
-      max-width: 100%;
-      height: 50%;
-      padding-top: 110px;
-      margin: 0 380px;
-     .title-logo{
-        //position: absolute;
-        //left: 370px;
-        //top: 110px;
-        width: 100%;
-        height: auto;
-        display: inline-block;
-        a{
-          display: inline-block;
-          width: 18%;
-          height: 37%;
-          background: url(../src/images/logo.png) 0 0/contain no-repeat;
-        }
-        .title-logo-txt{
-        display: inline-block;
-        vertical-align: top;
-        padding-top: 35px;
-        padding-left: 20px;
-        width: 75%;
-        height: auto;
-        h4{
-          width: 100%;
-          height: auto;
-          margin: 0;
-          padding-left: 3;
-          font-size: 20px;
-          letter-spacing: $letter-space;
-          color: $font-color-or;
-        }
-        h2{
-          margin: 5 0;
-          font-size: 25px;
-          letter-spacing: $letter-space;
-          color: $font-color-or;
-          font-weight: 400;
-
-          }
-      }
-    }
-    .title-slogan{
-      //position: absolute; //位置關係;
-      //left: 370px;
-      //top: 280px;
-      //display: inline-block;
-      width: 100%;
-      //height: 12%;
-      padding-top: 25px;
-      margin-left: 5px;
-      border-bottom: 2px solid$font-color-wh;
-      .title-slogan-txtch{
-        display: inline-block;
-        vertical-align: top;
-        width: 30%;
-        margin: 0;
-        padding-left: 5px;
-        font-size: 70px;
-        font-weight: 100;
-        letter-spacing: 5;
-        color: $font-color-wh;
-        
-      }
-      .title-slogan-txten{
-        display: inline-block;
-        vertical-align: top;
-        width: 35%;
-        margin: 25px 0 20px 0;
-        color:$font-color-wh;
-        font-size: 25px;
-        letter-spacing: $letter-space;
-      }
-    }
-    .title-content{
-      width: (100% * 3/5);
-      height: auto;
-      margin-top: 20px;
-      padding-left: 40px;
-      font-size: 12.5px;
-      letter-spacing: 4px;
-      line-height: 30px;
-      color: $font-color-wh;
-    }
-  }
-}*/
 .prize {
   position: relative;
   width: 100vw;
@@ -266,7 +178,7 @@ nav ul a:hover {
 
 .prize ul li .prize-block a {
   text-decoration: none;
-  color: #f4cea7;
+  color: #f0be9d;
   width: 140px;
   height: 50%;
 }
@@ -332,7 +244,7 @@ nav ul a:hover {
   margin: 0;
   font-size: 3rem;
   font-weight: normal;
-  color: #f4cea7;
+  color: #f0be9d;
 }
 
 .benefit .benefit-contain {
@@ -352,7 +264,7 @@ nav ul a:hover {
   font-size: 2rem;
   font-weight: normal;
   color: #ffffff;
-  border-bottom: 1px solid #f4cea7;
+  border-bottom: 1px solid #f0be9d;
 }
 
 .benefit .benefit-contain .benefit-contain-block p {
@@ -373,7 +285,6 @@ nav ul a:hover {
 
 .contact-container {
   width: 60%;
-  height: 100%;
   position: relative;
   margin: 0 auto;
 }
@@ -394,7 +305,7 @@ nav ul a:hover {
   z-index: 3;
   -webkit-transform: translate(0, -30px);
           transform: translate(0, -30px);
-  border: 2px solid #f4cea7;
+  border: 2px solid #f0be9d;
 }
 
 .contact-title .contact-title-pic-block img {
@@ -428,7 +339,7 @@ nav ul a:hover {
   margin-bottom: 15px;
   font-size: 2.5rem;
   font-weight: normal;
-  color: #f4cea7;
+  color: #f0be9d;
 }
 
 .contact-title .contact-title-contain .contact-title-content {
@@ -436,7 +347,7 @@ nav ul a:hover {
   width: 75%;
   margin: 0 auto;
   line-height: 25px;
-  color: #9e9e9e;
+  color: #bbb8b8;
 }
 
 form {
@@ -444,7 +355,7 @@ form {
   max-width: 90%;
   height: 650px;
   margin: 0 auto;
-  color: #9e9e9e;
+  color: #bbb8b8;
 }
 
 .form-row {
@@ -469,6 +380,7 @@ form {
 .form-radio-item-option {
   position: relative;
   width: 45%;
+  max-width: 115px;
   float: right;
   text-align: right;
 }
@@ -482,22 +394,97 @@ form {
 .form-checkbox-item-option {
   position: relative;
   line-height: 39px;
-  /*&::before{
-    content: "";
-    padding-left: 3%;
-  }*/
 }
 
 .form-agent-name-item > textarea {
   width: 100%;
 }
 
-.select-block {
-  border-top: 1px dashed #f4cea7;
+.select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px;
 }
 
-.select-block p {
-  font-size: 0.5rem;
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #bbb8b8;
+}
+
+.select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #0f0f0f;
+  padding: 8px 15px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.select-styled:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-color: #0f0f0f transparent transparent transparent;
+  position: absolute;
+  top: 16px;
+  right: 5px;
+}
+
+.select-styled:hover {
+  border-radius: 2%;
+}
+
+.select-styled:active, .select-styled.active {
+  border-radius: 2%;
+}
+
+.select-styled:active:after, .select-styled.active:after {
+  top: 9px;
+  border-color: transparent transparent #0f0f0f transparent;
+}
+
+.select-options {
+  display: none;
+  position: absolute;
+  top: 0%;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid #f0efef;
+  border-radius: 2%;
+  -webkit-box-shadow: 2px 3px 5px rgba(133, 133, 133, 0.2), -2px 0 5px rgba(133, 133, 133, 0.2), 0 2px rgba(19, 18, 18, 0.2);
+          box-shadow: 2px 3px 5px rgba(133, 133, 133, 0.2), -2px 0 5px rgba(133, 133, 133, 0.2), 0 2px rgba(19, 18, 18, 0.2);
+  background-color: #ffffff;
+}
+
+.select-options li {
+  margin: 0;
+  padding: 12px 0;
+  text-indent: 15px;
+  color: #f0be9d;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+  /*&[rel="hide"] {
+      display: none;
+    }*/
+}
+
+.select-options li:hover {
+  background: #ebeaea;
 }
 
 .item-width {
@@ -525,23 +512,23 @@ input[type=text] {
   line-height: 40px;
   outline: none;
   border: none;
-  border-bottom: 1px solid #9e9e9e;
+  border-bottom: 1px solid #bbb8b8;
 }
 
 input[type=text]::-webkit-input-placeholder {
-  color: #9e9e9e;
+  color: #bbb8b8;
 }
 
 input[type=text]:-ms-input-placeholder {
-  color: #9e9e9e;
+  color: #bbb8b8;
 }
 
 input[type=text]::-ms-input-placeholder {
-  color: #9e9e9e;
+  color: #bbb8b8;
 }
 
 input[type=text]::placeholder {
-  color: #9e9e9e;
+  color: #bbb8b8;
 }
 
 input[type=radio] {
@@ -557,20 +544,20 @@ input[type=radio] + label {
 input[type=radio] + label::before {
   content: "";
   position: relative;
-  left: -20px;
+  left: -50%;
   top: 3px;
   display: inline-block;
-  width: 15px;
-  height: 15px;
-  border: 2px solid #0f0f0f;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #555252;
   border-radius: 50%;
 }
 
 input[type=radio]:checked + label::before {
   content: "";
   position: relative;
-  border: 2px solid #f4cea7;
-  background: #f4cea7;
+  border: 2px solid #f0be9d;
+  background: #f0be9d;
 }
 
 input[type=checkbox] {
@@ -589,7 +576,7 @@ input[type=checkbox] + label::before {
   display: inline-block;
   width: 15px;
   height: 15px;
-  border: 2px solid #0f0f0f;
+  border: 2px solid #555252;
 }
 
 input[type=checkbox]:checked + label {
@@ -601,8 +588,8 @@ input[type=checkbox]:checked + label::before {
   width: 10px;
   height: 20px;
   border: none;
-  border-right: 2px solid #f4cea7;
-  border-bottom: 2px solid #f4cea7;
+  border-right: 2px solid #f0be9d;
+  border-bottom: 2px solid #f0be9d;
   border-bottom-width: 2px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -617,24 +604,16 @@ input[type=submit] {
   color: #ffffff;
   border-radius: 3%;
   border-color: rgba(247, 243, 243, 0.075);
-  -webkit-box-shadow: 3px 3px 15px #9e9e9e;
-          box-shadow: 3px 3px 15px #9e9e9e;
+  -webkit-box-shadow: 3px 0 10px #bbb8b8, 0 1px #bbb8b8;
+          box-shadow: 3px 0 10px #bbb8b8, 0 1px #bbb8b8;
   cursor: pointer;
-}
-
-select {
-  width: 100%;
-  outline: none;
-  border: none;
-  border-bottom: 1px solid #9e9e9e;
-  height: 50px;
 }
 
 textarea {
   outline: none;
   resize: none;
   border: none;
-  border-bottom: 1px solid #9e9e9e;
+  border-bottom: 1px solid #bbb8b8;
 }
 
 #message {
@@ -653,11 +632,11 @@ i {
   position: relative;
   max-width: 100vw;
   height: 550px;
-  background-color: $font-color-wh;
+  background-color: $second-color;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  color: $font-color-gray;
+  color: $contact-color;
   font-size: 14px;
   .form_span{
     line-height: 20px; 
@@ -670,12 +649,12 @@ i {
       @extend %form-line-style;
       cursor: text;
       border-bottom-width: 2px;
-      border-color: $font-color-black;
-      color: $font-color-gray;
+      border-color: $change-preset-color;
+      color: $contact-color;
       margin-top: 45px;
       /*&::before{
         content: "代理年限";
-        color: $font-color-gray;
+        color: $contact-color;
       }
       &:focus{
        color: $font-color-or;
@@ -711,11 +690,11 @@ i {
     }
     textarea{
       width: 90%;
-      color: $font-color-gray;
+      color: $contact-color;
       outline: none;
       resize: none; //取消textarea右下角預設樣式
       border-style: hidden hidden solid hidden;
-      border-color: $font-color-black;
+      border-color: $change-preset-color;
       text-align: right;
       &:focus{
         color: $font-color-or;
@@ -758,7 +737,7 @@ i {
          cursor: pointer;
        }
        &::placeholder{ 
-         color: $font-color-gray;
+         color: $contact-color;
         }
        
       }
