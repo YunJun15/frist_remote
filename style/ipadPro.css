@@ -1,18 +1,18 @@
 @media only screen and (max-width: 1024px) {
   header {
-    height: 40vh;
+    height: 35vh;
   }
   .logo-layout {
     margin-left: 165px;
   }
   .prize {
-    height: 12vh;
+    height: 10vh;
   }
   .prize ul {
     width: 90%;
   }
   .benefit {
-    height: 700px;
+    height: 52vh;
   }
   .benefit .benefit-container {
     padding-top: 50px;
@@ -22,6 +22,9 @@
   }
   .contact {
     height: 1000px;
+  }
+  .contact-container {
+    width: 70%;
   }
   .contact-title .contact-title-pic-block {
     height: 25%;
@@ -34,7 +37,7 @@
     margin-top: 5%;
   }
   form .form-checkbox-item-option {
-    width: 102%;
+    width: 90%;
     display: inline-block;
   }
   footer {

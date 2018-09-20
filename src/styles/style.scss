@@ -12,6 +12,7 @@ $prizeblock-rightline-x:-25px;
 $prizeblock-rightline-y:-40px;
 $prizeblock-rotate-line:-45deg;
 
+
 %form-style{
     width: 28%;
     height: auto;
@@ -24,17 +25,23 @@ $prizeblock-rotate-line:-45deg;
   width: 80%;
   outline:none;
 }
-%left-line-transform{ //prize block left-line
-  width: 40px;
-  height: 2px;
-  background-color: $primary-color;
+@mixin prize-block-left-line { //prize block left-line
+  @extend %prize-line-style;
   transform: translateY($prizeblock-leftline) rotate($prizeblock-rotate-line); 
 }
-%right-line-transform{ //prize block right-line 
+@mixin prize-block-right-line {
+  @extend %prize-line-style;
+  transform: translate($prizeblock-rightline-x,$prizeblock-rightline-y) rotate($prizeblock-rotate-line); 
+}
+%prize-line-style{ //prize-block-line-style
   width: 40px;
   height: 2px;
   background-color: $primary-color;
-  transform: translate($prizeblock-rightline-x,$prizeblock-rightline-y) rotate($prizeblock-rotate-line); 
+}
+%benefit-title-style{
+  margin: 0;
+  font-size: 3rem;
+  font-weight: normal;
 }
 
 html, body {
@@ -83,37 +90,33 @@ nav {
       }
     }
 }
-
 .logo-layout{
   position: relative;
   display: inline-block;
   width: 500px;
   height: 80px;
-  margin-left: 300px;
-  .logo{
-    display: inline-block;
-    width: 20%;
+  margin-left: 400px;
+}
+.logo{
+  display: inline-block;
+  width: 20%;
+  height: auto;
+  img{
+    width: 100px;
     height: auto;
-    img{
-      width: 100px;
-      height: auto;
-    }
   }
-  .logo-title{
-    display: inline-block;
-    width: 75%;
-    height: 100%;
-    vertical-align: top;
-    h4{
-      margin: 0;
-      margin-top: 20px;
-      color: $primary-color;
-    }
-    h3{
-      margin: 0;
-      color: $primary-color;
-      
-    }
+}
+.logo-title{
+  display: inline-block;
+  width: 75%;
+  height: 100%;
+  vertical-align: top;
+  h4,h3{
+    margin: 0;
+    color: $primary-color;
+  }
+  h4{
+    margin-top: 20px;
   }
 }
 .slogan{
@@ -121,15 +124,14 @@ nav {
   display: inline-block;
   width: 85%;
   height: 30%;
-  margin-left: 15%;
+  margin-left: 20%;
   margin-top: 5%;
   .slogan-content{
     width: 395px;
     color: $second-color;
     h2{
-      padding-bottom: 10px;
       margin: 0;
-      //margin-bottom: 30px;
+      padding-bottom: 10px;
       border-bottom: 1px solid $second-color;
       font-size: 2.5rem;
       font-weight: 100;
@@ -149,7 +151,7 @@ nav {
   position: relative;
   width: 100vw;
   max-width: 100%;
-  height: 20vh;
+  height: 18vh;
   
   background: url(../src/images/section1.jpg) 0 0/cover no-repeat;
   ul{
@@ -172,7 +174,7 @@ nav {
         justify-content: center;
         align-items: center;
         .prize-block-line-left{
-          @extend %left-line-transform;
+          @include prize-block-left-line();
         }
         a{
           text-decoration: none;
@@ -210,12 +212,13 @@ nav {
           }
         }
         .prize-block-line-right{
-          @extend %right-line-transform;
+          @include prize-block-right-line();
         }
       }
     } 
   }
 }
+
 .benefit{
   position: relative;
   width: 100vw;
@@ -230,15 +233,11 @@ nav {
   }
   .benefit-title{
     .benefit-title-txtch{
-      margin: 0;
-      font-size: 3rem;
-      font-weight: normal;
+      @extend %benefit-title-style;
       color: $second-color;
       }
      .benefit-title-txten{
-       margin: 0;
-       font-size: 3rem;
-       font-weight: normal;
+       @extend %benefit-title-style;
        color: $primary-color;
       }
    }
@@ -309,12 +308,12 @@ nav {
       .contact-title-slogan{
         padding-top: 100px;
         text-align: center;
-        .contact-title-slogan-txtch{
+        h2:nth-child(1){
           margin: 0;
           font-size: 2.5rem;
           font-weight: normal;
         }
-        .contact-title-slogan-txten{
+        h2:nth-child(2){
           margin-top: 5px;
           margin-bottom: 15px;
           font-size: 2.5rem;
@@ -332,6 +331,7 @@ nav {
   }
 }
 form{
+  position: relative;
   width: 100vw;
   max-width: 90%;
   height: 650px;
@@ -481,6 +481,14 @@ input{
       &::placeholder{
         color: $contact-color;
       }
+      &::after{
+          content: "稱呼";
+          position: relative;
+          color: red;
+          border: 1px solid red;
+          font-size: 16px;
+        }
+      
     }
     &[type=radio]{
       opacity: 0; //將預設的radio透明

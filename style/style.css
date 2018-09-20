@@ -1,18 +1,14 @@
 @charset "UTF-8";
-.prize ul li .prize-block .prize-block-line-left {
+.prize ul li .prize-block .prize-block-line-left, .prize ul li .prize-block .prize-block-line-right {
   width: 40px;
   height: 2px;
   background-color: #f0be9d;
-  -webkit-transform: translateY(10px) rotate(-45deg);
-          transform: translateY(10px) rotate(-45deg);
 }
 
-.prize ul li .prize-block .prize-block-line-right {
-  width: 40px;
-  height: 2px;
-  background-color: #f0be9d;
-  -webkit-transform: translate(-25px, -40px) rotate(-45deg);
-          transform: translate(-25px, -40px) rotate(-45deg);
+.benefit .benefit-title .benefit-title-txtch, .benefit .benefit-title .benefit-title-txten {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: normal;
 }
 
 html, body {
@@ -74,36 +70,34 @@ nav ul a:hover {
   display: inline-block;
   width: 500px;
   height: 80px;
-  margin-left: 300px;
+  margin-left: 400px;
 }
 
-.logo-layout .logo {
+.logo {
   display: inline-block;
   width: 20%;
   height: auto;
 }
 
-.logo-layout .logo img {
+.logo img {
   width: 100px;
   height: auto;
 }
 
-.logo-layout .logo-title {
+.logo-title {
   display: inline-block;
   width: 75%;
   height: 100%;
   vertical-align: top;
 }
 
-.logo-layout .logo-title h4 {
+.logo-title h4, .logo-title h3 {
   margin: 0;
-  margin-top: 20px;
   color: #f0be9d;
 }
 
-.logo-layout .logo-title h3 {
-  margin: 0;
-  color: #f0be9d;
+.logo-title h4 {
+  margin-top: 20px;
 }
 
 .slogan {
@@ -111,7 +105,7 @@ nav ul a:hover {
   display: inline-block;
   width: 85%;
   height: 30%;
-  margin-left: 15%;
+  margin-left: 20%;
   margin-top: 5%;
 }
 
@@ -121,8 +115,8 @@ nav ul a:hover {
 }
 
 .slogan .slogan-content h2 {
-  padding-bottom: 10px;
   margin: 0;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ffffff;
   font-size: 2.5rem;
   font-weight: 100;
@@ -141,7 +135,7 @@ nav ul a:hover {
   position: relative;
   width: 100vw;
   max-width: 100%;
-  height: 20vh;
+  height: 18vh;
   background: url(../src/images/section1.jpg) 0 0/cover no-repeat;
 }
 
@@ -174,6 +168,11 @@ nav ul a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.prize ul li .prize-block .prize-block-line-left {
+  -webkit-transform: translateY(10px) rotate(-45deg);
+          transform: translateY(10px) rotate(-45deg);
 }
 
 .prize ul li .prize-block a {
@@ -219,6 +218,11 @@ nav ul a:hover {
   font-size: 10px;
 }
 
+.prize ul li .prize-block .prize-block-line-right {
+  -webkit-transform: translate(-25px, -40px) rotate(-45deg);
+          transform: translate(-25px, -40px) rotate(-45deg);
+}
+
 .benefit {
   position: relative;
   width: 100vw;
@@ -234,16 +238,10 @@ nav ul a:hover {
 }
 
 .benefit .benefit-title .benefit-title-txtch {
-  margin: 0;
-  font-size: 3rem;
-  font-weight: normal;
   color: #ffffff;
 }
 
 .benefit .benefit-title .benefit-title-txten {
-  margin: 0;
-  font-size: 3rem;
-  font-weight: normal;
   color: #f0be9d;
 }
 
@@ -328,13 +326,13 @@ nav ul a:hover {
   text-align: center;
 }
 
-.contact-title .contact-title-contain .contact-title-slogan .contact-title-slogan-txtch {
+.contact-title .contact-title-contain .contact-title-slogan h2:nth-child(1) {
   margin: 0;
   font-size: 2.5rem;
   font-weight: normal;
 }
 
-.contact-title .contact-title-contain .contact-title-slogan .contact-title-slogan-txten {
+.contact-title .contact-title-contain .contact-title-slogan h2:nth-child(2) {
   margin-top: 5px;
   margin-bottom: 15px;
   font-size: 2.5rem;
@@ -351,6 +349,7 @@ nav ul a:hover {
 }
 
 form {
+  position: relative;
   width: 100vw;
   max-width: 90%;
   height: 650px;
@@ -529,6 +528,14 @@ input[type=text]::-ms-input-placeholder {
 
 input[type=text]::placeholder {
   color: #bbb8b8;
+}
+
+input[type=text]::after {
+  content: "稱呼";
+  position: relative;
+  color: red;
+  border: 1px solid red;
+  font-size: 16px;
 }
 
 input[type=radio] {
