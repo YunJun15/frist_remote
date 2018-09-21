@@ -5,6 +5,7 @@
     <title>ub8_切版V.2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../style/style.css" >
+    <link rel="stylesheet" type="text/css" href="../style/animation.css">
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rajdhani" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Michroma|Montserrat" rel="stylesheet">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" media="screen and (max-width:375px)" type="text/css" href="iphone8.css">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="../src/styles/select.js"></script>
+    <script src="../src/styles/input-text-onclick.js"></script>
 </head>
 <body>
 	<header>
@@ -135,23 +137,23 @@
         <div class="contact-title-pic-block">
           <div class="contact-title-pic-border"></div>
             <img src="../src/images/picture.jpg">
+        </div>
+        <div class="contact-title-contain">
+          <div class="contact-title-slogan">
+            <h2>{联系我们}</h2>
+            <h2>Contact Us</h2>
           </div>
-          <div class="contact-title-contain">
-            <div class="contact-title-slogan">
-              <h2>{联系我们}</h2>
-              <h2>Contact Us</h2>
-            </div>
-            <p class="contact-title-content">
-              您可以直接加招商主管QQ进行相关洽谈；如招商主管接待繁忙，也可以留下您的资料；
-              我们承诺资料不对外泄露，并在一个工作日内主动联系您。<br />
-              招商主管QQ：705874
-            </p>
+          <p class="contact-title-content">
+            您可以直接加招商主管QQ进行相关洽谈；如招商主管接待繁忙，也可以留下您的资料；
+            我们承诺资料不对外泄露，并在一个工作日内主动联系您。<br />
+            招商主管QQ：705874
+          </p>
         </div>
       </div> 
       <form action="#" method="post">
         <div class="form-row">
-          <input type="text" name="call" placeholder="称呼" required>
-          <span class="required-hint"></span>
+          <input type="text" name="call" placeholder="称呼" required onclick="callstart();" onfocus="this.placeholder=''" onblur="this.placeholder=''">
+          <span class="name" id="call-move-up">称呼</span>
           <div class="form-radio-item">
             <label>性别：</label>
             <div class="form-radio-item-option">
@@ -163,8 +165,11 @@
           </div>
         </div>
         <div class="form-row">
-          <input type="text" name="phone" placeholder="联系电话">
-          <input type="text" name="contactqq" placeholder="联系QQ(Email必填）" class="right">
+          <input type="text" name="phone" placeholder="联系电话" onclick="phonestart();" onfocus="this.placeholder=''" onblur="this.placeholder=''">
+          <span class="phone" id="phone-move-up">联系电话</span>
+          <input type="text" name="contactqq" placeholder="联系QQ(Email必填)" class="right" onclick="qqstart();" onfocus="this.placeholder=''" onblur="this.placeholder=''">
+          <span class="qq" id="qq-move-up">联系QQ(Email必填）</span>
+        
         </div>
         <div class="form-row">
           <div class="form-radio-item">

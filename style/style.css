@@ -237,6 +237,12 @@ nav ul a:hover {
   padding-top: 100px;
 }
 
+.benefit .benefit-title .benefit-title-txtch, .benefit .benefit-title .benefit-title-txten {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
 .benefit .benefit-title .benefit-title-txtch {
   color: #ffffff;
 }
@@ -365,6 +371,51 @@ form {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 6%;
+}
+
+/*@keyframes move{  //定義text動畫
+  0%{opacity: 0}
+  50%{opacity: 1}
+  100%{opacity: 0}
+}*/
+.name {
+  opacity: 0;
+  position: relative;
+  top: 12px;
+  right: 497px;
+  font-size: 0.8rem;
+  color: #f0be9d;
+}
+
+.phone {
+  opacity: 0;
+  position: relative;
+  top: 12px;
+  right: 480px;
+  float: left;
+  width: 70px;
+  height: 25px;
+  font-size: 0.8rem;
+  color: #f0be9d;
+}
+
+.qq {
+  opacity: 0;
+  position: absolute;
+  top: 116px;
+  right: 320px;
+  float: left;
+  width: 150px;
+  height: 25px;
+  font-size: 0.8rem;
+  color: #f0be9d;
+}
+
+.move-up {
+  -webkit-animation: move 0.8s;
+          animation: move 0.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .form-radio-item {
@@ -528,14 +579,6 @@ input[type=text]::-ms-input-placeholder {
 
 input[type=text]::placeholder {
   color: #bbb8b8;
-}
-
-input[type=text]::after {
-  content: "稱呼";
-  position: relative;
-  color: red;
-  border: 1px solid red;
-  font-size: 16px;
 }
 
 input[type=radio] {

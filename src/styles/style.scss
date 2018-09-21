@@ -232,6 +232,11 @@ nav {
     padding-top:100px;
   }
   .benefit-title{
+    .benefit-title-txtch, .benefit-title-txten{
+      margin: 0;
+      font-size: 3rem;
+      font-weight: normal;
+    }
     .benefit-title-txtch{
       @extend %benefit-title-style;
       color: $second-color;
@@ -342,6 +347,48 @@ form{
       display: flex;
       justify-content: space-between;
       margin-bottom: 6%;
+}
+/*@keyframes move{  //定義text動畫
+  0%{opacity: 0}
+  50%{opacity: 1}
+  100%{opacity: 0}
+}*/
+//稱呼初始位置and style
+.name{
+  opacity: 0;
+  position: relative;
+  top: 12px;
+  right: 497px; //497px
+  font-size: 0.8rem;
+  //font-weight: 800;
+  color: $primary-color;
+}
+.phone{
+  opacity: 0;
+  position: relative;
+  top: 12px;
+  right: 480px;
+  float: left;
+  width: 70px;
+  height: 25px;
+  font-size: 0.8rem;
+  color: $primary-color;
+}
+.qq{
+  opacity: 0;
+  position: absolute;
+  top: 116px;
+  right: 320px;
+  float: left;
+  width: 150px;
+  height: 25px;
+  font-size: 0.8rem;
+  color: $primary-color;
+}
+//text-animation for js
+.move-up{
+  animation: move 0.8s; //呼叫名為 move 的animation 
+  animation-fill-mode: forwards; //停在最後一個動畫
 }
 .form-radio-item{
   width: 48%;
@@ -473,6 +520,7 @@ form{
 }
 input{
     &[type=text]{
+      
       width: 48%; 
       line-height: 40px;
       outline: none;
@@ -481,14 +529,6 @@ input{
       &::placeholder{
         color: $contact-color;
       }
-      &::after{
-          content: "稱呼";
-          position: relative;
-          color: red;
-          border: 1px solid red;
-          font-size: 16px;
-        }
-      
     }
     &[type=radio]{
       opacity: 0; //將預設的radio透明

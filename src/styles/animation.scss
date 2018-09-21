@@ -1,0 +1,11 @@
+@keyframes move{  //定義text動畫 0%-100% / from-to
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(-40px);
+    //transition: transform 1s;
+    //transition-timing-function: linear;
+  }
+}

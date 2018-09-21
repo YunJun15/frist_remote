@@ -1,0 +1,2 @@
+@-webkit-keyframes move{0%{opacity:0}100%{opacity:1;-webkit-transform:translateY(-40px);transform:translateY(-40px)}}@keyframes move{0%{opacity:0}100%{opacity:1;-webkit-transform:translateY(-40px);transform:translateY(-40px)}}
+/*# sourceMappingURL=animation.min.css.map */
