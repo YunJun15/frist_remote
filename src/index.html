@@ -152,8 +152,10 @@
       </div> 
       <form action="#" method="post">
         <div class="form-row">
-          <input type="text" name="call" placeholder="称呼" required onclick="callstart();" onfocus="this.placeholder=''" onblur="this.placeholder=''">
-          <span class="name" id="call-move-up">称呼</span>
+          <div class="form-text-container">
+            <input type="text" name="call"  id="call" placeholder="称呼" required  onclick="callstart();"onfocus="this.placeholder=''" onblur="callonblur();">
+            <label class="form-text-container-label" for="call">称呼</label>
+          </div>
           <div class="form-radio-item">
             <label>性别：</label>
             <div class="form-radio-item-option">
@@ -165,10 +167,15 @@
           </div>
         </div>
         <div class="form-row">
-          <input type="text" name="phone" placeholder="联系电话" onclick="phonestart();" onfocus="this.placeholder=''" onblur="this.placeholder=''">
-          <span class="phone" id="phone-move-up">联系电话</span>
-          <input type="text" name="contactqq" placeholder="联系QQ(Email必填)" class="right" onclick="qqstart();" onfocus="this.placeholder=''" onblur="this.placeholder=''">
-          <span class="qq" id="qq-move-up">联系QQ(Email必填）</span>
+          <div class="form-text-container">
+            <input type="text" name="phone" id="phone" placeholder="联系电话" onclick="phonestart();" onfocus="this.placeholder=''" onblur="callonblur();">
+            <label class="form-text-container-label" for="phone">联系电话</label>
+          </div>
+          <div class="form-text-container">
+            <input type="text" name="contactqq" id="qq" placeholder="联系QQ(Email必填)" class="right" onclick="qqstart();" onfocus="this.placeholder=''" onblur="callonblur();">
+            <label class="form-text-container-label" for="qq">联系QQ(Email必填</label>
+          </div>
+          
         
         </div>
         <div class="form-row">

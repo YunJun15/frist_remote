@@ -122,7 +122,7 @@ nav {
 .slogan{
   position: relative;
   display: inline-block;
-  width: 85%;
+  width: 50%;
   height: 30%;
   margin-left: 20%;
   margin-top: 5%;
@@ -348,47 +348,32 @@ form{
       justify-content: space-between;
       margin-bottom: 6%;
 }
-/*@keyframes move{  //定義text動畫
-  0%{opacity: 0}
-  50%{opacity: 1}
-  100%{opacity: 0}
-}*/
+.form-text-container{
+  width: 48%;
+  height: 60px;
+  .form-text-container-label{
+    opacity: 0;
+    position: relative;
+    top: -30px;
+    display: inline-block;
+    min-width: 130px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.8rem;
+    color: $primary-color;
+  }
+}
 //稱呼初始位置and style
-.name{
-  opacity: 0;
-  position: relative;
-  top: 12px;
-  right: 497px; //497px
-  font-size: 0.8rem;
-  //font-weight: 800;
-  color: $primary-color;
-}
-.phone{
-  opacity: 0;
-  position: relative;
-  top: 12px;
-  right: 480px;
-  float: left;
-  width: 70px;
-  height: 25px;
-  font-size: 0.8rem;
-  color: $primary-color;
-}
-.qq{
-  opacity: 0;
-  position: absolute;
-  top: 116px;
-  right: 320px;
-  float: left;
-  width: 150px;
-  height: 25px;
-  font-size: 0.8rem;
-  color: $primary-color;
-}
+
+
 //text-animation for js
 .move-up{
-  animation: move 0.8s; //呼叫名為 move 的animation 
+  animation: moveUp 0.8s; //呼叫名為 move 的animation 
   animation-fill-mode: forwards; //停在最後一個動畫
+}
+.move-downward{
+  animation: moveDownward 0.8s;
+  
 }
 .form-radio-item{
   width: 48%;
@@ -425,7 +410,6 @@ form{
   padding-right: 10px;
 }
 .select {
-  cursor: pointer;
   display: inline-block;
   position: relative;
   font-size: 16px;
@@ -434,6 +418,7 @@ form{
   outline: none;
   border: none;
   border-bottom: 1px solid $contact-color;
+  cursor: pointer;
 }
 .select-styled {
   position: absolute; 
@@ -518,14 +503,19 @@ form{
 .required-hint{
   display: block;
 }
+
 input{
     &[type=text]{
-      
-      width: 48%; 
+      //position: relative;
+      //z-index: 1;  //將input移上一層，點擊placeholder也能觸發animation
+      width: 100%; 
       line-height: 40px;
       outline: none;
       border: none;
       border-bottom: 1px solid $contact-color;
+      + label{
+        cursor: text;
+      }
       &::placeholder{
         color: $contact-color;
       }

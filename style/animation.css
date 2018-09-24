@@ -1,4 +1,4 @@
-@-webkit-keyframes move {
+@-webkit-keyframes moveUp {
   0% {
     opacity: 0;
   }
@@ -8,7 +8,8 @@
             transform: translateY(-40px);
   }
 }
-@keyframes move {
+
+@keyframes moveUp {
   0% {
     opacity: 0;
   }
@@ -16,6 +17,28 @@
     opacity: 1;
     -webkit-transform: translateY(-40px);
             transform: translateY(-40px);
+  }
+}
+
+@-webkit-keyframes moveDownward {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@keyframes moveDownward {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
 }
 /*# sourceMappingURL=animation.css.map */

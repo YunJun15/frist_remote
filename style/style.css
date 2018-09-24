@@ -103,7 +103,7 @@ nav ul a:hover {
 .slogan {
   position: relative;
   display: inline-block;
-  width: 85%;
+  width: 50%;
   height: 30%;
   margin-left: 20%;
   margin-top: 5%;
@@ -373,49 +373,33 @@ form {
   margin-bottom: 6%;
 }
 
-/*@keyframes move{  //定義text動畫
-  0%{opacity: 0}
-  50%{opacity: 1}
-  100%{opacity: 0}
-}*/
-.name {
-  opacity: 0;
-  position: relative;
-  top: 12px;
-  right: 497px;
-  font-size: 0.8rem;
-  color: #f0be9d;
+.form-text-container {
+  width: 48%;
+  height: 60px;
 }
 
-.phone {
+.form-text-container .form-text-container-label {
   opacity: 0;
   position: relative;
-  top: 12px;
-  right: 480px;
-  float: left;
-  width: 70px;
-  height: 25px;
-  font-size: 0.8rem;
-  color: #f0be9d;
-}
-
-.qq {
-  opacity: 0;
-  position: absolute;
-  top: 116px;
-  right: 320px;
-  float: left;
-  width: 150px;
-  height: 25px;
+  top: -30px;
+  display: inline-block;
+  min-width: 130px;
+  height: 30px;
+  line-height: 30px;
   font-size: 0.8rem;
   color: #f0be9d;
 }
 
 .move-up {
-  -webkit-animation: move 0.8s;
-          animation: move 0.8s;
+  -webkit-animation: moveUp 0.8s;
+          animation: moveUp 0.8s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+.move-downward {
+  -webkit-animation: moveDownward 0.8s;
+          animation: moveDownward 0.8s;
 }
 
 .form-radio-item {
@@ -457,7 +441,6 @@ form {
 }
 
 .select {
-  cursor: pointer;
   display: inline-block;
   position: relative;
   font-size: 16px;
@@ -466,6 +449,7 @@ form {
   outline: none;
   border: none;
   border-bottom: 1px solid #bbb8b8;
+  cursor: pointer;
 }
 
 .select-styled {
@@ -558,11 +542,15 @@ form {
 }
 
 input[type=text] {
-  width: 48%;
+  width: 100%;
   line-height: 40px;
   outline: none;
   border: none;
   border-bottom: 1px solid #bbb8b8;
+}
+
+input[type=text] + label {
+  cursor: text;
 }
 
 input[type=text]::-webkit-input-placeholder {
