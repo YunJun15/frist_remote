@@ -95,7 +95,7 @@ nav {
   display: inline-block;
   width: 500px;
   height: 80px;
-  margin-left: 400px;
+  margin-left: 20%;
 }
 .logo{
   display: inline-block;
@@ -152,7 +152,6 @@ nav {
   width: 100vw;
   max-width: 100%;
   height: 18vh;
-  
   background: url(../src/images/section1.jpg) 0 0/cover no-repeat;
   ul{
     margin: 0;
@@ -246,10 +245,10 @@ nav {
        color: $primary-color;
       }
    }
-  .benefit-desp{
+  .benefit-content{
     margin-top: 5%;
     overflow: hidden;
-    .benefit-desp-block{
+    .benefit-content-block{
       width: 47%;
       height: 30%;
       margin-right: 2.5%;
@@ -275,7 +274,8 @@ nav {
 }
 .contact{
   width: 100%;
-  height: 1250px;
+  height: 1200px;
+  //max-height: 135%;
 }
 .contact-container{
   width: 60%;
@@ -283,9 +283,11 @@ nav {
   margin: 0 auto;
 }
 .contact-title{
+  height: 35%;
+  min-height: 360px;
   .contact-title-pic-block{
     width: 48%;
-    height: 35%;
+    height: inherit;
     position: relative;
     display: inline-block;
     .contact-title-pic-border{
@@ -306,8 +308,9 @@ nav {
       transform: translate(-15px,-15px);
     }
   }
-  .contact-title-contain{
+  .contact-title-desp{
       width: 50%;
+      min-height: 360px;
       display: inline-block;
       vertical-align: top;
       .contact-title-slogan{
@@ -339,7 +342,8 @@ form{
   position: relative;
   width: 100vw;
   max-width: 90%;
-  height: 650px;
+  height: 60%;
+  min-height: 780px;
   margin: 0 auto;
   color: $contact-color;
 }
@@ -719,10 +723,10 @@ input{
 }*/
 footer{
   width: 100vw;
-  max-width: 100%;
-  height: 155px;
-  background: url(../src/images/footer.jpg) center/cover no-repeat;
-  
+    max-width: 100%;
+    height: 120px;
+    margin-top: 20px;
+    background: url(../src/images/footer.jpg) center/cover no-repeat;
  }
 
 

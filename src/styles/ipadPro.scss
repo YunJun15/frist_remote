@@ -1,57 +1,27 @@
-@media only screen and (max-width:1024px){
-header{
-    height: 35vh;
-}
-
-.logo-layout{
-    margin-left: 165px;
-}
-.prize{
-    height: 10vh;
-    ul{
-        width: 90%;
-    }
-}
-.benefit{
-    height: 52vh;
-    .benefit-container{
-        padding-top: 50px;
-    }
-    .benefit-desp{
-        margin-top: 0;
+@media screen and (min-width: 1200px) {
+    header {
+        height: 75vh;
     }
 
-}
-.contact {
-    height: 1000px;
-}
-.contact-container{
-    width: 70%;
-}
-.contact-title{
-    .contact-title-pic-block {
-        height: 25%;
-    }
-    .contact-title-contain{
-        .contact-title-slogan {
-            padding-top: 15px;
+    .prize {
+        height: 18vh;
+
+        ul {
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                width: (100% / 4);
+                height: 100%;
+            }
+        }
+
+        .contact-container {
+            width: 70%;
+        }
+
+        form {
+            min-height: 720px;
         }
     }
-}
-form{
-    max-width: 100%;
-    margin-top: 5%;
-    .form-checkbox-item-option{
-        width: 90%;
-        display: inline-block;
-    }
-}
-footer{
-    max-width: 75%;
-    height: 135px;
-    margin: 0 13%;
-    margin-top: 3%;
-    padding-left: 5%;
-}
- 
 }

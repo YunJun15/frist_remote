@@ -1,37 +1,9 @@
-@media only screen and (max-width: 768px) {
-  nav ul {
-    width: 50%;
-  }
-  .logo-layout {
-    top: -50px;
-    width: 50%;
-    margin-left: 6%;
-  }
-  .logo {
-    width: 22%;
-  }
-  .logo img {
-    width: 80px;
-  }
-  .logo-title {
-    width: 70%;
-  }
-  .logo-title h4 {
-    margin-top: 15px;
-  }
-  .slogan {
-    height: 45%;
-    margin-left: 17%;
-    margin-top: -5%;
-  }
-  .slogan .slogan-content {
-    width: 300px;
-  }
-  .slogan .slogan-content h2 {
-    font-size: 2rem;
+@media (min-width: 992px) and (max-width: 1200px) {
+  header {
+    height: 55vh;
   }
   .prize {
-    height: 20vh;
+    height: 30vh;
   }
   .prize ul {
     width: 100%;
@@ -43,37 +15,29 @@
   }
   .prize ul li:nth-of-type(1) {
     width: 100%;
+    height: 50%;
   }
-  .benefit .benefit-container {
-    width: 80%;
-    padding-top: 40px;
+  .contact {
+    height: 1100px;
   }
-  .benefit .benefit-container .benefit-title h2 {
-    font-size: 2.5rem;
+  .contact .contact-container {
+    width: 70%;
   }
-  .benefit .benefit-desp .benefit-desp-block {
-    height: 35%;
+  .contact .contact-container .contact-title {
+    height: 30%;
   }
-  .benefit .benefit-desp .benefit-desp-block h2 {
-    margin: 0;
-    margin-top: 5%;
-    font-size: 1.7rem;
+  .contact .contact-container .contact-title .contact-title-desp {
+    min-height: 200px;
+    padding-top: 50px;
   }
-  .benefit .benefit-desp .benefit-desp-block p {
-    line-height: 25px;
+  .contact .contact-container .contact-title .contact-title-desp .contact-title-slogan {
+    padding-top: 0;
   }
-  .contact-container {
+  .form-checkbox-item-option {
     width: 85%;
   }
-  form .form-checkbox-item-option {
-    width: 100%;
-  }
   footer {
-    max-width: 85%;
-    height: 110px;
-    margin: 0 auto;
-    margin-top: 3%;
-    padding: 0;
+    min-height: 120px;
   }
 }
 /*# sourceMappingURL=ipad.css.map */

@@ -70,7 +70,7 @@ nav ul a:hover {
   display: inline-block;
   width: 500px;
   height: 80px;
-  margin-left: 400px;
+  margin-left: 20%;
 }
 
 .logo {
@@ -251,19 +251,19 @@ nav ul a:hover {
   color: #f0be9d;
 }
 
-.benefit .benefit-desp {
+.benefit .benefit-content {
   margin-top: 5%;
   overflow: hidden;
 }
 
-.benefit .benefit-desp .benefit-desp-block {
+.benefit .benefit-content .benefit-content-block {
   width: 47%;
   height: 30%;
   margin-right: 2.5%;
   float: left;
 }
 
-.benefit .benefit-desp .benefit-desp-block h2 {
+.benefit .benefit-content .benefit-content-block h2 {
   padding-bottom: 10px;
   font-size: 2rem;
   font-weight: normal;
@@ -271,12 +271,12 @@ nav ul a:hover {
   border-bottom: 1px solid #f0be9d;
 }
 
-.benefit .benefit-desp .benefit-desp-block p {
+.benefit .benefit-content .benefit-content-block p {
   line-height: 30px;
   color: #ffffff;
 }
 
-.benefit .benefit-desp .benefit-desp-block::after {
+.benefit .benefit-content .benefit-content-block::after {
   content: "";
   display: block;
   clear: both;
@@ -284,7 +284,7 @@ nav ul a:hover {
 
 .contact {
   width: 100%;
-  height: 1250px;
+  height: 1200px;
 }
 
 .contact-container {
@@ -293,9 +293,14 @@ nav ul a:hover {
   margin: 0 auto;
 }
 
+.contact-title {
+  height: 35%;
+  min-height: 360px;
+}
+
 .contact-title .contact-title-pic-block {
   width: 48%;
-  height: 35%;
+  height: inherit;
   position: relative;
   display: inline-block;
 }
@@ -321,24 +326,25 @@ nav ul a:hover {
           transform: translate(-15px, -15px);
 }
 
-.contact-title .contact-title-contain {
+.contact-title .contact-title-desp {
   width: 50%;
+  min-height: 360px;
   display: inline-block;
   vertical-align: top;
 }
 
-.contact-title .contact-title-contain .contact-title-slogan {
+.contact-title .contact-title-desp .contact-title-slogan {
   padding-top: 100px;
   text-align: center;
 }
 
-.contact-title .contact-title-contain .contact-title-slogan h2:nth-child(1) {
+.contact-title .contact-title-desp .contact-title-slogan h2:nth-child(1) {
   margin: 0;
   font-size: 2.5rem;
   font-weight: normal;
 }
 
-.contact-title .contact-title-contain .contact-title-slogan h2:nth-child(2) {
+.contact-title .contact-title-desp .contact-title-slogan h2:nth-child(2) {
   margin-top: 5px;
   margin-bottom: 15px;
   font-size: 2.5rem;
@@ -346,7 +352,7 @@ nav ul a:hover {
   color: #f0be9d;
 }
 
-.contact-title .contact-title-contain .contact-title-content {
+.contact-title .contact-title-desp .contact-title-content {
   max-width: 450px;
   width: 75%;
   margin: 0 auto;
@@ -358,7 +364,8 @@ form {
   position: relative;
   width: 100vw;
   max-width: 90%;
-  height: 650px;
+  height: 60%;
+  min-height: 780px;
   margin: 0 auto;
   color: #bbb8b8;
 }
@@ -780,7 +787,8 @@ i {
 footer {
   width: 100vw;
   max-width: 100%;
-  height: 155px;
+  height: 120px;
+  margin-top: 20px;
   background: url(../src/images/footer.jpg) center/cover no-repeat;
 }
 /*# sourceMappingURL=style.css.map */
