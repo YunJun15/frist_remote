@@ -219,8 +219,8 @@ nav ul a:hover {
 }
 
 .prize ul li .prize-block .prize-block-line-right {
-  -webkit-transform: translate(-25px, -40px) rotate(-45deg);
-          transform: translate(-25px, -40px) rotate(-45deg);
+  -webkit-transform: translate(-23px, -25px) rotate(-45deg);
+          transform: translate(-23px, -25px) rotate(-45deg);
 }
 
 .benefit {
@@ -251,19 +251,19 @@ nav ul a:hover {
   color: #f0be9d;
 }
 
-.benefit .benefit-contain {
+.benefit .benefit-desp {
   margin-top: 5%;
   overflow: hidden;
 }
 
-.benefit .benefit-contain .benefit-contain-block {
+.benefit .benefit-desp .benefit-desp-block {
   width: 47%;
   height: 30%;
   margin-right: 2.5%;
   float: left;
 }
 
-.benefit .benefit-contain .benefit-contain-block h2 {
+.benefit .benefit-desp .benefit-desp-block h2 {
   padding-bottom: 10px;
   font-size: 2rem;
   font-weight: normal;
@@ -271,12 +271,12 @@ nav ul a:hover {
   border-bottom: 1px solid #f0be9d;
 }
 
-.benefit .benefit-contain .benefit-contain-block p {
+.benefit .benefit-desp .benefit-desp-block p {
   line-height: 30px;
   color: #ffffff;
 }
 
-.benefit .benefit-contain .benefit-contain-block::after {
+.benefit .benefit-desp .benefit-desp-block::after {
   content: "";
   display: block;
   clear: both;
@@ -535,10 +535,6 @@ form {
 
 .form-textarea > div > p {
   display: inline-block;
-}
-
-.required-hint {
-  display: block;
 }
 
 input[type=text] {

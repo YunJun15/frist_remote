@@ -17,7 +17,7 @@
   .benefit .benefit-container {
     padding-top: 50px;
   }
-  .benefit .benefit-contain {
+  .benefit .benefit-desp {
     margin-top: 0;
   }
   .contact {
@@ -43,7 +43,8 @@
   footer {
     max-width: 75%;
     height: 135px;
-    margin: 0 15%;
+    margin: 0 13%;
+    margin-top: 3%;
     padding-left: 5%;
   }
 }

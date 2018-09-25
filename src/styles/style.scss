@@ -8,8 +8,8 @@ $select-height: 40px;
 $font-family-st: GillSans, Calibri, Trebuchet,"文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", sans-serif;
 $letter-space:2px;
 $prizeblock-leftline:10px;
-$prizeblock-rightline-x:-25px;
-$prizeblock-rightline-y:-40px;
+$prizeblock-rightline-x:-23px;
+$prizeblock-rightline-y:-25px;
 $prizeblock-rotate-line:-45deg;
 
 
@@ -246,10 +246,10 @@ nav {
        color: $primary-color;
       }
    }
-  .benefit-contain{
+  .benefit-desp{
     margin-top: 5%;
     overflow: hidden;
-    .benefit-contain-block{
+    .benefit-desp-block{
       width: 47%;
       height: 30%;
       margin-right: 2.5%;
@@ -484,7 +484,6 @@ form{
     }*/
   }
 }
-
 .item-width{ //暫時先不動
       width: 48%;
       //background: rgba(241, 144, 17, 0.2);
@@ -500,10 +499,6 @@ form{
     }
   }
 }
-.required-hint{
-  display: block;
-}
-
 input{
     &[type=text]{
       //position: relative;
@@ -573,7 +568,6 @@ input{
           border-bottom: 2px solid $primary-color;
           border-bottom-width: 2px;
           transform: rotate(45deg);
-
         }
       }
     }
@@ -599,7 +593,6 @@ input{
  }
  #message{
    width: 96%;
-
    margin-bottom: 20px;
    float: right;
  }

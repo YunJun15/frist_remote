@@ -1,0 +1,89 @@
+@media only screen and ( max-width:768px ){
+    nav{
+        ul{
+            width: 50%;}
+    }
+    .logo-layout {
+        top: -50px;
+        width: 50%;
+        margin-left: 6%;
+    }
+    .logo{
+        width: 22%;
+        img{
+            width: 80px;
+        }
+    }
+    .logo-title{
+        width: (100%-30%);
+        h4{
+            margin-top: 15px;
+        }
+    }
+    .slogan{
+        height: 45%;
+        margin-left: 17%;
+        margin-top: -5%;
+        .slogan-content{
+            width: 300px;
+            h2{
+                font-size: 2rem;
+            }
+        }
+    }
+    .prize{
+        height: 20vh;
+        ul{
+            width: 100%;
+            margin: 0;
+            li{
+                width: (100%/3);
+                height: 50%;
+            }
+            li:nth-of-type(1){
+             width: 100%;
+             }
+        }
+    }
+    .benefit{
+        .benefit-container{
+            width: 80%;
+            padding-top: 40px;
+            .benefit-title{
+                h2{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+        .benefit-desp{
+            .benefit-desp-block{
+                height: 35%;
+                h2{
+                    margin: 0;
+                    margin-top: 5%;
+                    font-size: 1.7rem;
+                }
+                p{
+                    line-height: 25px;
+                    //font-size: 0.8rem;
+                }
+            }
+        }
+        
+    }
+    .contact-container {
+        width: 85%;
+    }
+    form{
+        .form-checkbox-item-option {
+            width: 100%;
+        }
+    }
+    footer{
+        max-width: 85%;
+        height: 110px;
+        margin: 0 auto;
+        margin-top: 3%;
+        padding: 0;
+    }
+}
