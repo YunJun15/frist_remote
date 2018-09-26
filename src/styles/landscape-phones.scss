@@ -1,0 +1,105 @@
+@media screen and (max-width:578px){
+    header{
+        height: 70vh;
+    }
+    .logo-layout{
+        position: relative;
+        top: -50px;
+        width: 100%;
+        height: 65px;
+        margin-left: 0;
+        .logo{
+            width: 13%;
+            display: block;
+            margin: 0 auto;
+            img{
+                width:70px;
+            }
+        }
+        .logo-title{
+            display: none;
+            //width: 65%;
+        }
+    }
+    .slogan{
+        margin-top: 15%;
+        .slogan-content{
+            width: 300px;
+            h2{
+                text-align: left;
+                font-size: 1.5rem;
+            }
+            p{
+                height: 55%;
+                line-height: 25px;
+                width: 94%;
+            }
+        }
+    }
+    .benefit{
+        height: 1200px;
+        .benefit-container{
+            width: 90%;
+        }
+        .benefit-content{
+            .benefit-content-block {
+                width: 100%;
+                height: 20%;
+            }
+        }
+    }
+    .contact{
+        height: 1680px;
+        .contact-container{
+            .contact-title {
+                height: 35%;
+                .contact-title-pic-block {
+                    width: 95%;
+                    height: 300px;
+                    margin-top: 30px;
+                    margin-left: 20px;
+                }
+                .contact-title-desp {
+                    width: 100%;
+                    .contact-title-content {
+                        width: 100%;
+                        max-width: 455px;
+                        margin: 0 auto;
+                        line-height: 25px;
+                        font-size: 0.85rem;
+                    }
+                }
+            }
+        }
+    }
+    form{
+        max-width: 85%;
+        .form-row{
+            flex-wrap: wrap;
+            margin-bottom: 0;
+        }
+        .form-text-container {
+            width: 100%;
+            margin-bottom: 6%;
+        }
+        .form-radio-item {
+            width: 100%;
+            margin-bottom: 6%;
+        }
+        .select-block{
+            margin-bottom: 10%;
+        }
+        .item-width {
+            width: 100%;
+        }
+        .form-checkbox-item-option{
+            margin-bottom: 6%;
+        }
+        .form-agent-name-item{
+            margin-bottom: 6%;
+        }
+    }
+    footer{
+        height: 85px;
+    }
+}

@@ -1,14 +1,16 @@
 $primary-color: #f0be9d;
 $second-color:#ffffff;
 $change-preset-color: #0f0f0f;
-$contact-color: #bbb8b8;
+$form-color: #9e9e9e;
+$contact-title-content-color:#666666;
 $select-background: #f0efef;
+$button-hover-background:#26a69a;
 $select-width: 100%;
 $select-height: 40px; 
 $font-family-st: GillSans, Calibri, Trebuchet,"文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", sans-serif;
 $letter-space:2px;
 $prizeblock-leftline:10px;
-$prizeblock-rightline-x:-23px;
+$prizeblock-rightline-x:-15px;
 $prizeblock-rightline-y:-25px;
 $prizeblock-rotate-line:-45deg;
 
@@ -104,6 +106,7 @@ nav {
   img{
     width: 100px;
     height: auto;
+    filter: drop-shadow(5px 5px 5px $change-preset-color);
   }
 }
 .logo-title{
@@ -142,7 +145,9 @@ nav {
       margin-top: 20px;
       padding-left: 15px;
       font-size: 0.9rem;
-      border-left: 2px solid $primary-color;
+      border-left: 3px solid $primary-color;
+      text-shadow: 1px 1px 2px $change-preset-color,0 0 15px $change-preset-color,0 0 5px $change-preset-color;
+
     }
   }
 }
@@ -274,7 +279,7 @@ nav {
 }
 .contact{
   width: 100%;
-  height: 1200px;
+  height: 1400px;
   //max-height: 135%;
 }
 .contact-container{
@@ -334,23 +339,27 @@ nav {
         width: 75%;
         margin: 0 auto;
         line-height: 25px;
-        color: $contact-color;
+        color: $contact-title-content-color;
       }
   }
 }
 form{
   position: relative;
   width: 100vw;
-  max-width: 90%;
+  max-width: 100%;
   height: 60%;
-  min-height: 780px;
+  min-height: 900px;
   margin: 0 auto;
-  color: $contact-color;
+  color: $form-color;
+  //background-color: rgba(133, 133, 133, 0.2);
 }
 .form-row{  //form的每一行
       display: flex;
       justify-content: space-between;
       margin-bottom: 6%;
+}
+.select-block{
+  border-top: 1px dashed $primary-color;
 }
 .form-text-container{
   width: 48%;
@@ -367,20 +376,22 @@ form{
     color: $primary-color;
   }
 }
-//稱呼初始位置and style
+
 
 
 //text-animation for js
 .move-up{
-  animation: moveUp 0.8s; //呼叫名為 move 的animation 
+  animation: moveUp 0.2s; //呼叫名為 move 的animation 
   animation-fill-mode: forwards; //停在最後一個動畫
 }
-.move-downward{
-  animation: moveDownward 0.8s;
-  
+//textarea-animation
+.texarea-title-move-up{
+  animation: textareaTitle 1s; //呼叫名為textareaTitle 的animation 
+  animation-fill-mode: forwards; 
 }
 .form-radio-item{
   width: 48%;
+  height: 40px;
   label:nth-of-type(1){
     display: inline-block;
     line-height: 25px;
@@ -416,12 +427,12 @@ form{
 .select {
   display: inline-block;
   position: relative;
-  font-size: 16px;
+  font-size: 1rem;
   width: $select-width;
   height: $select-height;
   outline: none;
   border: none;
-  border-bottom: 1px solid $contact-color;
+  border-bottom: 1px solid $form-color;
   cursor: pointer;
 }
 .select-styled {
@@ -511,13 +522,14 @@ input{
       line-height: 40px;
       outline: none;
       border: none;
-      border-bottom: 1px solid $contact-color;
+      border-bottom: 1px solid $form-color;
       + label{
         cursor: text;
       }
       &::placeholder{
-        color: $contact-color;
+        color: $form-color;
       }
+      
     }
     &[type=radio]{
       opacity: 0; //將預設的radio透明
@@ -533,7 +545,7 @@ input{
           display: inline-block;
           width: 12px;
           height: 12px;
-          border: 2px solid darken($contact-color, 40%);
+          border: 2px solid darken($form-color, 25%);
           border-radius: 50%;
         }
       }
@@ -558,7 +570,7 @@ input{
           display: inline-block;
           width: 15px;
           height: 15px;
-          border: 2px solid darken($contact-color, 40%);
+          border: 2px solid darken($form-color, 25%);
         }
       }
       &:checked + label{
@@ -575,25 +587,42 @@ input{
         }
       }
     }
-    &[type=submit]{
-      width: 10vw;
-      max-width: 120px;
-      height: 50px;
-      outline: none;
-      background: $primary-color;
-      color: $second-color;
-      border-radius: 3%;
-      border-color: rgba(247, 243, 243, 0.075);
-      box-shadow: 3px 0 10px $contact-color,0 1px $contact-color;
-      cursor: pointer;
-   }
   }
+  button{
+    width: 50%;
+    max-width: 120px;
+    height: 55px;
+    line-height: 55px;
+    padding: 0 20px;
+    //padding-bottom: 10px;
+    outline: none;
+    background: $primary-color;
+    color: $second-color;
+    border-radius: 3%;
+    border-color: rgba(247, 243, 243, 0.075);
+    box-shadow: 0 1px 2px $form-color;
+    cursor: pointer;
+    .material-icons{
+      margin-right: 0;
+      width: 25px;
+      height: 40px;
+      vertical-align: middle;
+      margin-left: 10px;
+      padding-top: 12px;
+      color: #ffffff;
+      font-size: 1.6rem;
+    }
+    &:hover{
+      background: $button-hover-background;
+    }
+ }
+ 
   
  textarea{
    outline: none;
    resize: none;
    border: none;
-   border-bottom: 1px solid $contact-color;
+   border-bottom: 1px solid $form-color;
  }
  #message{
    width: 96%;
@@ -605,6 +634,10 @@ input{
    margin-right: 15px;
    color: $change-preset-color;
  }
+ .material-icons{
+   width: 20px;
+   height: 20px;
+ }
 
 /*.form{
   position: relative;
@@ -614,7 +647,7 @@ input{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  color: $contact-color;
+  color: $form-color;
   font-size: 14px;
   .form_span{
     line-height: 20px; 
@@ -628,11 +661,11 @@ input{
       cursor: text;
       border-bottom-width: 2px;
       border-color: $change-preset-color;
-      color: $contact-color;
+      color: $form-color;
       margin-top: 45px;
       /*&::before{
         content: "代理年限";
-        color: $contact-color;
+        color: $form-color;
       }
       &:focus{
        color: $font-color-or;
@@ -668,7 +701,7 @@ input{
     }
     textarea{
       width: 90%;
-      color: $contact-color;
+      color: $form-color;
       outline: none;
       resize: none; //取消textarea右下角預設樣式
       border-style: hidden hidden solid hidden;
@@ -715,7 +748,7 @@ input{
          cursor: pointer;
        }
        &::placeholder{ 
-         color: $contact-color;
+         color: $form-color;
         }
        
       }

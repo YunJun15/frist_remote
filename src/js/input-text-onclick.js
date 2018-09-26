@@ -10,12 +10,16 @@ function qqstart(){
     var text=document.getElementsByClassName("form-text-container-label")[2];
     text.classList.add("move-up");
 }
+function agenstart(){
+    var text=document.getElementsByClassName("form-text-container-label")[0];
+    text.classList.add("texarea-title-move-up");
+}
 
 
 
 
 function callonblur(){
-    document.getElementById("call").placeholder = "稱呼";
+    document.getElementById("call").placeholder = "称呼";
     document.getElementById("phone").placeholder = "联系电话";
     document.getElementById("qq").placeholder = "联系QQ(Email必填";
     document.getElementsByClassName("form-text-container-label")[0].classList.remove("move-up");

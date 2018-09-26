@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAChC,AAAA,MAAM,CAAC;IACH,MAAM,EAAE,IAAI;GAWf;EAZD,AAGI,MAHE,CAGF,EAAE,CAAC;IACC,KAAK,EAAE,GAAG;IACV,MAAM,EAAE,MAAM;GAMjB;EAXL,AAOQ,MAPF,CAGF,EAAE,CAIE,EAAE,CAAC;IACC,KAAK,EAAE,GAAU;IACjB,MAAM,EAAE,IAAI;GACf",
+    "sources": [
+        "../src/styles/large-desktops.scss"
+    ],
+    "names": [],
+    "file": "large-desktops.css"
+}
