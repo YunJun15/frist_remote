@@ -82,6 +82,8 @@ nav ul a:hover {
 .logo img {
   width: 100px;
   height: auto;
+  -webkit-filter: drop-shadow(5px 5px 5px #0f0f0f);
+          filter: drop-shadow(5px 5px 5px #0f0f0f);
 }
 
 .logo-title {
@@ -128,7 +130,8 @@ nav ul a:hover {
   margin-top: 20px;
   padding-left: 15px;
   font-size: 0.9rem;
-  border-left: 2px solid #f0be9d;
+  border-left: 3px solid #f0be9d;
+  text-shadow: 1px 1px 2px #0f0f0f, 0 0 15px #0f0f0f, 0 0 5px #0f0f0f;
 }
 
 .prize {
@@ -219,8 +222,8 @@ nav ul a:hover {
 }
 
 .prize ul li .prize-block .prize-block-line-right {
-  -webkit-transform: translate(-23px, -25px) rotate(-45deg);
-          transform: translate(-23px, -25px) rotate(-45deg);
+  -webkit-transform: translate(-15px, -25px) rotate(-45deg);
+          transform: translate(-15px, -25px) rotate(-45deg);
 }
 
 .benefit {
@@ -284,7 +287,7 @@ nav ul a:hover {
 
 .contact {
   width: 100%;
-  height: 1200px;
+  height: 1400px;
 }
 
 .contact-container {
@@ -357,17 +360,17 @@ nav ul a:hover {
   width: 75%;
   margin: 0 auto;
   line-height: 25px;
-  color: #bbb8b8;
+  color: #666666;
 }
 
 form {
   position: relative;
   width: 100vw;
-  max-width: 90%;
+  max-width: 100%;
   height: 60%;
-  min-height: 780px;
+  min-height: 900px;
   margin: 0 auto;
-  color: #bbb8b8;
+  color: #9e9e9e;
 }
 
 .form-row {
@@ -378,6 +381,10 @@ form {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 6%;
+}
+
+.select-block {
+  border-top: 1px dashed #f0be9d;
 }
 
 .form-text-container {
@@ -398,19 +405,22 @@ form {
 }
 
 .move-up {
-  -webkit-animation: moveUp 0.8s;
-          animation: moveUp 0.8s;
+  -webkit-animation: moveUp 0.2s;
+          animation: moveUp 0.2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.move-downward {
-  -webkit-animation: moveDownward 0.8s;
-          animation: moveDownward 0.8s;
+.texarea-title-move-up {
+  -webkit-animation: textareaTitle 1s;
+          animation: textareaTitle 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .form-radio-item {
   width: 48%;
+  height: 40px;
 }
 
 .form-radio-item label:nth-of-type(1) {
@@ -450,12 +460,12 @@ form {
 .select {
   display: inline-block;
   position: relative;
-  font-size: 16px;
+  font-size: 1rem;
   width: 100%;
   height: 40px;
   outline: none;
   border: none;
-  border-bottom: 1px solid #bbb8b8;
+  border-bottom: 1px solid #9e9e9e;
   cursor: pointer;
 }
 
@@ -549,7 +559,7 @@ input[type=text] {
   line-height: 40px;
   outline: none;
   border: none;
-  border-bottom: 1px solid #bbb8b8;
+  border-bottom: 1px solid #9e9e9e;
 }
 
 input[type=text] + label {
@@ -557,19 +567,19 @@ input[type=text] + label {
 }
 
 input[type=text]::-webkit-input-placeholder {
-  color: #bbb8b8;
+  color: #9e9e9e;
 }
 
 input[type=text]:-ms-input-placeholder {
-  color: #bbb8b8;
+  color: #9e9e9e;
 }
 
 input[type=text]::-ms-input-placeholder {
-  color: #bbb8b8;
+  color: #9e9e9e;
 }
 
 input[type=text]::placeholder {
-  color: #bbb8b8;
+  color: #9e9e9e;
 }
 
 input[type=radio] {
@@ -590,7 +600,7 @@ input[type=radio] + label::before {
   display: inline-block;
   width: 12px;
   height: 12px;
-  border: 2px solid #555252;
+  border: 2px solid #5e5e5e;
   border-radius: 50%;
 }
 
@@ -617,7 +627,7 @@ input[type=checkbox] + label::before {
   display: inline-block;
   width: 15px;
   height: 15px;
-  border: 2px solid #555252;
+  border: 2px solid #5e5e5e;
 }
 
 input[type=checkbox]:checked + label {
@@ -636,25 +646,42 @@ input[type=checkbox]:checked + label::before {
           transform: rotate(45deg);
 }
 
-input[type=submit] {
-  width: 10vw;
+button {
+  width: 50%;
   max-width: 120px;
-  height: 50px;
+  height: 55px;
+  line-height: 55px;
+  padding: 0 20px;
   outline: none;
   background: #f0be9d;
   color: #ffffff;
   border-radius: 3%;
   border-color: rgba(247, 243, 243, 0.075);
-  -webkit-box-shadow: 3px 0 10px #bbb8b8, 0 1px #bbb8b8;
-          box-shadow: 3px 0 10px #bbb8b8, 0 1px #bbb8b8;
+  -webkit-box-shadow: 0 1px 2px #9e9e9e;
+          box-shadow: 0 1px 2px #9e9e9e;
   cursor: pointer;
+}
+
+button .material-icons {
+  margin-right: 0;
+  width: 25px;
+  height: 40px;
+  vertical-align: middle;
+  margin-left: 10px;
+  padding-top: 12px;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+button:hover {
+  background: #26a69a;
 }
 
 textarea {
   outline: none;
   resize: none;
   border: none;
-  border-bottom: 1px solid #bbb8b8;
+  border-bottom: 1px solid #9e9e9e;
 }
 
 #message {
@@ -669,6 +696,11 @@ i {
   color: #0f0f0f;
 }
 
+.material-icons {
+  width: 20px;
+  height: 20px;
+}
+
 /*.form{
   position: relative;
   max-width: 100vw;
@@ -677,7 +709,7 @@ i {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  color: $contact-color;
+  color: $form-color;
   font-size: 14px;
   .form_span{
     line-height: 20px; 
@@ -691,11 +723,11 @@ i {
       cursor: text;
       border-bottom-width: 2px;
       border-color: $change-preset-color;
-      color: $contact-color;
+      color: $form-color;
       margin-top: 45px;
       /*&::before{
         content: "代理年限";
-        color: $contact-color;
+        color: $form-color;
       }
       &:focus{
        color: $font-color-or;
@@ -731,7 +763,7 @@ i {
     }
     textarea{
       width: 90%;
-      color: $contact-color;
+      color: $form-color;
       outline: none;
       resize: none; //取消textarea右下角預設樣式
       border-style: hidden hidden solid hidden;
@@ -778,7 +810,7 @@ i {
          cursor: pointer;
        }
        &::placeholder{ 
-         color: $contact-color;
+         color: $form-color;
         }
        
       }

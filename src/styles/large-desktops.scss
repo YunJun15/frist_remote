@@ -1,8 +1,4 @@
-@media screen and (min-width: 1200px) {
-    header {
-        height: 75vh;
-    }
-
+@media screen and (max-width: 1200px) {
     .prize {
         height: 18vh;
 
@@ -15,13 +11,10 @@
                 height: 100%;
             }
         }
-
-        .contact-container {
-            width: 70%;
-        }
-
-        form {
-            min-height: 720px;
-        }
     }
+    
+
+    //form {
+    //    min-height: 720px;
+    //}
 }
