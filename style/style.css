@@ -389,7 +389,7 @@ form {
 
 .form-text-container {
   width: 48%;
-  height: 60px;
+  overflow: hidden;
 }
 
 .form-text-container .form-text-container-label {
@@ -404,23 +404,18 @@ form {
   color: #f0be9d;
 }
 
-.move-up {
-  -webkit-animation: moveUp 0.2s;
-          animation: moveUp 0.2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.texarea-title-move-up {
-  -webkit-animation: textareaTitle 0.2s;
-          animation: textareaTitle 0.2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+.form-text-required-style {
+  width: 32px;
+  height: 18px;
+  margin-top: 15px;
+  float: left;
+  color: #CC3333;
+  border: 1px solid #CC3333;
 }
 
 .form-radio-item {
   width: 48%;
-  height: 40px;
+  overflow: hidden;
 }
 
 .form-radio-item label:nth-of-type(1) {
@@ -440,6 +435,30 @@ form {
   content: "";
   display: block;
   clear: both;
+}
+
+.form-radio-required {
+  width: 80px;
+  height: 18px;
+  margin-top: 15px;
+  margin-right: 15px;
+  float: right;
+  color: #CC3333;
+  border: 1px solid #CC3333;
+}
+
+.move-up {
+  -webkit-animation: moveUp 0.2s;
+          animation: moveUp 0.2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.texarea-title-move-up {
+  -webkit-animation: textareaTitle 0.2s;
+          animation: textareaTitle 0.2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .form-checkbox-item-option {

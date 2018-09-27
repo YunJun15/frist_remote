@@ -24,9 +24,6 @@ function messagestart(){
 
 }
 
-
-
-
 function callonblur(){
     document.getElementById("call").placeholder = "称呼";
     document.getElementById("phone").placeholder = "联系电话";
@@ -38,6 +35,24 @@ function callonblur(){
     document.getElementsByClassName("form-textarea-container-label")[1].classList.remove("texarea-title-move-up");
     document.getElementById("message-icon").style.color = "#0f0f0f";
     document.getElementsByClassName("message-character")[0].textContent="";
+    
+}
+
+//驗證表單
+function checkRequired(){
+    var call, qq, lottery, tiger;
+    call = document.getElementById("call").value;
+    qq = document.getElementById("qq").value;
+    lottery = document.getElementsByClassName("item-required")[2].value;
+    tiger = document.getElementsByClassName("item-required")[3].value;
+
+    if (call,qq == "") { //為空值
+        classList.add("form-text-required-style"); //加入class
+        return false;
+    } else {
+        classList.remove("text-required");
+        return true;
+    }
     
 }
 //function phonestart(){

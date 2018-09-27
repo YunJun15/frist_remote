@@ -2,6 +2,7 @@ $primary-color: #f0be9d;
 $second-color: #ffffff;
 $change-preset-color: #0f0f0f;
 $form-color: #9e9e9e;
+$form-requird-color:#CC3333;
 $contact-title-content-color: #666666;
 $select-background: #f0efef;
 $button-hover-background: #26a69a;
@@ -425,7 +426,7 @@ form {
 
 .form-text-container {
     width: 48%;
-    height: 60px;
+    overflow: hidden;
 
     .form-text-container-label {
         opacity: 0;
@@ -440,6 +441,49 @@ form {
     }
 }
 
+//必填(text)的style
+.form-text-required-style {
+    width: 32px; //若不設定寬高，會使父元素overflow:hidden超過的隱藏，及不顯示此class style
+    height: 18px;
+    margin-top: 15px;
+    float: left;
+    color: $form-requird-color;
+    border: 1px solid $form-requird-color;
+}
+
+.form-radio-item {
+  width: 48%;
+  overflow: hidden;
+  label:nth-of-type(1) {
+      display: inline-block;
+      line-height: 25px;
+  }
+}
+
+.form-radio-item-option {
+  position: relative;
+  width: 45%;
+  max-width: 115px;
+  float: right;
+  text-align: right;
+
+  &::after {
+      content: "";
+      display: block;
+      clear: both;
+  }
+}
+//請進行選取(radio)的style
+.form-radio-required {
+    width: 80px; //若不設定寬高，會使父元素overflow:hidden超過的隱藏，及不顯示此class style
+    height: 18px;
+    margin-top: 15px;
+    margin-right: 15px;
+    float: right;
+    color: $form-requird-color;
+    border: 1px solid $form-requird-color;
+}
+
 //text-animation for js
 .move-up {
     animation: moveUp 0.2s; //呼叫名為 move 的animation
@@ -452,29 +496,7 @@ form {
     animation-fill-mode: forwards;
 }
 
-.form-radio-item {
-    width: 48%;
-    height: 40px;
 
-    label:nth-of-type(1) {
-        display: inline-block;
-        line-height: 25px;
-    }
-}
-
-.form-radio-item-option {
-    position: relative;
-    width: 45%;
-    max-width: 115px;
-    float: right;
-    text-align: right;
-
-    &::after {
-        content: "";
-        display: block;
-        clear: both;
-    }
-}
 
 .form-checkbox-item-option {
     position: relative;
@@ -606,7 +628,8 @@ form {
         width: 96%;
         float: right;
     }
-    .message-character{ //0-100 style
+
+    .message-character { //0-100 style
         width: 50px;
         height: 20px;
         line-height: 20px;
@@ -615,9 +638,7 @@ form {
         text-align: right;
         font-size: 0.8rem;
         color: $change-preset-color;
-    
-      
-  }
+    }
 }
 
 textarea {

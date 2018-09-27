@@ -168,6 +168,7 @@
             <input type="text" name="call" id="call" placeholder="称呼" onclick="callstart();" onfocus="this.placeholder=''"
               onblur="callonblur();">
             <label class="form-text-container-label" for="call">称呼</label>
+            <span class="form-text-required">必填</span>
           </div>
           <div class="form-radio-item">
             <label>性别：</label>
@@ -186,9 +187,10 @@
             <label class="form-text-container-label" for="phone">联系电话</label>
           </div>
           <div class="form-text-container">
-            <input type="text" name="contactqq" id="qq" placeholder="联系QQ(Email必填)" class="right" onclick="qqstart();"
+            <input type="text" name="contactqq" id="qq" class="rigt " placeholder="联系QQ(Email必填)" onclick="qqstart();"
               onfocus="this.placeholder=''" onblur="callonblur();">
             <label class="form-text-container-label" for="qq">联系QQ(Email必填</label>
+            <span class="form-text-required">必填</span>
           </div>
 
 
@@ -197,19 +199,21 @@
           <div class="form-radio-item">
             <label>是否做过彩票代理：</label>
             <div class="form-radio-item-option">
-              <input type="radio" name="lottery" id="lottery-yes">
+              <input type="radio" name="lottery" id="lottery-yes" class="">
               <label for="lottery-yes">是</label>
-              <input type="radio" name="lottery" id="lotter-no">
+              <input type="radio" name="lottery" id="lotter-no" class="">
               <label for="lotter-no">否</label>
+              <span class="form-radio-required">请进行选取</span>
             </div>
           </div>
           <div class="form-radio-item">
             <label>是否做过老虎机代理：</label>
             <div class="form-radio-item-option">
-              <input type="radio" name="tiger" id="tiger-yes">
+              <input type="radio" name="tiger" id="tiger-yes" class="">
               <label for="tiger-yes">是</label>
-              <input type="radio" name="tiger" id="tiger-no">
+              <input type="radio" name="tiger" id="tiger-no" class="">
               <label for="tiger-no">否</label>
+              <span class="form-radio-required">请进行选取</span>
             </div>
           </div>
         </div>
@@ -264,7 +268,7 @@
           <textarea name="message" id="message" maxLength ="100" onclick="messagestart();" onblur="callonblur();"></textarea>
           <span class="message-character"></span>
         </div>
-        <button type="submit" name="action">发送
+        <button type="submit" name="action" onclick="checkRequired();">发送
         <i class="material-icons">
           send
           </i>
