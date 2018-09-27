@@ -11,8 +11,17 @@ function qqstart(){
     text.classList.add("move-up");
 }
 function agenstart(){
-    var text=document.getElementsByClassName("form-text-container-label")[0];
+    var text=document.getElementsByClassName("form-textarea-container-label")[0];
     text.classList.add("texarea-title-move-up");
+}
+function messagestart(){
+    var text=document.getElementsByClassName("form-textarea-container-label")[1];
+    text.classList.add("texarea-title-move-up");
+    var icon=document.getElementById("message-icon");
+    icon.style.color = "#f0be9d";
+    var character=document.getElementsByClassName("message-character")[0];
+    character.textContent="0/100"; //文字顯示內容 "0/100"
+
 }
 
 
@@ -25,6 +34,10 @@ function callonblur(){
     document.getElementsByClassName("form-text-container-label")[0].classList.remove("move-up");
     document.getElementsByClassName("form-text-container-label")[1].classList.remove("move-up");
     document.getElementsByClassName("form-text-container-label")[2].classList.remove("move-up");
+    document.getElementsByClassName("form-textarea-container-label")[0].classList.remove("texarea-title-move-up");
+    document.getElementsByClassName("form-textarea-container-label")[1].classList.remove("texarea-title-move-up");
+    document.getElementById("message-icon").style.color = "#0f0f0f";
+    document.getElementsByClassName("message-character")[0].textContent="";
     
 }
 //function phonestart(){

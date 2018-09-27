@@ -50,8 +50,8 @@
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
     color: #f0be9d;
     font-size: 0.5rem;
   }
@@ -65,10 +65,24 @@
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
     color: #f0be9d;
     font-size: 0.5rem;
+  }
+}
+
+@-webkit-keyframes button {
+  0% {
+  }
+  100% {
+  }
+}
+
+@keyframes button {
+  0% {
+  }
+  100% {
   }
 }
 /*# sourceMappingURL=animation.css.map */

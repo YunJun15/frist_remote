@@ -412,8 +412,8 @@ form {
 }
 
 .texarea-title-move-up {
-  -webkit-animation: textareaTitle 1s;
-          animation: textareaTitle 1s;
+  -webkit-animation: textareaTitle 0.2s;
+          animation: textareaTitle 0.2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -447,7 +447,13 @@ form {
   line-height: 39px;
 }
 
-.form-agent-name-item > textarea {
+.form-agent-name-item p {
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+}
+
+.form-agent-name-item textarea {
   width: 100%;
 }
 
@@ -530,8 +536,8 @@ form {
   -webkit-transition: all 0.15s ease-in;
   transition: all 0.15s ease-in;
   /*&[rel="hide"] {
-      display: none;
-    }*/
+          display: none;
+        }*/
 }
 
 .select-options li:hover {
@@ -544,14 +550,53 @@ form {
 
 .form-textarea {
   width: 100%;
-}
-
-.form-textarea textarea {
-  width: 100%;
+  overflow: hidden;
 }
 
 .form-textarea > div > p {
   display: inline-block;
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+}
+
+.form-textarea #message {
+  width: 96%;
+  float: right;
+}
+
+.form-textarea .message-character {
+  width: 50px;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 20px;
+  float: right;
+  text-align: right;
+  font-size: 0.8rem;
+  color: #0f0f0f;
+}
+
+textarea {
+  width: 100%;
+  outline: none;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+}
+
+textarea:focus {
+  border-bottom-color: #f0be9d;
+}
+
+i {
+  font-size: 20px;
+  margin-right: 15px;
+  color: #0f0f0f;
+}
+
+.material-icons {
+  width: 20px;
+  height: 20px;
 }
 
 input[type=text] {
@@ -580,6 +625,10 @@ input[type=text]::-ms-input-placeholder {
 
 input[type=text]::placeholder {
   color: #9e9e9e;
+}
+
+input[type=text]:focus {
+  border-bottom-color: #f0be9d;
 }
 
 input[type=radio] {
@@ -662,6 +711,14 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background: #26a69a;
+}
+
+button:focus {
+  background-color: #2e6d67;
+}
+
 button .material-icons {
   margin-right: 0;
   width: 25px;
@@ -671,34 +728,6 @@ button .material-icons {
   padding-top: 12px;
   color: #ffffff;
   font-size: 1.6rem;
-}
-
-button:hover {
-  background: #26a69a;
-}
-
-textarea {
-  outline: none;
-  resize: none;
-  border: none;
-  border-bottom: 1px solid #9e9e9e;
-}
-
-#message {
-  width: 96%;
-  margin-bottom: 20px;
-  float: right;
-}
-
-i {
-  font-size: 20px;
-  margin-right: 15px;
-  color: #0f0f0f;
-}
-
-.material-icons {
-  width: 20px;
-  height: 20px;
 }
 
 /*.form{

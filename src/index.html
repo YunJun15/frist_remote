@@ -165,7 +165,7 @@
       <form action="#" method="post">
         <div class="form-row">
           <div class="form-text-container">
-            <input type="text" name="call" id="call" placeholder="称呼" required onclick="callstart();" onfocus="this.placeholder=''"
+            <input type="text" name="call" id="call" placeholder="称呼" onclick="callstart();" onfocus="this.placeholder=''"
               onblur="callonblur();">
             <label class="form-text-container-label" for="call">称呼</label>
           </div>
@@ -252,16 +252,17 @@
             </div>
           </div>
           <div class="item-width form-agent-name-item">
-            <p class="form-textarea-container-label texarea-title-move-up" for="agent-name">目前代理平台名(多个请用“|”分开):</p>
-            <textarea name="agent-name"  id="agent-name" onclick="agenstart();"></textarea>
+            <p class="form-textarea-container-label">目前代理平台名(多个请用“|”分开):</p>
+            <textarea name="agent-name" onclick="agenstart();" onblur="callonblur();"></textarea>
           </div>
         </div>
         <div class="form-textarea">
           <div>
-            <i class="fas fa-pen"></i>
-            <p>附言：</p>
+            <i class="fas fa-pen" id="message-icon"></i>
+            <p class="form-textarea-container-label">附言：</p>
           </div>
-          <textarea name="message" id="message"></textarea>
+          <textarea name="message" id="message" maxLength ="100" onclick="messagestart();" onblur="callonblur();"></textarea>
+          <span class="message-character"></span>
         </div>
         <button type="submit" name="action">发送
         <i class="material-icons">
