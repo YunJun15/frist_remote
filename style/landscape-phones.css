@@ -90,7 +90,7 @@
     width: 100%;
   }
   form .form-checkbox-item-option {
-    width: 100%;
+    min-width: 300px;
     margin-bottom: 6%;
   }
   form .form-agent-name-item {

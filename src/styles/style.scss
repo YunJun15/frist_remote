@@ -131,6 +131,7 @@ nav {
     width: 75%;
     height: 100%;
     vertical-align: top;
+    margin-left: 10px;
 
     h4, h3 {
         margin: 0;
@@ -472,11 +473,12 @@ form {
    
     }
 }
-.error-radio{
-  .form-radio-required {
-    visibility: visible; //顯示
 
-}
+.error-radio {
+    .form-radio-required {
+        visibility: visible; //顯示
+   
+    }
 }
 
 .form-radio-item {
@@ -517,6 +519,7 @@ form {
 
 .form-checkbox-item-option {
     position: relative;
+    width: 395px;
     line-height: 39px;
 }
 

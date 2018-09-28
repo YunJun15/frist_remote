@@ -91,6 +91,7 @@ nav ul a:hover {
   width: 75%;
   height: 100%;
   vertical-align: top;
+  margin-left: 10px;
 }
 
 .logo-title h4, .logo-title h3 {
@@ -470,6 +471,7 @@ form {
 
 .form-checkbox-item-option {
   position: relative;
+  width: 395px;
   line-height: 39px;
 }
 
