@@ -97,7 +97,7 @@ nav {
             text-align: center;
             margin: 0 5%;
             width: 20%;
-
+            filter: drop-shadow(5px 4px 4px $change-preset-color);
             &:hover {
                 border-top: 3px solid $primary-color;
                 padding-top: 22px;
@@ -136,10 +136,15 @@ nav {
     h4, h3 {
         margin: 0;
         color: $primary-color;
+        filter: drop-shadow(5px 5px 5px $change-preset-color);
     }
 
     h4 {
         margin-top: 20px;
+    }
+    h3{
+      font-style: italic;
+      margin-left: -5px;
     }
 }
 
