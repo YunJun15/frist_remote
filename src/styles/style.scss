@@ -77,34 +77,64 @@ nav {
     height: 70px;
     font-size: 14px;
     color: $second-color;
+    .nav-button {
+    display: none;
+    padding: 20px;
+    color: #fff;
+    color: $primary-color;
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 3px $change-preset-color);
+    
+    &:hover {
+       opacity: 0.5;
+    }
 
     ul { //不用的話
-        position: absolute;
-        right: 10px;
-        width: 35%;
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-        list-style: none;
+      position: absolute;
+      right: 10px;
+      width: 35%;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      list-style: none;
 
-        a {
-            text-decoration: none;
-            display: inline-block;
-            color: $second-color;
-            line-height: 20px;
-            padding-top: 25px;
-            text-align: center;
-            margin: 0 5%;
-            width: 20%;
-            filter: drop-shadow(5px 4px 4px $change-preset-color);
-            &:hover {
-                border-top: 3px solid $primary-color;
-                padding-top: 22px;
-            }
-        }
+      a {
+       
+          text-decoration: none;
+          display: inline-block;
+          color: $second-color;
+          line-height: 20px;
+          padding-top: 25px;
+          text-align: center;
+          margin: 0 5%;
+          width: 20%;
+          filter: drop-shadow(5px 4px 4px $change-preset-color);
+          &:hover {
+              border-top: 3px solid $primary-color;
+              padding-top: 22px;
+          }
+      }
     }
+  }
 }
+.nav-button {
+  display: none;
+  padding: 20px;
+  color: #fff;
+  color: $primary-color;
+  text-align: center;
+  font-size: 1.5em;
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 3px $change-preset-color);
+  
+  &:hover {
+     opacity: 0.5;
+  }
+}
+
 
 .logo-layout {
     position: relative;
@@ -473,9 +503,8 @@ form {
 }
 
 .error {
-    .form-text-required {
+    .form-text-required, .form-radio-required {
         visibility: visible; //顯示
-   
     }
 }
 
