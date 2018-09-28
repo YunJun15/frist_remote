@@ -297,7 +297,7 @@ nav ul a:hover {
 
 .contact {
   width: 100%;
-  height: 1500px;
+  height: 1400px;
 }
 
 .contact-container {
@@ -307,7 +307,7 @@ nav ul a:hover {
 }
 
 .contact-title {
-  height: 35%;
+  height: 32%;
   min-height: 360px;
 }
 
@@ -347,7 +347,7 @@ nav ul a:hover {
 }
 
 .contact-title .contact-title-desp .contact-title-slogan {
-  padding-top: 100px;
+  padding-top: 15%;
   text-align: center;
 }
 
