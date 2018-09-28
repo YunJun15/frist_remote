@@ -27,7 +27,7 @@ function messagestart(){
 function callonblur(){
     document.getElementById("call").placeholder = "称呼";
     document.getElementById("phone").placeholder = "联系电话";
-    document.getElementById("qq").placeholder = "联系QQ(Email必填";
+    document.getElementById("qq").placeholder = "联系QQ(Email必填)";
     document.getElementsByClassName("form-text-container-label")[0].classList.remove("move-up");
     document.getElementsByClassName("form-text-container-label")[1].classList.remove("move-up");
     document.getElementsByClassName("form-text-container-label")[2].classList.remove("move-up");
@@ -39,22 +39,22 @@ function callonblur(){
 }
 
 //驗證表單
-function checkRequired(){
-    var call, qq, lottery, tiger;
-    call = document.getElementById("call").value;
-    qq = document.getElementById("qq").value;
-    lottery = document.getElementsByClassName("item-required")[2].value;
-    tiger = document.getElementsByClassName("item-required")[3].value;
-
-    if (call,qq == "") { //為空值
-        classList.add("form-text-required-style"); //加入class
-        return false;
-    } else {
-        classList.remove("text-required");
-        return true;
-    }
-    
-}
+//function checkRequired(){
+//    var call, qq, lottery, tiger;
+//    call = document.getElementById("call").value;
+//    qq = document.getElementById("qq").value;
+//    lottery = document.getElementsByClassName("item-required")[2].value;
+//    tiger = document.getElementsByClassName("item-required")[3].value;
+//
+//    if (call,qq == "") { //為空值
+//        classList.add("form-text-required-style"); //加入class
+//        return false;
+//    } else {
+//        classList.remove("text-required");
+//        return true;
+//    }
+//    
+//}
 //function phonestart(){
 //var text = document.getElementById("phone-move-up");
 //text.classList.add("move-up");
