@@ -77,20 +77,6 @@ nav {
     height: 70px;
     font-size: 14px;
     color: $second-color;
-    .nav-button {
-    display: none;
-    padding: 20px;
-    color: #fff;
-    color: $primary-color;
-    text-align: center;
-    font-size: 1.5em;
-    cursor: pointer;
-    filter: drop-shadow(2px 2px 3px $change-preset-color);
-    
-    &:hover {
-       opacity: 0.5;
-    }
-
     ul { //不用的話
       position: absolute;
       right: 10px;
@@ -99,10 +85,9 @@ nav {
       justify-content: center;
       margin: 0;
       padding: 0;
-      list-style: none;
-
+      list-style: none; //是ul的属性，不是li属性
+      
       a {
-       
           text-decoration: none;
           display: inline-block;
           color: $second-color;
@@ -112,30 +97,22 @@ nav {
           margin: 0 5%;
           width: 20%;
           filter: drop-shadow(5px 4px 4px $change-preset-color);
+          
+          
+
           &:hover {
               border-top: 3px solid $primary-color;
               padding-top: 22px;
           }
       }
+  }
+
     }
-  }
-}
-.nav-button {
-  display: none;
-  padding: 20px;
-  color: #fff;
-  color: $primary-color;
-  text-align: center;
-  font-size: 1.5em;
-  cursor: pointer;
-  filter: drop-shadow(2px 2px 3px $change-preset-color);
-  
-  &:hover {
-     opacity: 0.5;
-  }
+.nav-button{
+  display:none;
 }
 
-
+    
 .logo-layout {
     position: relative;
     display: inline-block;
@@ -172,9 +149,10 @@ nav {
     h4 {
         margin-top: 20px;
     }
-    h3{
-      font-style: italic;
-      margin-left: -5px;
+
+    h3 {
+        font-style: italic;
+        margin-left: -5px;
     }
 }
 
@@ -505,6 +483,7 @@ form {
 .error {
     .form-text-required, .form-radio-required {
         visibility: visible; //顯示
+   
     }
 }
 

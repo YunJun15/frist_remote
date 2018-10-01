@@ -34,23 +34,7 @@ nav {
   color: #ffffff;
 }
 
-nav .nav-button {
-  display: none;
-  padding: 20px;
-  color: #fff;
-  color: #f0be9d;
-  text-align: center;
-  font-size: 1.5em;
-  cursor: pointer;
-  -webkit-filter: drop-shadow(2px 2px 3px #0f0f0f);
-          filter: drop-shadow(2px 2px 3px #0f0f0f);
-}
-
-nav .nav-button:hover {
-  opacity: 0.5;
-}
-
-nav .nav-button ul {
+nav ul {
   position: absolute;
   right: 10px;
   width: 35%;
@@ -65,7 +49,7 @@ nav .nav-button ul {
   list-style: none;
 }
 
-nav .nav-button ul a {
+nav ul a {
   text-decoration: none;
   display: inline-block;
   color: #ffffff;
@@ -78,25 +62,13 @@ nav .nav-button ul a {
           filter: drop-shadow(5px 4px 4px #0f0f0f);
 }
 
-nav .nav-button ul a:hover {
+nav ul a:hover {
   border-top: 3px solid #f0be9d;
   padding-top: 22px;
 }
 
 .nav-button {
   display: none;
-  padding: 20px;
-  color: #fff;
-  color: #f0be9d;
-  text-align: center;
-  font-size: 1.5em;
-  cursor: pointer;
-  -webkit-filter: drop-shadow(2px 2px 3px #0f0f0f);
-          filter: drop-shadow(2px 2px 3px #0f0f0f);
-}
-
-.nav-button:hover {
-  opacity: 0.5;
 }
 
 .logo-layout {
