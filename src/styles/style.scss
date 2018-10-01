@@ -20,6 +20,7 @@ $prizeblock-rotate-line: -45deg;
     width: 28%;
     height: auto;
     margin-top: 20px;
+    visibility: visible;
 }
 
 %form-line-style { //input+select
@@ -109,7 +110,7 @@ nav {
 
     }
 .nav-button{
-  display:none;
+  display: none;
 }
 
     

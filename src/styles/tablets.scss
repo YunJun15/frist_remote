@@ -1,69 +1,162 @@
-@media screen and (max-width:768px){
-   
-    nav{
-        ul{
-        width: 45%;
-        } 
+@media screen and (max-width: 768px) {
+    $primary-color: #f0be9d;
+    $second-color: #ffffff;
+    $change-preset-color: #0f0f0f;
+    $form-color: #9e9e9e;
+    $form-requird-color: #CC3333;
+    $contact-title-content-color: #666666;
+    $select-background: #f0efef;
+    $button-hover-background: #26a69a;
+    $button-focus-background: #2e6d67;
+
+    nav {
+        width: 400px;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+
+        .nav-button {
+            visibility: visible;
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+            width: 50px;
+            height: 40px;
+            margin-right: 10px;
+            color: $primary-color;
+            text-align: center;
+            font-size: 1.5em;
+            cursor: pointer;
+            filter: drop-shadow(5px 4px 4px $change-preset-color);
+
+            &:hover {
+                color: #eee;
+            }
+        }
+
+        .navbar {
+            position: relative;
+            top: -40px;
+        
+            .navbar-container {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                list-style: none;
+                right: 0;
+               
+    
+                a {
+                    display: block;
+                    color: #fff;
+                    text-decoration: none;
+                    line-height: 20px;
+                    padding-top: 25px;
+                    text-align: center;
+                    margin: 0 5%;
+                    width: 50%;
+                    filter: drop-shadow(5px 4px 4px $change-preset-color);
+    
+                    &:hover {
+                        border-top: 3px solid $primary-color;
+                        padding-top: 22px;
+                    }
+                  
+                }
+
+               
+            }
+        }
+
+        .left {
+            //width: 400px;
+            height: 75vh;
+            flex: 1 1 auto;
+            background: #3a3a3a;
+        }
+
+ 
     }
-    .logo-layout{
+
+    .logo-layout {
         position: relative;
         top: -50px;
         width: 100%;
         height: 65px;
         margin-left: 0;
-        .logo{
+
+        .logo {
             width: 13%;
             display: block;
             margin: 0 auto;
-            img{
-                width:70px;
+
+            img {
+                width: 70px;
             }
         }
-        .logo-title{
+
+        .logo-title {
             display: none;
+
             //width: 65%;
+       
         }
     }
-    .slogan{
+
+    .slogan {
         margin-left: 10%;
     }
-    .prize{
+
+    .prize {
         height: 30vh;
-        ul{
+
+        ul {
             width: 100%;
             margin: 0;
-            li{
-                width: (100%/3);
+
+            li {
+                width: (100% / 3);
                 height: 50%;
             }
-            li:nth-of-type(1){
+
+            li:nth-of-type(1) {
                 width: 100%;
                 height: 50%;
             }
         }
-
     }
-    .contact{
+
+    .contact {
         height: 1200px;
-        .contact-container{
+
+        .contact-container {
             width: 90%;
+
             .contact-title {
                 height: 30%;
-                .contact-title-desp{
+
+                .contact-title-desp {
                     min-height: 200px;
                     padding-top: 20px;
-                    .contact-title-slogan{
+
+                    .contact-title-slogan {
                         padding-top: 0;
                     }
                 }
-
             }
         }
     }
+
     .form-checkbox-item-option {
         width: 301px;
     }
-    footer{
+
+    footer {
         height: 105px;
     }
 }
