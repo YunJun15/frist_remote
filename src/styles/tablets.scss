@@ -10,7 +10,6 @@
     $button-focus-background: #2e6d67;
 
     nav {
-        width: 400px;
         display: inline-block;
         position: relative;
         z-index: 2;
@@ -74,8 +73,8 @@
         }
 
         .left {
-            //width: 400px;
-            height: 75vh;
+            width: 300px;
+            height: 70vh;
             flex: 1 1 auto;
             background: #3a3a3a;
         }

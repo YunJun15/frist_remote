@@ -36,6 +36,15 @@
             }
         }
     }
+    .prize-block{
+        .prize-block-number{
+            font-size: 12px;
+        }
+        .prizeblock3-txtch-position{
+            padding-left: 0;
+        }
+    }
+    
     .benefit{
         height: 1200px;
         .benefit-container{
@@ -86,6 +95,9 @@
             width: 100%;
             margin-bottom: 12%;
         }
+        .form-radio-item-option{
+            max-width: 120px;
+        }
         .select-block{
             margin-bottom: 10%;
         }
@@ -101,6 +113,6 @@
         }
     }
     footer{
-        height: 75px;
+        height: 65px;
     }
 }

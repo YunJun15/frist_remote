@@ -35,6 +35,12 @@
     line-height: 25px;
     width: 94%;
   }
+  .prize-block .prize-block-number {
+    font-size: 12px;
+  }
+  .prize-block .prizeblock3-txtch-position {
+    padding-left: 0;
+  }
   .benefit {
     height: 1200px;
   }
@@ -83,6 +89,9 @@
     width: 100%;
     margin-bottom: 12%;
   }
+  form .form-radio-item-option {
+    max-width: 120px;
+  }
   form .select-block {
     margin-bottom: 10%;
   }
@@ -97,7 +106,7 @@
     margin-bottom: 6%;
   }
   footer {
-    height: 75px;
+    height: 65px;
   }
 }
 /*# sourceMappingURL=landscape-phones.css.map */

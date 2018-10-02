@@ -230,7 +230,7 @@ nav ul a:hover {
 }
 
 .prize-block a {
-  width: 140px;
+  width: 115px;
   height: 50%;
   color: #f0be9d;
   letter-spacing: 2px;
@@ -267,8 +267,8 @@ nav ul a:hover {
 }
 
 .prize-block .prize-block-line-right {
-  -webkit-transform: translate(-15px, -25px) rotate(-45deg);
-          transform: translate(-15px, -25px) rotate(-45deg);
+  -webkit-transform: translate(-5px, -25px) rotate(-45deg);
+          transform: translate(-5px, -25px) rotate(-45deg);
 }
 
 .benefit-container {
