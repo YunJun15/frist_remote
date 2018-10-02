@@ -1,35 +1,6 @@
-$primary-color: #f0be9d;
-$second-color: #ffffff;
-$change-preset-color: #0f0f0f;
-$form-color: #9e9e9e;
-$form-requird-color: #CC3333;
-$contact-title-content-color: #666666;
-$select-background: #f0efef;
-$button-hover-background: #26a69a;
-$button-focus-background: #2e6d67;
-$select-width: 100%;
-$select-height: 40px;
-$font-family-st: GillSans, Calibri, Trebuchet, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", sans-serif;
-$letter-space: 2px;
-$prizeblock-leftline: 10px;
-$prizeblock-rightline-x: -15px;
-$prizeblock-rightline-y: -25px;
-$prizeblock-rotate-line: -45deg;
+@import "variables";
 
-%form-style {
-    width: 28%;
-    height: auto;
-    margin-top: 20px;
-    visibility: visible;
-}
 
-%form-line-style { //input+select
-    border-style: hidden hidden solid hidden;
-    line-height: 30px;
-    margin-top: 35px;
-    width: 80%;
-    outline: none;
-}
 
 @mixin prize-block-left-line { //prize block left-line
     @extend %prize-line-style;
@@ -277,8 +248,6 @@ nav {
     width: 100vw;
     max-width: 100%;
     height: 800px;
-
-    //height: 657px; //60vh
     background: url(../src/images/section2.jpg) (center / cover) no-repeat;
 
     .benefit-container {
@@ -498,7 +467,6 @@ form {
 .form-radio-item {
     width: 48%;
 
-    //overflow: hidden;
     label:nth-of-type(1) {
         display: inline-block;
         line-height: 25px;
