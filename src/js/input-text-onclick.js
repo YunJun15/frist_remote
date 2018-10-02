@@ -1,20 +1,20 @@
-function callstart() {
+function callStart() {
     var text = document.getElementsByClassName("form-text-container-label")[0];
     text.classList.add("move-up");
 }
-function phonestart() {
+function phoneStart() {
     var text = document.getElementsByClassName("form-text-container-label")[1];
     text.classList.add("move-up");
 }
-function qqstart() {
+function qqStart() {
     var text = document.getElementsByClassName("form-text-container-label")[2];
     text.classList.add("move-up");
 }
-function agenstart() {
+function agentStart() {
     var text = document.getElementsByClassName("form-textarea-container-label")[0];
     text.classList.add("texarea-title-move-up");
 }
-function messagestart() {
+function messageStart() {
     var text = document.getElementsByClassName("form-textarea-container-label")[1];
     text.classList.add("texarea-title-move-up");
     var icon = document.getElementById("message-icon");
@@ -24,7 +24,7 @@ function messagestart() {
 
 }
 
-function callonblur() {
+function callOnBlur() {
     document.getElementById("call").placeholder = "称呼";
     document.getElementById("phone").placeholder = "联系电话";
     document.getElementById("qq").placeholder = "联系QQ(Email必填)";
@@ -37,40 +37,5 @@ function callonblur() {
     document.getElementsByClassName("message-character")[0].textContent = "";
 
 }
-
-//驗證表單
-//function checkRequired(){
-//    var call, qq, lottery, tiger;
-//    call = document.getElementById("call").value;
-//    qq = document.getElementById("qq").value;
-//    lottery = document.getElementsByClassName("item-required")[2].value;
-//    tiger = document.getElementsByClassName("item-required")[3].value;
-//
-//    if (call,qq == "") { //為空值
-//        classList.add("form-text-required-style"); //加入class
-//        return false;
-//    } else {
-//        classList.remove("text-required");
-//        return true;
-//    }
-//    
-//}
-//function phonestart(){
-//var text = document.getElementById("phone-move-up");
-//text.classList.add("move-up");
-//}
-//function qqstart(){
-//    var text = document.getElementById("qq-move-up");
-//    text.classList.add("move-up");
-//}
-
-
-
-    //document.getElementById("call").onclick = 
-    //function(){
-    //    var text = document.getElementsByClassName("form-text-container-lael");
-    //    alert("text");
-    //}
-
 
 

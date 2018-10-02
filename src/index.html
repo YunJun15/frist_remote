@@ -169,8 +169,8 @@
       <form action="#" method="post">
         <div class="form-row">
           <div class="form-text-container">
-            <input type="text" name="call" id="call" placeholder="称呼" onclick="callstart();" onfocus="this.placeholder=''" required="required"
-              onblur="callonblur();">
+            <input type="text" name="call" id="call" placeholder="称呼" onclick="callStart();" onfocus="this.placeholder=''"
+              onblur="callOnBlur();">
             <label class="form-text-container-label" for="call">称呼</label>
             <span class="form-text-required">必填</span>
           </div>
@@ -186,13 +186,13 @@
         </div>
         <div class="form-row">
           <div class="form-text-container">
-            <input type="text" name="phone" id="phone" placeholder="联系电话" onclick="phonestart();" onfocus="this.placeholder=''"
-              onblur="callonblur();">
+            <input type="text" name="phone" id="phone" placeholder="联系电话" onclick="phoneStart();" onfocus="this.placeholder=''"
+              onblur="callOnBlur();">
             <label class="form-text-container-label" for="phone">联系电话</label>
           </div>
           <div class="form-text-container">
-            <input type="text" name="contactqq" id="qq" placeholder="联系QQ(Email必填)" onclick="qqstart();" required="required"
-              onfocus="this.placeholder=''" onblur="callonblur();">
+            <input type="text" name="contactqq" id="qq" placeholder="联系QQ(Email必填)" onclick="qqStart();" 
+              onfocus="this.placeholder=''" onblur="callOnBlur();">
             <label class="form-text-container-label" for="qq">联系QQ(Email必填)</label>
             <span class="form-text-required">必填</span>
           </div>
@@ -261,7 +261,7 @@
           </div>
           <div class="item-width form-agent-name-item">
             <p class="form-textarea-container-label">目前代理平台名(多个请用“|”分开):</p>
-            <textarea name="agent-name" onclick="agenstart();" onblur="callonblur();"></textarea>
+            <textarea name="agent-name" onclick="agentStart();" onblur="callOnBlur();"></textarea>
           </div>
         </div>
         <div class="form-textarea">
@@ -269,10 +269,10 @@
             <i class="fas fa-pen" id="message-icon"></i>
             <p class="form-textarea-container-label">附言：</p>
           </div>
-          <textarea name="message" id="message" maxLength ="100" onclick="messagestart();" onblur="callonblur();"></textarea>
+          <textarea name="message" id="message" maxLength ="100" onclick="messageStart();" onblur="callOnBlur();"></textarea>
           <span class="message-character"></span>
         </div>
-        <button type="submit" name="action" id="button">发送
+        <button type="submit" name="action" id="submit-button">发送
         <i class="material-icons">
           send
           </i>
