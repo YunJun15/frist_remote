@@ -1,19 +1,32 @@
 @charset "UTF-8";
-.prize ul li .prize-block .prize-block-line-left, .prize ul li .prize-block .prize-block-line-right {
-  width: 40px;
-  height: 2px;
-  background-color: #f0be9d;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.benefit .benefit-title .benefit-title-txtch, .benefit .benefit-title .benefit-title-txten {
-  margin: 0;
-  font-size: 3rem;
-  font-weight: normal;
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+
+h1 {
+  font-size: 2.5reem;
+}
+
+h2 {
+  font-weight: 100;
 }
 
 html, body {
   font-family: GillSans, Calibri, Trebuchet, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", sans-serif;
   font-size: 16px;
+  font-weight: 100;
   width: 100%;
   height: 100%;
 }
@@ -24,6 +37,47 @@ header {
   max-width: 100%;
   height: 75vh;
   background: url(../src/images/index_01.jpg) center/cover no-repeat;
+}
+
+.prize {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 18vh;
+  background: url(../src/images/section1.jpg) 0 0/cover no-repeat;
+}
+
+.benefit {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 800px;
+  background: url(../src/images/section2.jpg) center/cover no-repeat;
+}
+
+.contact {
+  width: 100%;
+  height: 1400px;
+}
+
+footer {
+  width: 100vw;
+  max-width: 100%;
+  height: 120px;
+  margin-top: 20px;
+  background: url(../src/images/footer.jpg) center/cover no-repeat;
+}
+
+.prize-block .prize-block-line-left, .prize-block .prize-block-line-right {
+  width: 40px;
+  height: 2px;
+  background-color: #f0be9d;
+}
+
+.benefit-title .benefit-title-txtch, .benefit-title .benefit-title-txten {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: normal;
 }
 
 nav {
@@ -44,14 +98,9 @@ nav ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 nav ul a {
-  text-decoration: none;
-  display: inline-block;
   color: #ffffff;
   line-height: 20px;
   padding-top: 25px;
@@ -128,12 +177,10 @@ nav ul a:hover {
   color: #ffffff;
 }
 
-.slogan .slogan-content h2 {
+.slogan .slogan-content h1 {
   margin: 0;
   padding-bottom: 10px;
   border-bottom: 1px solid #ffffff;
-  font-size: 2.5rem;
-  font-weight: 100;
   text-align: center;
 }
 
@@ -146,33 +193,25 @@ nav ul a:hover {
   text-shadow: 1px 1px 2px #0f0f0f, 0 0 15px #0f0f0f, 0 0 5px #0f0f0f;
 }
 
-.prize {
-  position: relative;
-  width: 100vw;
-  max-width: 100%;
-  height: 18vh;
-  background: url(../src/images/section1.jpg) 0 0/cover no-repeat;
-}
-
-.prize ul {
-  margin: 0;
-  list-style: none;
+.prize-container {
   width: 80%;
   height: 100%;
   margin: 0 auto;
-  padding: 0;
-  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.prize ul li {
-  display: inline-block;
-  font-size: 16px;
+.prize-block {
   width: 25%;
-  height: 100%;
-}
-
-.prize ul li .prize-block {
-  width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,34 +224,28 @@ nav ul a:hover {
           align-items: center;
 }
 
-.prize ul li .prize-block .prize-block-line-left {
+.prize-block .prize-block-line-left {
   -webkit-transform: translateY(10px) rotate(-45deg);
           transform: translateY(10px) rotate(-45deg);
 }
 
-.prize ul li .prize-block a {
-  text-decoration: none;
-  color: #f0be9d;
+.prize-block a {
   width: 140px;
   height: 50%;
-}
-
-.prize ul li .prize-block a .prize-block-txt {
-  width: 100%;
-  margin-bottom: 35px;
+  color: #f0be9d;
   letter-spacing: 2px;
 }
 
-.prize ul li .prize-block a .prize-block-txt .prize-block-txtch {
+.prize-block .prize-block-txtch {
   margin: 5px 0;
-  font-size: 14px;
+  font-size: 0.8rem;
 }
 
-.prize ul li .prize-block a .prize-block-txt .prizeblock3-txtch-position {
+.prize-block .prizeblock3-txtch-position {
   padding-left: 15px;
 }
 
-.prize ul li .prize-block a .prize-block-txt .prize-block-number {
+.prize-block .prize-block-number {
   margin: 0;
   font-size: 20px;
   text-align: right;
@@ -221,85 +254,81 @@ nav ul a:hover {
   font-weight: normal;
 }
 
-.prize ul li .prize-block a .prize-block-txt .prizeblock2-number-align {
+.prize-block .prizeblock2-number-align {
   text-align: left;
 }
 
-.prize ul li .prize-block a .prize-block-txt .prize-number-position {
+.prize-block .prize-number-position {
   padding-right: 20px;
 }
 
-.prize ul li .prize-block a .prize-block-txt .prize-block-txt-unit {
+.prize-block .prize-block-txt-unit {
   font-size: 10px;
 }
 
-.prize ul li .prize-block .prize-block-line-right {
+.prize-block .prize-block-line-right {
   -webkit-transform: translate(-15px, -25px) rotate(-45deg);
           transform: translate(-15px, -25px) rotate(-45deg);
 }
 
-.benefit {
-  position: relative;
-  width: 100vw;
-  max-width: 100%;
-  height: 800px;
-  background: url(../src/images/section2.jpg) center/cover no-repeat;
-}
-
-.benefit .benefit-container {
+.benefit-container {
   width: 75%;
   margin: 0 auto;
   padding-top: 100px;
 }
 
-.benefit .benefit-title .benefit-title-txtch, .benefit .benefit-title .benefit-title-txten {
+.benefit-title .benefit-title-txtch, .benefit-title .benefit-title-txten {
   margin: 0;
   font-size: 3rem;
   font-weight: normal;
 }
 
-.benefit .benefit-title .benefit-title-txtch {
+.benefit-title .benefit-title-txtch {
   color: #ffffff;
 }
 
-.benefit .benefit-title .benefit-title-txten {
+.benefit-title .benefit-title-txten {
   color: #f0be9d;
 }
 
-.benefit .benefit-content {
+.benefit-content {
   margin-top: 5%;
   overflow: hidden;
 }
 
-.benefit .benefit-content .benefit-content-block {
+.benefit-content .benefit-content-block {
   width: 47%;
   height: 30%;
   margin-right: 2.5%;
   float: left;
 }
 
-.benefit .benefit-content .benefit-content-block h2 {
+.benefit-content .benefit-content-block h2 {
   padding-bottom: 10px;
   font-size: 2rem;
-  font-weight: normal;
   color: #ffffff;
   border-bottom: 1px solid #f0be9d;
 }
 
-.benefit .benefit-content .benefit-content-block p {
+.benefit-content .benefit-content-block p {
   line-height: 30px;
   color: #ffffff;
 }
 
-.benefit .benefit-content .benefit-content-block::after {
+.benefit-content .benefit-content-block::after {
   content: "";
   display: block;
   clear: both;
 }
 
-.contact {
-  width: 100%;
-  height: 1400px;
+form {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 60%;
+  min-height: 900px;
+  margin: 0 auto;
+  color: #9e9e9e;
 }
 
 .contact-container {
@@ -353,17 +382,13 @@ nav ul a:hover {
   text-align: center;
 }
 
-.contact-title .contact-title-desp .contact-title-slogan h2:nth-child(1) {
+.contact-title .contact-title-desp .contact-title-slogan h1:nth-child(1) {
   margin: 0;
-  font-size: 2.5rem;
-  font-weight: normal;
 }
 
-.contact-title .contact-title-desp .contact-title-slogan h2:nth-child(2) {
+.contact-title .contact-title-desp .contact-title-slogan h1:nth-child(2) {
   margin-top: 5px;
   margin-bottom: 15px;
-  font-size: 2.5rem;
-  font-weight: normal;
   color: #f0be9d;
 }
 
@@ -373,16 +398,6 @@ nav ul a:hover {
   margin: 0 auto;
   line-height: 25px;
   color: #666666;
-}
-
-form {
-  position: relative;
-  width: 100vw;
-  max-width: 100%;
-  height: 60%;
-  min-height: 900px;
-  margin: 0 auto;
-  color: #9e9e9e;
 }
 
 .form-row {
@@ -769,13 +784,5 @@ button .material-icons {
   padding-top: 2px;
   color: #ffffff;
   font-size: 1.5rem;
-}
-
-footer {
-  width: 100vw;
-  max-width: 100%;
-  height: 120px;
-  margin-top: 20px;
-  background: url(../src/images/footer.jpg) center/cover no-repeat;
 }
 /*# sourceMappingURL=style.css.map */

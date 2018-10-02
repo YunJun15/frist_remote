@@ -9,14 +9,14 @@
     }
     .prize{
         height: 30vh;
-        ul{
+        .prize-container{
             width: 100%;
             margin: 0;
-            li{
+            .prize-block{
                 width: (100%/3);
                 height: 50%;
             }
-            li:nth-of-type(1){
+            .prize-block-shrink-place{
                 width: 100%;
                 height: 50%;
             }
