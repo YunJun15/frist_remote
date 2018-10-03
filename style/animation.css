@@ -4,13 +4,8 @@
   }
   100% {
     opacity: 1;
-<<<<<<< HEAD
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
-=======
-    -webkit-transform: translateY(-40px);
-            transform: translateY(-40px);
->>>>>>> 471ce2579ede8cdf921155173ffc113a02c74edd
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
   }
 }
 
@@ -20,13 +15,8 @@
   }
   100% {
     opacity: 1;
-<<<<<<< HEAD
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
-=======
-    -webkit-transform: translateY(-40px);
-            transform: translateY(-40px);
->>>>>>> 471ce2579ede8cdf921155173ffc113a02c74edd
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
   }
 }
 
@@ -63,7 +53,7 @@
     -webkit-transform: translateY(-20px);
             transform: translateY(-20px);
     color: #f0be9d;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -78,7 +68,7 @@
     -webkit-transform: translateY(-20px);
             transform: translateY(-20px);
     color: #f0be9d;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 }
 

@@ -116,23 +116,16 @@
     width: 100%;
   }
   form .form-checkbox-item-option {
-    min-width: 300px;
+    width: 220px;
     margin-bottom: 6%;
   }
   form .form-agent-name-item {
     margin-bottom: 6%;
   }
-  input[type=text]::-webkit-input-placeholder {
-    font-size: 0.8rem;
-  }
-  input[type=text]:-ms-input-placeholder {
-    font-size: 0.8rem;
-  }
-  input[type=text]::-ms-input-placeholder {
-    font-size: 0.8rem;
-  }
-  input[type=text]::placeholder {
-    font-size: 0.8rem;
+  input[type=text] {
+    height: 20px;
+    line-height: 15px;
+    margin-top: 10px;
   }
   footer {
     height: 65px;
