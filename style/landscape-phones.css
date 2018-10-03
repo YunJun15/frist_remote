@@ -35,6 +35,9 @@
     line-height: 25px;
     width: 94%;
   }
+  .prize-block .prize-block-text-shrink {
+    width: 85px;
+  }
   .prize-block a {
     width: 115px;
     height: 65px;
@@ -53,7 +56,7 @@
   }
   .prize-block .prize-block-txt-unit {
     display: inline-block;
-    font-size: 2px;
+    font-size: 5px;
   }
   .benefit {
     height: 1200px;
