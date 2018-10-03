@@ -157,7 +157,7 @@ nav {
     }
 
     a {
-        width: 115px;
+        width: 135px;
         height: 50%;
         color: $primary-color;
         letter-spacing: $letter-space;
@@ -617,6 +617,7 @@ input {
 
         &::placeholder {
             color: $form-color;
+            
         }
 
         &:focus {
