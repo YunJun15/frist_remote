@@ -73,7 +73,8 @@
         }
 
         .left {
-            width: 300px;
+            visibility: hidden;
+            width: 0px;
             height: 70vh;
             flex: 1 1 auto;
             background: #3a3a3a;

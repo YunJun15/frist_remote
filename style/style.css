@@ -12,15 +12,6 @@ a {
 
 h1, h2 {
   font-weight: 100;
-  font-size: 2.5rem;
-}
-
-h1 {
-  font-size: 2.5reem;
-}
-
-h2 {
-  font-weight: 100;
 }
 
 html, body {
@@ -117,6 +108,7 @@ nav ul a:hover {
 
 .nav-button {
   display: none;
+  outline: none;
 }
 
 .logo-layout {

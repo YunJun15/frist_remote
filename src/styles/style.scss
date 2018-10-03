@@ -59,6 +59,7 @@ nav {
 
 .nav-button {
     display: none;
+    outline: none;
 }
 
 .logo-layout {
@@ -318,7 +319,6 @@ form {
             h1:nth-child(2) {
                 margin-top: 5px;
                 margin-bottom: 15px;
-               
                 color: $primary-color;
             }
         }
