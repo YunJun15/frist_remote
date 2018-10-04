@@ -1,0 +1,29 @@
+@mixin prize-block-left-line { //prize block left-line
+    @extend %prize-line-style;
+
+    transform: translateY($prizeblock-leftline) rotate($prizeblock-rotate-line);
+}
+
+@mixin prize-block-right-line {
+    @extend %prize-line-style;
+
+    transform: translate($prizeblock-rightline-x, $prizeblock-rightline-y) rotate($prizeblock-rotate-line);
+}
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+%prize-line-style { //prize-block-line-style
+    width: 40px;
+    height: 2px;
+    background-color: $primary-color;
+}
+
+%benefit-title-style {
+    margin: 0;
+}

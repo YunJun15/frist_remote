@@ -1,0 +1,62 @@
+.prize-container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.prize-block {
+    width: (100% / 4);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .prize-block-line-left {
+        @mixin prize-block-left-line { //prize block left-line
+        }
+    }
+
+    a {
+        width: 135px;
+        height: 50%;
+        color: $primary-color;
+        letter-spacing: $letter-space;
+    }
+
+    .prize-block-txtch {
+        margin: 5px 0;
+        font-size: 0.8rem;
+    }
+
+    .prizeblock3-txtch-position {
+        padding-left: 15px;
+    }
+
+    .prize-block-number {
+        margin: 0;
+        font-size: 20px;
+        text-align: right;
+        letter-spacing: 3px;
+        font-family: 'Michroma';
+    }
+
+    .prizeblock2-number-align {
+        text-align: left;
+    }
+
+    .prize-number-position {
+        padding-right: 20px;
+    }
+
+    .prize-block-txt-unit {
+        font-size: 10px;
+    }
+
+    .prize-block-line-right {
+        @include prize-block-right-line;
+    }
+}

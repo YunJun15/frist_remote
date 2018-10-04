@@ -1,0 +1,385 @@
+form {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 60%;
+    min-height: 900px;
+    margin: 0 auto;
+    color: $form-color;
+}
+
+.form-row { //form的每一行
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6%;
+}
+
+.select-block {
+    border-top: 1px dashed $primary-color;
+}
+
+.form-text-container {
+    width: 48%;
+
+    .form-text-container-label {
+        opacity: 0;
+        position: relative;
+        top: -30px;
+        display: inline-block;
+        min-width: 130px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 0.8rem;
+        color: $primary-color;
+    }
+}
+
+//必填(text)的style
+.form-text-required {
+    visibility: hidden; //隱藏
+    width: 32px; //若不設定寬高，會使父元素overflow:hidden超過的隱藏，及不顯示此class style
+    height: 18px;
+    display: block;
+    color: $form-requird-color;
+    border: 1px solid $form-requird-color;
+}
+
+//請進行選取(radio)的style
+.form-radio-required {
+    visibility: hidden; //隱藏
+    width: 80px; //若不設定寬高，會使父元素overflow:hidden超過的隱藏，及不顯示此class style
+    height: 18px;
+    margin-top: 15px;
+    margin-left: 15px;
+    display: block;
+    color: $form-requird-color;
+    border: 1px solid $form-requird-color;
+}
+
+.error {
+    .form-text-required, .form-radio-required {
+        visibility: visible; //顯示
+   
+    }
+}
+
+.error-radio {
+    .form-radio-required {
+        visibility: visible; //顯示
+   
+    }
+}
+
+.form-radio-item {
+    width: 48%;
+
+    label:nth-of-type(1) {
+        display: inline-block;
+        line-height: 25px;
+    }
+}
+
+.form-radio-item-option {
+    position: relative;
+    width: 45%;
+    max-width: 115px;
+    float: right;
+    text-align: right;
+
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+//text-animation for js
+.move-up {
+    animation: moveUp 0.2s; //呼叫名為 move 的animation
+    animation-fill-mode: forwards; //停在最後一個動畫
+}
+
+//textarea-animation
+.texarea-title-move-up {
+    animation: textareaTitle 0.2s; //呼叫名為textareaTitle 的animation
+    animation-fill-mode: forwards;
+}
+
+.form-checkbox-item-option {
+    position: relative;
+    width: 395px;
+    line-height: 39px;
+}
+
+.form-agent-name-item {
+    p {
+        margin: 0;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    textarea {
+        width: 100%;
+    }
+}
+
+//for selesct.js use
+.select {
+    display: inline-block;
+    position: relative;
+    font-size: 1rem;
+    width: $select-width;
+    height: $select-height;
+    border: none;
+    border-bottom: 1px solid $form-color;
+    cursor: pointer;
+
+    .select-hidden {
+        display: none;
+        visibility: hidden;
+        padding-right: 10px;
+    }
+}
+
+.select-styled {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: $change-preset-color;
+    padding: 8px 15px;
+    transition: all 0.2s ease-in;
+
+    //箭頭
+    &:after {
+        content: "";
+        width: 0;
+        height: 0;
+        border: 7px solid transparent;
+        border-color: $change-preset-color transparent transparent transparent;
+        position: absolute;
+        top: 16px;
+        right: 5px;
+    }
+
+    &:hover {
+        border-radius: 2%;
+    }
+
+    &:active, &.active {
+        border-radius: 2%;
+
+        //點擊之後的箭頭
+        &:after {
+            top: 9px;
+            border-color: transparent transparent $change-preset-color transparent;
+        }
+    }
+}
+
+.select-options {
+    display: none;
+    position: absolute;
+    top: 0%;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid $select-background;
+    border-radius: 2%;
+    box-shadow: 2px 3px 5px rgba(133, 133, 133, 0.2), -2px 0 5px rgba(133, 133, 133, 0.2), 0 2px rgba(19, 18, 18, 0.2);
+    background-color: $second-color;
+
+    li {
+        margin: 0;
+        padding: 12px 0;
+        text-indent: 15px;
+        color: $primary-color;
+        transition: all 0.15s ease-in;
+
+        &:hover {
+            background: darken($select-background, 2);
+        }
+    }
+}
+
+.item-width {
+    width: 48%;
+}
+
+.form-textarea {
+    width: 100%;
+    overflow: hidden;
+
+    > div {
+        > p {
+            display: inline-block;
+            margin: 0;
+            height: 50px;
+            line-height: 50px;
+        }
+    }
+
+    #message {
+        width: 96%;
+        float: right;
+    }
+
+    .message-character { //0-100 style
+        width: 50px;
+        height: 20px;
+        line-height: 20px;
+        margin-top: 20px;
+        float: right;
+        text-align: right;
+        font-size: 0.8rem;
+        color: $change-preset-color;
+    }
+}
+
+textarea {
+    width: 100%;
+    border-bottom: 1px solid $form-color;
+
+    &:focus {
+        border-bottom-color: $primary-color;
+    }
+}
+
+i {
+    font-size: 20px;
+    margin-right: 15px;
+    color: $change-preset-color;
+}
+
+.material-icons {
+    width: 20px;
+    height: 20px;
+}
+
+input {
+    &[type=text] {
+        //position: relative;
+        //z-index: 1; //將input移上一層，點擊placeholder也能觸發animation
+        width: 100%;
+        line-height: 40px;
+        border: none;
+        border-bottom: 1px solid $form-color;
+
+        + label {
+            cursor: text;
+        }
+
+        &::placeholder {
+            color: $form-color;
+        }
+
+        &:focus {
+            border-bottom-color: $primary-color;
+        }
+    }
+
+    &[type=radio] {
+        opacity: 0; //將預設的radio透明
+        + label {
+            display: inline-block;
+            padding-left: 5px;
+            cursor: pointer;
+
+            &::before {
+                content: "";
+                position: relative;
+                left: -50%;
+                top: 3px;
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                border: 2px solid darken($form-color, 25%);
+                border-radius: 50%;
+            }
+        }
+
+        &:checked + label { //點擊label
+            &::before {
+                content: "";
+                position: relative;
+                border: 2px solid $primary-color;
+                background: $primary-color;
+            }
+        }
+    }
+
+    &[type=checkbox] {
+        opacity: 0;
+
+        + label {
+            margin-right: 3%;
+            cursor: pointer;
+
+            &::before {
+                content: "";
+                position: relative;
+                left: -5px;
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                border: 2px solid darken($form-color, 25%);
+            }
+        }
+
+        &:checked + label {
+            padding-left: 7px;
+
+            &::before {
+                content: "";
+                width: 10px;
+                height: 20px;
+                border: none;
+                border-right: 2px solid $primary-color;
+                border-bottom: 2px solid $primary-color;
+                border-bottom-width: 2px;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
+
+button {
+    width: 50%;
+    max-width: 120px;
+    height: 55px;
+    line-height: 55px;
+    padding: 0 20px;
+    padding-top: 6px;
+    background: $primary-color;
+    color: $second-color;
+    border-radius: 3%;
+    border-color: rgba(247, 243, 243, 0.075);
+    box-shadow: 0 1px 2px $form-color;
+
+    &:hover {
+        background: $button-hover-background;
+    }
+
+    //被點擊(焦點)後改變顏色，失去焦點後變回button原顏色
+    &:focus {
+        background-color: $button-focus-background;
+    }
+
+    cursor: pointer;
+
+    .material-icons {
+        margin-right: 0;
+        display: inline-block;
+        width: 25px;
+        height: 30px;
+        vertical-align: middle;
+        margin-left: 10px;
+        padding-top: 2px;
+        color: #ffffff;
+        font-size: 1.5rem;
+    }
+}

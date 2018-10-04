@@ -1,0 +1,42 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; //是ul的属性，不是li属性
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+h1, h2, h4 {
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: $second-color;
+}
+
+
+textarea {
+    resize: none;
+    border: none;
+}
+
+input {
+    &[type=text] {
+        outline: none;
+    }
+}
+
+.select, button, textarea {
+    outline: none;
+}
+.select,textarea{
+    border-bottom: 1px solid $form-color;
+}

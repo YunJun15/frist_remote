@@ -1,0 +1,39 @@
+.benefit-container {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.benefit-title-txtch {
+    @extend %benefit-title-style;
+
+    color: $second-color;
+}
+
+.benefit-title-txten {
+    @extend %benefit-title-style;
+
+    color: $primary-color;
+}
+
+.benefit-content {
+    margin-top: 5%;
+    overflow: hidden;
+
+    .benefit-content-block {
+        width: 47%;
+        height: 30%;
+        margin-right: 2.5%;
+        float: left;
+
+        h2 {
+            padding-bottom: 10px;
+            border-bottom: 1px solid $primary-color;
+        }
+
+        p {
+            line-height: 30px;
+            color: $second-color;
+        }
+    }
+}
