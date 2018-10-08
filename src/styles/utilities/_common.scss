@@ -9,12 +9,12 @@ a {
     text-decoration: none;
 }
 
-h1, h2, h4 {
-    font-weight: 100;
+h1, h2 {
+    font-weight: $font-weight-light;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: $h1-font-size;
 }
 
 h2 {
@@ -22,6 +22,9 @@ h2 {
     color: $secondary-color;
 }
 
+p {
+    line-height: $line-height-base;
+}
 
 textarea {
     resize: none;
@@ -37,6 +40,7 @@ input {
 .select, button, textarea {
     outline: none;
 }
-.select,textarea{
+
+.select, textarea {
     border-bottom: 1px solid $form-color;
 }

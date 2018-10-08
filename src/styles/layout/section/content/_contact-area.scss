@@ -64,8 +64,8 @@
             max-width: 450px;
             width: 75%;
             margin: 0 auto;
-            line-height: 25px;
-            color: $contact-title-content-color;
+            line-height: $line-height-base;
+            color: $info-color;
         }
     }
 }

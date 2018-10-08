@@ -40,8 +40,8 @@ form {
     width: 32px; //若不設定寬高，會使父元素overflow:hidden超過的隱藏，及不顯示此class style
     height: 18px;
     display: block;
-    color: $form-requird-color;
-    border: 1px solid $form-requird-color;
+    color: $warning-color;
+    border: 1px solid $warning-color;
 }
 
 //請進行選取(radio)的style
@@ -52,8 +52,8 @@ form {
     margin-top: 15px;
     margin-left: 15px;
     display: block;
-    color: $form-requird-color;
-    border: 1px solid $form-requird-color;
+    color: $warning-color;
+    border: 1px solid $warning-color;
 }
 
 .error {
@@ -147,7 +147,7 @@ form {
     right: 0;
     bottom: 0;
     left: 0;
-    color: $change-preset-color;
+    color: $common-color;
     padding: 8px 15px;
     transition: all 0.2s ease-in;
 
@@ -157,23 +157,23 @@ form {
         width: 0;
         height: 0;
         border: 7px solid transparent;
-        border-color: $change-preset-color transparent transparent transparent;
+        border-color: $common-color transparent transparent transparent;
         position: absolute;
         top: 16px;
         right: 5px;
     }
 
     &:hover {
-        border-radius: 2%;
+        border-radius: $border-radius;
     }
 
     &:active, &.active {
-        border-radius: 2%;
+        border-radius: $border-radius;
 
         //點擊之後的箭頭
         &:after {
             top: 9px;
-            border-color: transparent transparent $change-preset-color transparent;
+            border-color: transparent transparent $common-color transparent;
         }
     }
 }
@@ -236,7 +236,7 @@ form {
         float: right;
         text-align: right;
         font-size: 0.8rem;
-        color: $change-preset-color;
+        color: $common-color;
     }
 }
 
@@ -252,7 +252,7 @@ textarea {
 i {
     font-size: 20px;
     margin-right: 15px;
-    color: $change-preset-color;
+    color: $common-color;
 }
 
 .material-icons {
@@ -265,7 +265,7 @@ input {
         //position: relative;
         //z-index: 1; //將input移上一層，點擊placeholder也能觸發animation
         width: 100%;
-        line-height: 40px;
+        line-height: $line-height-lg;
         border: none;
         border-bottom: 1px solid $form-color;
 
@@ -298,7 +298,7 @@ input {
                 width: 12px;
                 height: 12px;
                 border: 2px solid darken($form-color, 25%);
-                border-radius: 50%;
+                border-radius: $border-radius-round;
             }
         }
 
@@ -351,12 +351,10 @@ button {
     width: 50%;
     max-width: 120px;
     height: 55px;
-    line-height: 55px;
-    padding: 0 20px;
-    padding-top: 6px;
+    padding: $btn-padding-x $btn-padding-y;
     background: $primary-color;
     color: $secondary-color;
-    border-radius: 3%;
+    border-radius: $border-radius;
     border-color: rgba(247, 243, 243, 0.075);
     box-shadow: 0 1px 2px $form-color;
 
