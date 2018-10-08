@@ -119,18 +119,15 @@ nav {
     height: 100%;
     vertical-align: top;
     margin-left: 10px;
+    margin-top: 20px;
 
-    h4, h3 {
+    h5 {
         margin: 0;
         color: $primary-color;
         text-shadow: 3px 3px 5px $common-color;
     }
 
-    h4 {
-        margin-top: 20px;
-    }
-
-    h3 {
+    .logo-title-number {
         font-style: italic;
         margin-left: -5px;
     }

@@ -39,19 +39,6 @@ a {
   text-decoration: none;
 }
 
-h1, h2 {
-  font-weight: 300;
-}
-
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2rem;
-  color: #ffffff;
-}
-
 p {
   line-height: 1.5;
 }
@@ -71,6 +58,38 @@ input[type=text] {
 
 .select, textarea {
   border-bottom: 1px solid #9e9e9e;
+}
+
+h1, h2, h6 {
+  font-weight: 300;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
 }
 
 .prize-block .prize-block-line-left, .prize-block .prize-block-line-right {
@@ -309,19 +328,16 @@ nav ul a:hover {
   height: 100%;
   vertical-align: top;
   margin-left: 10px;
+  margin-top: 20px;
 }
 
-.logo-title h4, .logo-title h3 {
+.logo-title h5 {
   margin: 0;
   color: #f0be9d;
   text-shadow: 3px 3px 5px #0f0f0f;
 }
 
-.logo-title h4 {
-  margin-top: 20px;
-}
-
-.logo-title h3 {
+.logo-title .logo-title-number {
   font-style: italic;
   margin-left: -5px;
 }
