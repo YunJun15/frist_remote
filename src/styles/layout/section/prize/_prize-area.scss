@@ -60,7 +60,9 @@
     .prize-block-txt-unit {
         font-size: 10px;
     }
-
+    .prize-block-line-left {
+        @include  prize-block-left-line;
+    }
     .prize-block-line-right {
         @include prize-block-right-line;
     }
