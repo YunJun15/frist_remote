@@ -3,7 +3,7 @@ nav {
     width: 100%;
     height: 70px;
     font-size: 14px;
-    color: $second-color;
+    color: $secondary-color;
 
     ul { //不用的話
         position: absolute;
@@ -13,7 +13,7 @@ nav {
         justify-content: center;
 
         a {
-            color: $second-color;
+            color: $secondary-color;
             line-height: 20px;
             padding-top: 25px;
             text-align: center;
@@ -28,10 +28,22 @@ nav {
         }
     }
 }
+
 //@media(max-width:578px) element
 .nav-button {
-    display: none;
+    visibility: hidden;
     outline: none;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    width: 50px;
+    height: 40px;
+    margin-right: 10px;
+    color: $primary-color;
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    filter: drop-shadow(5px 4px 4px $change-preset-color);
 }
 
 .logo-layout {
@@ -87,12 +99,12 @@ nav {
 
     .slogan-content {
         width: 395px;
-        color: $second-color;
+        color: $secondary-color;
 
         h1 {
             margin: 0;
             padding-bottom: 10px;
-            border-bottom: 1px solid $second-color;
+            border-bottom: 1px solid $secondary-color;
             text-align: center;
         }
 

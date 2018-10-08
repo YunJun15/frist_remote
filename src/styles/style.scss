@@ -1,10 +1,13 @@
-@import "variables";
-@import "layout";
-@import "common";
-@import "mixin";
-@import "header-area";
-@import "prize-area";
-@import "benefit-area";
-@import "contact-area";
-@import "form";
+@import "utilities/variables";
+@import "utilities/layout";
+@import "utilities/common";
+@import "mixin/mixin";
+@import "animation/animation";
+@import "layout/header/header-area";
+@import "layout/section/prize/prize-area";
+@import "layout/section/benefit/benefit-area";
+@import "layout/section/content/contact-area";
+@import "layout/section/content/form";
+
+
 

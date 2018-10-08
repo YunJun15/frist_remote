@@ -15,25 +15,10 @@ header {
   background: url(../src/images/index_01.jpg) center/cover no-repeat;
 }
 
-.prize {
+section {
   position: relative;
   width: 100vw;
   max-width: 100%;
-  height: 18vh;
-  background: url(../src/images/section1.jpg) 0 0/50% 50% repeat;
-}
-
-.benefit {
-  position: relative;
-  width: 100vw;
-  max-width: 100%;
-  height: 800px;
-  background: url(../src/images/section2.jpg) center/cover no-repeat;
-}
-
-.contact {
-  width: 100%;
-  height: 1400px;
 }
 
 footer {
@@ -91,8 +76,96 @@ input[type=text] {
   background-color: #f0be9d;
 }
 
-.benefit-title-txtch, .benefit-title-txten {
+.benefit .benefit-title-txtch, .benefit .benefit-title-txten {
   margin: 0;
+}
+
+@-webkit-keyframes moveUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+}
+
+@-webkit-keyframes moveDownward {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@keyframes moveDownward {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@-webkit-keyframes textareaTitle {
+  0% {
+    opacity: 0;
+    font-size: 1rem;
+    color: #9e9e9e;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    color: #f0be9d;
+    font-size: 0.8rem;
+  }
+}
+
+@keyframes textareaTitle {
+  0% {
+    opacity: 0;
+    font-size: 1rem;
+    color: #9e9e9e;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    color: #f0be9d;
+    font-size: 0.8rem;
+  }
+}
+
+@-webkit-keyframes button {
+  0% {
+  }
+  100% {
+  }
+}
+
+@keyframes button {
+  0% {
+  }
+  100% {
+  }
 }
 
 nav {
@@ -131,8 +204,20 @@ nav ul a:hover {
 }
 
 .nav-button {
-  display: none;
+  visibility: hidden;
   outline: none;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  width: 50px;
+  height: 40px;
+  margin-right: 10px;
+  color: #f0be9d;
+  text-align: center;
+  font-size: 1.5em;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(5px 4px 4px #0f0f0f);
+          filter: drop-shadow(5px 4px 4px #0f0f0f);
 }
 
 .logo-layout {
@@ -209,6 +294,11 @@ nav ul a:hover {
   text-shadow: 1px 1px 2px #0f0f0f, 0 0 15px #0f0f0f, 0 0 5px #0f0f0f;
 }
 
+.prize {
+  height: 18vh;
+  background: url(../src/images/section1.jpg) 0 0/50% 50% repeat;
+}
+
 .prize-container {
   width: 80%;
   height: 100%;
@@ -281,40 +371,49 @@ nav ul a:hover {
           transform: translate(-5px, -25px) rotate(-45deg);
 }
 
-.benefit-container {
+.benefit {
+  height: 800px;
+  background: url(../src/images/section2.jpg) center/cover no-repeat;
+}
+
+.benefit .benefit-container {
   width: 75%;
   margin: 0 auto;
   padding-top: 100px;
 }
 
-.benefit-title-txtch {
+.benefit .benefit-title-txtch {
   color: #ffffff;
 }
 
-.benefit-title-txten {
+.benefit .benefit-title-txten {
   color: #f0be9d;
 }
 
-.benefit-content {
+.benefit .benefit-content {
   margin-top: 5%;
   overflow: hidden;
 }
 
-.benefit-content .benefit-content-block {
+.benefit .benefit-content .benefit-content-block {
   width: 47%;
   height: 30%;
   margin-right: 2.5%;
   float: left;
 }
 
-.benefit-content .benefit-content-block h2 {
+.benefit .benefit-content .benefit-content-block h2 {
   padding-bottom: 10px;
   border-bottom: 1px solid #f0be9d;
 }
 
-.benefit-content .benefit-content-block p {
+.benefit .benefit-content .benefit-content-block p {
   line-height: 30px;
   color: #ffffff;
+}
+
+.contact {
+  height: 1400px;
 }
 
 .contact-container {

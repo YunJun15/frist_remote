@@ -14,25 +14,10 @@ header {
     background: url(../src/images/index_01.jpg) (center / cover) no-repeat;
 }
 
-.prize {
+section {
     position: relative;
     width: 100vw;
     max-width: 100%;
-    height: 18vh;
-    background: url(../src/images/section1.jpg)  0 (0 / 50% 50%) repeat;
-}
-
-.benefit {
-    position: relative;
-    width: 100vw;
-    max-width: 100%;
-    height: 800px;
-    background: url(../src/images/section2.jpg) (center / cover) no-repeat;
-}
-
-.contact {
-    width: 100%;
-    height: 1400px;
 }
 
 footer {

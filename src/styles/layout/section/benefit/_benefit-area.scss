@@ -1,4 +1,9 @@
 .benefit {
+    
+    height: 800px;
+    background: url(../src/images/section2.jpg) (center / cover) no-repeat;
+}
+.benefit {
     .benefit-container {
         width: 75%;
         margin: 0 auto;
@@ -8,7 +13,7 @@
     .benefit-title-txtch {
         @extend %benefit-title-style;
     
-        color: $second-color;
+        color: $secondary-color;
     }
     
     .benefit-title-txten {
@@ -34,7 +39,7 @@
     
             p {
                 line-height: 30px;
-                color: $second-color;
+                color: $secondary-color;
             }
         }
     }

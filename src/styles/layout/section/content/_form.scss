@@ -191,7 +191,7 @@ form {
     border: 1px solid $select-background;
     border-radius: 2%;
     box-shadow: 2px 3px 5px rgba(133, 133, 133, 0.2), -2px 0 5px rgba(133, 133, 133, 0.2), 0 2px rgba(19, 18, 18, 0.2);
-    background-color: $second-color;
+    background-color: $secondary-color;
 
     li {
         margin: 0;
@@ -355,7 +355,7 @@ button {
     padding: 0 20px;
     padding-top: 6px;
     background: $primary-color;
-    color: $second-color;
+    color: $secondary-color;
     border-radius: 3%;
     border-color: rgba(247, 243, 243, 0.075);
     box-shadow: 0 1px 2px $form-color;
