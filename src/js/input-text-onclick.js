@@ -12,11 +12,11 @@ function qqStart() {
 }
 function agentStart() {
     var text = document.getElementsByClassName("form-textarea-container-label")[0];
-    text.classList.add("texarea-title-move-up");
+    text.classList.add("textarea-title-move-up");
 }
 function messageStart() {
     var text = document.getElementsByClassName("form-textarea-container-label")[1];
-    text.classList.add("texarea-title-move-up");
+    text.classList.add("textarea-title-move-up");
     var icon = document.getElementById("message-icon");
     icon.style.color = "#f0be9d";
     var character = document.getElementsByClassName("message-character")[0];
@@ -31,8 +31,8 @@ function callOnBlur() {
     document.getElementsByClassName("form-text-container-label")[0].classList.remove("move-up");
     document.getElementsByClassName("form-text-container-label")[1].classList.remove("move-up");
     document.getElementsByClassName("form-text-container-label")[2].classList.remove("move-up");
-    document.getElementsByClassName("form-textarea-container-label")[0].classList.remove("texarea-title-move-up");
-    document.getElementsByClassName("form-textarea-container-label")[1].classList.remove("texarea-title-move-up");
+    document.getElementsByClassName("form-textarea-container-label")[0].classList.remove("textarea-title-move-up");
+    document.getElementsByClassName("form-textarea-container-label")[1].classList.remove("textarea-title-move-up");
     document.getElementById("message-icon").style.color = "#0f0f0f";
     document.getElementsByClassName("message-character")[0].textContent = "";
 

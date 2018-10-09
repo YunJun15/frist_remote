@@ -1,48 +1,50 @@
-@media screen and (max-width:992px){
-    nav{
-        ul{
+@media screen and (max-width: 992px) {
+    nav {
+        ul {
             width: 45%;
         }
     }
-    .slogan{
+
+    .slogan {
         margin-left: 10%;
     }
-    .prize{
+
+    .prize {
         height: 30vh;
-        .prize-container{
+
+        .prize-container {
             width: 100%;
             margin: 0;
-            .prize-block{
-                width: (100%/3);
+
+            .prize-block {
+                width: (100% / 3);
                 height: 50%;
             }
-            .prize-block-shrink-place{
+
+            .prize-block-shrink-place {
                 width: 100%;
                 height: 50%;
             }
         }
-
     }
-    .contact{
-        height: 1245px;
-        .contact-container{
-            width: 85%;
-            .contact-title {
-                height: 25%;
-                .contact-title-desp{
-                    min-height: 200px;
-                    padding-top: 20px;
-                    .contact-title-slogan{
-                        padding-top: 0;
-                    }
-                }
 
+    .contact-container {
+        width: 85%;
+    }
+        .contact-title-desp {
+            min-height: 200px;
+            padding-top: 20px;
+
+            .contact-title-slogan {
+                padding-top: 0;
             }
         }
-    }
+    
+
     .form-checkbox-item-option {
         width: 302px;
     }
+
     //footer{
     //    min-height: 120px;
     //}

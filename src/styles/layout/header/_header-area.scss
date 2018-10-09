@@ -1,6 +1,5 @@
 nav {
     display: inline-block;
-    width: 100%;
     height: 70px;
     font-size: $font-size-sm;
     color: $secondary-color;
@@ -14,12 +13,13 @@ nav {
         justify-content: center;
 
         a {
-            color: $secondary-color;
-            line-height: 20px;
-            padding-top: 25px;
-            text-align: center;
-            margin: 0 5%;
             width: 20%;
+            display: inline-block;
+            margin: 0 5%;
+            padding-top: 25px;
+            line-height: 20px;
+            text-align: center;
+            color: $secondary-color;
             text-shadow: 3px 3px 4px $common-color;
 
             &:hover {
@@ -33,7 +33,6 @@ nav {
 //@media(max-width:578px) element
 .nav-button {
     visibility: hidden;
-    outline: none;
     position: relative;
     display: inline-block;
     z-index: 1;
@@ -62,11 +61,10 @@ nav {
 .logo {
     display: inline-block;
     width: 20%;
-    height: auto;
+   
 
     img {
         width: 100px;
-        height: auto;
         filter: drop-shadow(5px 5px 5px $common-color);
     }
 }

@@ -1,10 +1,5 @@
 form {
-    position: relative;
-    width: 100vw;
-    max-width: 100%;
-    height: 60%;
-    min-height: 900px;
-    margin: 0 auto;
+    margin-top: 10%;
     color: $form-color;
 }
 
@@ -86,11 +81,7 @@ form {
     float: right;
     text-align: right;
 
-    &::after {
-        content: "";
-        display: block;
-        clear: both;
-    }
+    @include clearfix;
 }
 
 //text-animation for js
@@ -100,7 +91,7 @@ form {
 }
 
 //textarea-animation
-.texarea-title-move-up {
+.textarea-title-move-up {
     animation: textareaTitle 0.2s; //呼叫名為textareaTitle 的animation
     animation-fill-mode: forwards;
 }
@@ -123,7 +114,7 @@ form {
     }
 }
 
-//for selesct.js use
+//for select.js use
 .select {
     display: inline-block;
     position: relative;
@@ -181,20 +172,16 @@ form {
 .select-options {
     display: none;
     position: absolute;
-    top: 0%;
+    top: 0;
     right: 0;
     left: 0;
     z-index: 9999;
-    margin: 0;
-    padding: 0;
-    list-style: none;
     border: 1px solid $select-background;
     border-radius: 2%;
     box-shadow: 2px 3px 5px rgba(133, 133, 133, 0.2), -2px 0 5px rgba(133, 133, 133, 0.2), 0 2px rgba(19, 18, 18, 0.2);
     background-color: $secondary-color;
 
     li {
-        margin: 0;
         padding: 12px 0;
         text-indent: 15px;
         color: $primary-color;
@@ -211,16 +198,11 @@ form {
 }
 
 .form-textarea {
-    width: 100%;
-    overflow: hidden;
-
-    > div {
-        > p {
-            display: inline-block;
-            margin: 0;
-            height: 50px;
-            line-height: 50px;
-        }
+    p {
+        display: inline-block;
+        margin: 0;
+        height: 55px;
+        line-height: 55px;
     }
 
     #message {
@@ -238,6 +220,8 @@ form {
         font-size: 0.8rem;
         color: $common-color;
     }
+
+    @include clearfix;
 }
 
 textarea {
@@ -250,7 +234,7 @@ textarea {
 }
 
 i {
-    font-size: 20px;
+    font-size: 24px;
     margin-right: 15px;
     color: $common-color;
 }
@@ -290,11 +274,8 @@ input {
             cursor: pointer;
 
             &::before {
-                content: "";
-                position: relative;
-                left: -50%;
                 top: 3px;
-                display: inline-block;
+                left: -50%;
                 width: 12px;
                 height: 12px;
                 border: 2px solid darken($form-color, 25%);
@@ -305,7 +286,6 @@ input {
         &:checked + label { //點擊label
             &::before {
                 content: "";
-                position: relative;
                 border: 2px solid $primary-color;
                 background: $primary-color;
             }
@@ -317,13 +297,9 @@ input {
 
         + label {
             margin-right: 3%;
-            cursor: pointer;
 
             &::before {
-                content: "";
-                position: relative;
                 left: -5px;
-                display: inline-block;
                 width: 15px;
                 height: 15px;
                 border: 2px solid darken($form-color, 25%);
@@ -351,9 +327,8 @@ button {
     width: 50%;
     max-width: 120px;
     height: 55px;
-    padding: $btn-padding-x $btn-padding-y;
-    background: $primary-color;
     color: $secondary-color;
+    background: $primary-color;
     border-radius: $border-radius;
     border-color: rgba(247, 243, 243, 0.075);
     box-shadow: 0 1px 2px $form-color;
@@ -366,18 +341,12 @@ button {
     &:focus {
         background-color: $button-focus-background;
     }
-
-    cursor: pointer;
-
     .material-icons {
         margin-right: 0;
-        display: inline-block;
         width: 25px;
         height: 30px;
-        vertical-align: middle;
         margin-left: 10px;
         padding-top: 2px;
         color: #ffffff;
-        font-size: 1.5rem;
     }
 }

@@ -20,20 +20,14 @@
     width: 100%;
     height: 50%;
   }
-  .contact {
-    height: 1245px;
-  }
-  .contact .contact-container {
+  .contact-container {
     width: 85%;
   }
-  .contact .contact-container .contact-title {
-    height: 25%;
-  }
-  .contact .contact-container .contact-title .contact-title-desp {
+  .contact-title-desp {
     min-height: 200px;
     padding-top: 20px;
   }
-  .contact .contact-container .contact-title .contact-title-desp .contact-title-slogan {
+  .contact-title-desp .contact-title-slogan {
     padding-top: 0;
   }
   .form-checkbox-item-option {

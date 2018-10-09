@@ -68,30 +68,21 @@
     width: 100%;
     height: 20%;
   }
-  .contact {
-    height: 1950px;
-  }
-  .contact .contact-container .contact-title {
-    height: 32%;
-  }
-  .contact .contact-container .contact-title .contact-title-pic-block {
+  .contact .contact-container .contact-title-pic-block {
     width: 95%;
     height: 300px;
     margin-top: 30px;
     margin-left: 20px;
   }
-  .contact .contact-container .contact-title .contact-title-desp {
+  .contact .contact-container .contact-title-desp {
     width: 100%;
   }
-  .contact .contact-container .contact-title .contact-title-desp .contact-title-content {
+  .contact .contact-container .contact-title-desp .contact-title-content {
     width: 100%;
     max-width: 455px;
     margin: 0 auto;
     line-height: 25px;
     font-size: 0.85rem;
-  }
-  form {
-    max-width: 85%;
   }
   form .form-row {
     -ms-flex-wrap: wrap;
@@ -128,7 +119,8 @@
     margin-top: 10px;
   }
   footer {
-    height: 65px;
+    height: 70px;
+    margin-top: 850px;
   }
 }
 /*# sourceMappingURL=landscape-phones.css.map */

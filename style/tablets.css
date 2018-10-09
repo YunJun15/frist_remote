@@ -82,14 +82,11 @@
   .contact .contact-container {
     width: 90%;
   }
-  .contact .contact-container .contact-title {
-    height: 30%;
-  }
-  .contact .contact-container .contact-title .contact-title-desp {
+  .contact .contact-container .contact-title-desp {
     min-height: 200px;
     padding-top: 20px;
   }
-  .contact .contact-container .contact-title .contact-title-desp .contact-title-slogan {
+  .contact .contact-container .contact-title-desp .contact-title-slogan {
     padding-top: 0;
   }
   .form-checkbox-item-option {

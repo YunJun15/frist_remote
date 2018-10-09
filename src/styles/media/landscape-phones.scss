@@ -76,10 +76,9 @@
         }
     }
     .contact{
-        height: 1950px;
+       // height: 1990px;
         .contact-container{
-            .contact-title {
-                height: 32%;
+            
                 .contact-title-pic-block {
                     width: 95%;
                     height: 300px;
@@ -96,11 +95,11 @@
                         font-size: 0.85rem;
                     }
                 }
-            }
+            
         }
     }
     form{
-        max-width: 85%;
+       
         .form-row{
             flex-wrap: wrap;
             margin-bottom: 0;
@@ -138,6 +137,7 @@
         }
     }
     footer{
-        height: 65px;
+        height: 70px;
+        margin-top: 850px;
     }
 }
