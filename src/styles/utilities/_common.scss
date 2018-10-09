@@ -1,3 +1,27 @@
+h1 {
+    font-size: $h1-font-size;
+}
+
+h2 {
+    font-size: $h2-font-size;
+}
+
+h3 {
+    font-size: $h3-font-size;
+}
+
+h4 {
+    font-size: $h4-font-size;
+}
+
+h5 {
+    font-size: $h5-font-size;
+}
+
+h6 {
+    font-size: $h6-font-size;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -26,8 +50,4 @@ input {
 
 .select, button, textarea {
     outline: none;
-}
-
-.select, textarea {
-    border-bottom: 1px solid $form-color;
 }
