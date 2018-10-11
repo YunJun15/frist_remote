@@ -5,10 +5,10 @@
 
 .benefit-container {
     width: 75%;
-    margin: 0 auto;
     padding-top: 100px;
 }
 
+//--Benefit Title區塊--
 .benefit-title-txtch {
     @extend %benefit-title-style;
 
@@ -21,25 +21,26 @@
     color: $primary-color;
 }
 
+//--Benefit 4大項目區塊--
 .benefit-content {
     margin-top: 5%;
     overflow: hidden;
 }
 
-    .benefit-content-block {
-        width: 47%;
-        height: 30%;
-        margin-right: 2.5%;
-        float: left;
+//項目區塊
+.benefit-content-block {
+    width: 47%;
+    height: 30%;
+    margin-right: 2.5%;
+    float: left;
 
-        h2 {
-            padding-bottom: 10px;
-            border-bottom: 1px solid $primary-color;
-        }
-
-        p {
-            line-height: $line-height-lg;
-            color: $secondary-color;
-        }
+    h2 {
+        padding-bottom: 10px;
+        border-bottom: 1px solid $primary-color;
     }
 
+    p {
+        line-height: $line-height-lg;
+        color: $secondary-color;
+    }
+}

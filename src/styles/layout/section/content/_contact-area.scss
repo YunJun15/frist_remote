@@ -1,9 +1,10 @@
 .contact-container {
     width: 60%;
     position: relative;
-    margin: 0 auto;
 }
 
+//--contact 區塊--
+//contact pic
 .contact-title-pic-block {
     width: 48%;
     height: inherit;
@@ -11,51 +12,51 @@
     display: inline-block;
 
     .contact-title-pic-border {
+        position: absolute;
+        z-index: 3;
         width: 100%;
         height: auto;
         padding: 33% 0;
         float: left;
-        position: absolute;
-        z-index: 3;
         transform: translate(0, -30px);
         border: 2px solid $primary-color;
     }
 
     img {
-        width: 100%;
-        float: left;
         position: absolute;
         z-index: 2;
+        width: 100%;
+        float: left;
         transform: translate(-15px, -15px);
     }
 }
 
+//contact description 區塊
 .contact-title-desp {
     width: 50%;
     display: inline-block;
     vertical-align: top;
 }
 
-    .contact-title-slogan {
-        padding-top: 15%;
-        text-align: center;
+.contact-title-slogan {
+    padding-top: 15%;
+    text-align: center;
 
-        h1:nth-child(1) {
-            margin: 0;
-        }
-
-        h1:nth-child(2) {
-            margin-top: 5px;
-            margin-bottom: 15px;
-            color: $primary-color;
-        }
+    h1:nth-child(1) {
+        margin: 0;
     }
 
-    .contact-title-content {
-        max-width: 450px;
-        width: 75%;
-        margin: 0 auto;
-        line-height: $line-height-base;
-        color: $info-color;
+    h1:nth-child(2) {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        color: $primary-color;
     }
+}
 
+.contact-title-content {
+    max-width: 450px;
+    width: 75%;
+    margin: 0 auto;
+    line-height: $line-height-base;
+    color: $info-color;
+}

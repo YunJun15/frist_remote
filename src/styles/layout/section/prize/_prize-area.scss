@@ -6,24 +6,19 @@
 .prize-container {
     width: 80%;
     height: 100%;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
+//--Prize 4個block--
 .prize-block {
     width: (100% / 4);
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    .prize-block-line-left {
-        @mixin prize-block-left-line { //prize block left-line
-        }
-    }
 
     a {
         width: 135px;
@@ -32,15 +27,12 @@
         color: $primary-color;
     }
 
+    //中文style
     .prize-block-txtch {
         margin: 5px 0;
         font-size: $font-size-sm;
     }
-
-    .prizeblock3-txtch-position {
-        padding-left: 15px;
-    }
-
+    //數字style
     .prize-block-number {
         margin: 0;
         font-size: $font-size-lg;
@@ -48,23 +40,25 @@
         letter-spacing: 3px;
         font-family: 'Michroma';
     }
-
-    .prizeblock2-number-align {
+    //單位style
+    .prize-block-txt-unit {
+        font-size: $font-size-lg-sm;
+    }
+    //block1 and block2 number position
+    .prizeblock-number-align {
         text-align: left;
     }
-
+    //block3 and block4 number padding
     .prize-number-position {
         padding-right: 20px;
     }
 
-    .prize-block-txt-unit {
-        font-size: $font-size-lg-sm;
-    }
-
+  
+    //left line
     .prize-block-line-left {
         @include prize-block-left-line;
     }
-
+    //right line
     .prize-block-line-right {
         @include prize-block-right-line;
     }

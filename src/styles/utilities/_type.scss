@@ -1,14 +1,11 @@
 h1, h2, h6 {
     font-weight: $font-weight-light;
 }
+
 h2 {
     color: $secondary-color;
 }
-
-
-
-
-
-
-
-
+//Container區塊垂直置中
+.prize-container, .benefit-container, .contact-container {
+    margin: 0 auto;
+}

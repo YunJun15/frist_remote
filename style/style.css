@@ -104,6 +104,10 @@ h2 {
   color: #ffffff;
 }
 
+.prize-container, .benefit-container, .contact-container {
+  margin: 0 auto;
+}
+
 .prize-block .prize-block-line-left, .prize-block .prize-block-line-right {
   width: 40px;
   height: 2px;
@@ -335,7 +339,6 @@ nav ul a:hover {
 .prize-container {
   width: 80%;
   height: 100%;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,10 +378,6 @@ nav ul a:hover {
   font-size: 0.875rem;
 }
 
-.prize-block .prizeblock3-txtch-position {
-  padding-left: 15px;
-}
-
 .prize-block .prize-block-number {
   margin: 0;
   font-size: 1.25rem;
@@ -387,16 +386,16 @@ nav ul a:hover {
   font-family: 'Michroma';
 }
 
-.prize-block .prizeblock2-number-align {
+.prize-block .prize-block-txt-unit {
+  font-size: 0.625rem;
+}
+
+.prize-block .prizeblock-number-align {
   text-align: left;
 }
 
 .prize-block .prize-number-position {
   padding-right: 20px;
-}
-
-.prize-block .prize-block-txt-unit {
-  font-size: 0.625rem;
 }
 
 .prize-block .prize-block-line-left {
@@ -416,7 +415,6 @@ nav ul a:hover {
 
 .benefit-container {
   width: 75%;
-  margin: 0 auto;
   padding-top: 100px;
 }
 
@@ -453,7 +451,6 @@ nav ul a:hover {
 .contact-container {
   width: 60%;
   position: relative;
-  margin: 0 auto;
 }
 
 .contact-title-pic-block {
@@ -464,22 +461,22 @@ nav ul a:hover {
 }
 
 .contact-title-pic-block .contact-title-pic-border {
+  position: absolute;
+  z-index: 3;
   width: 100%;
   height: auto;
   padding: 33% 0;
   float: left;
-  position: absolute;
-  z-index: 3;
   -webkit-transform: translate(0, -30px);
           transform: translate(0, -30px);
   border: 2px solid #f0be9d;
 }
 
 .contact-title-pic-block img {
-  width: 100%;
-  float: left;
   position: absolute;
   z-index: 2;
+  width: 100%;
+  float: left;
   -webkit-transform: translate(-15px, -15px);
           transform: translate(-15px, -15px);
 }
