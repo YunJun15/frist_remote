@@ -105,7 +105,7 @@ form {
 
 //---------------------
 
-//text-animation for js
+//--text-animation for js--
 .move-up {
     animation: moveUp 0.2s; //呼叫名為 move 的animation
     animation-fill-mode: forwards; //停在最後一個動畫
@@ -119,7 +119,9 @@ form {
 
 //---------------------
 
-//--select 區塊style (for select.js use)--
+
+//--各區塊style--
+//select區塊 (for select.js use)
 .select {
     display: inline-block;
     position: relative;
@@ -197,7 +199,7 @@ form {
     }
 }
 
-//-------------------------------------------------
+//附言區塊
 .form-textarea {
     p {
         display: inline-block;
@@ -233,7 +235,7 @@ form {
 
     @include clearfix;
 }
-
+//Input
 input {
     &[type=text] {
         //position: relative;
@@ -319,6 +321,7 @@ textarea, input[type=text] {
     }
 }
 
+//Button
 button {
     width: 120px;
     height: 55px;
@@ -343,6 +346,6 @@ button {
         height: 30px;
         margin-left: 10px;
         padding-top: 2px;
-        color: #ffffff;
+        color: $secondary-color;
     }
 }
