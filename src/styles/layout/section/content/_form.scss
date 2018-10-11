@@ -13,67 +13,48 @@ form {
     border-top: 1px dashed $primary-color;
 }
 
-.form-text-container {
+//--項目--
+//每個項目各占48%
+.item-width, .form-text-container, .form-radio-item, .form-agent-name-item {
     width: 48%;
-
-    .form-text-container-label {
-        opacity: 0;
-        position: relative;
-        top: -30px;
-        display: inline-block;
-        min-width: 130px;
-        height: 30px;
-        line-height: 30px;
-        font-size: 0.8rem;
-        color: $primary-color;
-    }
-}
-
-//必填(text)的style
-.form-text-required {
-    visibility: hidden; //隱藏
-    width: 32px; //若不設定寬高，會使父元素overflow:hidden超過的隱藏，及不顯示此class style
-    height: 18px;
-    display: block;
-    color: $warning-color;
-    border: 1px solid $warning-color;
-}
-
-//請進行選取(radio)的style
-.form-radio-required {
-    visibility: hidden; //隱藏
-    width: 80px; //若不設定寬高，會使父元素overflow:hidden超過的隱藏，及不顯示此class style
-    height: 18px;
-    margin-top: 15px;
-    margin-left: 15px;
-    display: block;
-    color: $warning-color;
-    border: 1px solid $warning-color;
-}
-
-.error {
-    .form-text-required, .form-radio-required {
-        visibility: visible; //顯示
-   
-    }
-}
-
-.error-radio {
-    .form-radio-required {
-        visibility: visible; //顯示
-   
-    }
 }
 
 .form-radio-item {
-    width: 48%;
-
     label:nth-of-type(1) {
         display: inline-block;
         line-height: 25px;
     }
 }
 
+//目前代理平台名
+.form-agent-name-item {
+    p {
+        margin: 0;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    textarea {
+        width: 100%;
+    }
+}
+
+//-------------------------------
+
+//點擊input text時，字往上跑style
+.form-text-container-label {
+    opacity: 0;
+    position: relative;
+    top: -30px;
+    display: inline-block;
+    min-width: 130px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.8rem;
+    color: $primary-color;
+}
+
+//radio 選取區塊
 .form-radio-item-option {
     position: relative;
     width: 45%;
@@ -83,6 +64,46 @@ form {
 
     @include clearfix;
 }
+
+//checkbox 選取區塊
+.form-checkbox-item-option {
+    position: relative;
+    width: 395px;
+    line-height: 39px;
+}
+
+//--表單必填--
+//text and radio common style
+.form-text-required, .form-radio-required {
+    visibility: hidden; //隱藏
+    display: block;
+    color: $warning-color;
+    border: 1px solid $warning-color;
+}
+
+//必填(text)的required style
+.form-text-required {
+    width: 32px; //若不設定寬高，會使父元素overflow:hidden超過的隱藏，及不顯示此class style
+    height: 18px;
+}
+
+//請進行選取(radio)的required style
+.form-radio-required {
+    width: 80px; //若不設定寬高，會使父元素overflow:hidden超過的隱藏，及不顯示此class style
+    height: 18px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+//必填項目未填時，顯示
+.error {
+    .form-text-required, .form-radio-required {
+        visibility: visible; //顯示
+   
+    }
+}
+
+//---------------------
 
 //text-animation for js
 .move-up {
@@ -96,25 +117,9 @@ form {
     animation-fill-mode: forwards;
 }
 
-.form-checkbox-item-option {
-    position: relative;
-    width: 395px;
-    line-height: 39px;
-}
+//---------------------
 
-.form-agent-name-item {
-    p {
-        margin: 0;
-        height: 50px;
-        line-height: 50px;
-    }
-
-    textarea {
-        width: 100%;
-    }
-}
-
-//for select.js use
+//--select 區塊style (for select.js use)--
 .select {
     display: inline-block;
     position: relative;
@@ -122,7 +127,6 @@ form {
     width: $select-width;
     height: $select-height;
     border: none;
-    border-bottom: 1px solid $form-color;
     cursor: pointer;
 
     .select-hidden {
@@ -175,7 +179,7 @@ form {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 9;
     border: 1px solid $select-background;
     border-radius: 2%;
     box-shadow: 2px 3px 5px rgba(133, 133, 133, 0.2), -2px 0 5px rgba(133, 133, 133, 0.2), 0 2px rgba(19, 18, 18, 0.2);
@@ -193,10 +197,7 @@ form {
     }
 }
 
-.item-width {
-    width: 48%;
-}
-
+//-------------------------------------------------
 .form-textarea {
     p {
         display: inline-block;
@@ -210,7 +211,8 @@ form {
         float: right;
     }
 
-    .message-character { //0-100 style
+    //0-100 style
+    .message-character {
         width: 50px;
         height: 20px;
         line-height: 20px;
@@ -221,27 +223,15 @@ form {
         color: $common-color;
     }
 
-    @include clearfix;
-}
-
-textarea {
-    width: 100%;
-    border-bottom: 1px solid $form-color;
-
-    &:focus {
-        border-bottom-color: $primary-color;
+    i {
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+        font-size: 24px;
+        color: $common-color;
     }
-}
 
-i {
-    font-size: 24px;
-    margin-right: 15px;
-    color: $common-color;
-}
-
-.material-icons {
-    width: 20px;
-    height: 20px;
+    @include clearfix;
 }
 
 input {
@@ -251,7 +241,6 @@ input {
         width: 100%;
         line-height: $line-height-lg;
         border: none;
-        border-bottom: 1px solid $form-color;
 
         + label {
             cursor: text;
@@ -259,10 +248,6 @@ input {
 
         &::placeholder {
             color: $form-color;
-        }
-
-        &:focus {
-            border-bottom-color: $primary-color;
         }
     }
 
@@ -323,9 +308,19 @@ input {
     }
 }
 
+//common style
+.select, textarea, input[type=text] {
+    border-bottom: 1px solid $form-color;
+}
+
+textarea, input[type=text] {
+    &:focus {
+        border-bottom-color: $primary-color;
+    }
+}
+
 button {
-    width: 50%;
-    max-width: 120px;
+    width: 120px;
     height: 55px;
     color: $secondary-color;
     background: $primary-color;
@@ -341,7 +336,8 @@ button {
     &:focus {
         background-color: $button-focus-background;
     }
-    .material-icons {
+
+    i {
         margin-right: 0;
         width: 25px;
         height: 30px;

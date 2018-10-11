@@ -490,22 +490,22 @@ nav ul a:hover {
   vertical-align: top;
 }
 
-.contact-title-desp .contact-title-slogan {
+.contact-title-slogan {
   padding-top: 15%;
   text-align: center;
 }
 
-.contact-title-desp .contact-title-slogan h1:nth-child(1) {
+.contact-title-slogan h1:nth-child(1) {
   margin: 0;
 }
 
-.contact-title-desp .contact-title-slogan h1:nth-child(2) {
+.contact-title-slogan h1:nth-child(2) {
   margin-top: 5px;
   margin-bottom: 15px;
   color: #f0be9d;
 }
 
-.contact-title-desp .contact-title-content {
+.contact-title-content {
   max-width: 450px;
   width: 75%;
   margin: 0 auto;
@@ -532,11 +532,26 @@ form {
   border-top: 1px dashed #f0be9d;
 }
 
-.form-text-container {
+.item-width, .form-text-container, .form-radio-item, .form-agent-name-item {
   width: 48%;
 }
 
-.form-text-container .form-text-container-label {
+.form-radio-item label:nth-of-type(1) {
+  display: inline-block;
+  line-height: 25px;
+}
+
+.form-agent-name-item p {
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+}
+
+.form-agent-name-item textarea {
+  width: 100%;
+}
+
+.form-text-container-label {
   opacity: 0;
   position: relative;
   top: -30px;
@@ -546,43 +561,6 @@ form {
   line-height: 30px;
   font-size: 0.8rem;
   color: #f0be9d;
-}
-
-.form-text-required {
-  visibility: hidden;
-  width: 32px;
-  height: 18px;
-  display: block;
-  color: #CC3333;
-  border: 1px solid #CC3333;
-}
-
-.form-radio-required {
-  visibility: hidden;
-  width: 80px;
-  height: 18px;
-  margin-top: 15px;
-  margin-left: 15px;
-  display: block;
-  color: #CC3333;
-  border: 1px solid #CC3333;
-}
-
-.error .form-text-required, .error .form-radio-required {
-  visibility: visible;
-}
-
-.error-radio .form-radio-required {
-  visibility: visible;
-}
-
-.form-radio-item {
-  width: 48%;
-}
-
-.form-radio-item label:nth-of-type(1) {
-  display: inline-block;
-  line-height: 25px;
 }
 
 .form-radio-item-option {
@@ -599,6 +577,35 @@ form {
   clear: both;
 }
 
+.form-checkbox-item-option {
+  position: relative;
+  width: 395px;
+  line-height: 39px;
+}
+
+.form-text-required, .form-radio-required {
+  visibility: hidden;
+  display: block;
+  color: #CC3333;
+  border: 1px solid #CC3333;
+}
+
+.form-text-required {
+  width: 32px;
+  height: 18px;
+}
+
+.form-radio-required {
+  width: 80px;
+  height: 18px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.error .form-text-required, .error .form-radio-required {
+  visibility: visible;
+}
+
 .move-up {
   -webkit-animation: moveUp 0.2s;
           animation: moveUp 0.2s;
@@ -613,22 +620,6 @@ form {
           animation-fill-mode: forwards;
 }
 
-.form-checkbox-item-option {
-  position: relative;
-  width: 395px;
-  line-height: 39px;
-}
-
-.form-agent-name-item p {
-  margin: 0;
-  height: 50px;
-  line-height: 50px;
-}
-
-.form-agent-name-item textarea {
-  width: 100%;
-}
-
 .select {
   display: inline-block;
   position: relative;
@@ -636,7 +627,6 @@ form {
   width: 100%;
   height: 40px;
   border: none;
-  border-bottom: 1px solid #9e9e9e;
   cursor: pointer;
 }
 
@@ -688,7 +678,7 @@ form {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 9;
   border: 1px solid #f0efef;
   border-radius: 2%;
   -webkit-box-shadow: 2px 3px 5px rgba(133, 133, 133, 0.2), -2px 0 5px rgba(133, 133, 133, 0.2), 0 2px rgba(19, 18, 18, 0.2);
@@ -706,10 +696,6 @@ form {
 
 .select-options li:hover {
   background: #ebeaea;
-}
-
-.item-width {
-  width: 48%;
 }
 
 .form-textarea p {
@@ -735,37 +721,24 @@ form {
   color: #0f0f0f;
 }
 
+.form-textarea i {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  font-size: 24px;
+  color: #0f0f0f;
+}
+
 .form-textarea::after {
   content: "";
   display: block;
   clear: both;
 }
 
-textarea {
-  width: 100%;
-  border-bottom: 1px solid #9e9e9e;
-}
-
-textarea:focus {
-  border-bottom-color: #f0be9d;
-}
-
-i {
-  font-size: 24px;
-  margin-right: 15px;
-  color: #0f0f0f;
-}
-
-.material-icons {
-  width: 20px;
-  height: 20px;
-}
-
 input[type=text] {
   width: 100%;
   line-height: 2;
   border: none;
-  border-bottom: 1px solid #9e9e9e;
 }
 
 input[type=text] + label {
@@ -786,10 +759,6 @@ input[type=text]::-ms-input-placeholder {
 
 input[type=text]::placeholder {
   color: #9e9e9e;
-}
-
-input[type=text]:focus {
-  border-bottom-color: #f0be9d;
 }
 
 input[type=radio] {
@@ -848,9 +817,16 @@ input[type=checkbox]:checked + label::before {
           transform: rotate(45deg);
 }
 
+.select, textarea, input[type=text] {
+  border-bottom: 1px solid #9e9e9e;
+}
+
+textarea:focus, input[type=text]:focus {
+  border-bottom-color: #f0be9d;
+}
+
 button {
-  width: 50%;
-  max-width: 120px;
+  width: 120px;
   height: 55px;
   color: #ffffff;
   background: #f0be9d;
