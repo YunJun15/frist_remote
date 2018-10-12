@@ -1,0 +1,20 @@
+.form-row { //form的每一行
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6%;
+}
+
+//每個項目各占48%
+.item-width, .form-text-container, .form-radio-item, .form-agent-name-item {
+    width: 48%;
+}
+//input common style
+.select, textarea, input[type=text] {
+    border-bottom: 1px solid $form-color;
+}
+
+textarea, input[type=text] {
+    &:focus {
+        border-bottom-color: $primary-color;
+    }
+}

@@ -1,0 +1,19 @@
+//@media(max-width:578px) element
+.nav-button {
+    visibility: hidden;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    width: 50px;
+    height: 40px;
+    margin-right: 10px;
+    color: $primary-color;
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    filter: drop-shadow(5px 4px 4px $common-color);
+
+    &:hover {
+        color: $secondary-color;
+    }
+}

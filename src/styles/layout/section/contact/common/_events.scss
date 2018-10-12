@@ -1,0 +1,59 @@
+//點擊input text時，字往上跑style
+.form-text-container-label {
+    opacity: 0;
+    position: relative;
+    top: -30px;
+    display: inline-block;
+    min-width: 130px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.8rem;
+    color: $primary-color;
+}
+
+//--表單必填--
+//text and radio common style
+.form-text-required, .form-radio-required {
+    visibility: hidden; //隱藏
+    display: block;
+    color: $warning-color;
+    border: 1px solid $warning-color;
+}
+
+//必填(text)的required style
+.form-text-required {
+    width: 32px; //若不設定寬高，會使父元素overflow:hidden超過的隱藏，及不顯示此class style
+    height: 18px;
+}
+
+//請進行選取(radio)的required style
+.form-radio-required {
+    width: 80px; //若不設定寬高，會使父元素overflow:hidden超過的隱藏，及不顯示此class style
+    height: 18px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+//必填項目未填時，顯示
+.error {
+    .form-text-required, .form-radio-required {
+        visibility: visible; //顯示
+   
+    }
+}
+
+//---------------------
+
+//--text-animation for js--
+.move-up {
+    animation: moveUp 0.2s; //呼叫名為 move 的animation
+    animation-fill-mode: forwards; //停在最後一個動畫
+}
+
+//textarea-animation
+.textarea-title-move-up {
+    animation: textareaTitle 0.2s; //呼叫名為textareaTitle 的animation
+    animation-fill-mode: forwards;
+}
+
+//---------------------

@@ -1,0 +1,28 @@
+//Button
+button {
+    width: 120px;
+    height: 55px;
+    color: $secondary-color;
+    background: $primary-color;
+    border-radius: $border-radius;
+    border-color: rgba(247, 243, 243, 0.075);
+    box-shadow: 0 1px 2px $form-color;
+
+    &:hover {
+        background: $button-hover-background;
+    }
+
+    //被點擊(焦點)後改變顏色，失去焦點後變回button原顏色
+    &:focus {
+        background-color: $button-focus-background;
+    }
+
+    i {
+        margin-right: 0;
+        width: 25px;
+        height: 30px;
+        margin-left: 10px;
+        padding-top: 2px;
+        color: $secondary-color;
+    }
+}

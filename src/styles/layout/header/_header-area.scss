@@ -1,5 +1,5 @@
+//navbar container
 nav {
-    display: inline-block;
     height: 70px;
     font-size: $font-size-sm;
     color: $secondary-color;
@@ -8,9 +8,9 @@ nav {
         position: absolute;
         top: 0px;
         right: 10px;
-        width: 35%;
         display: flex;
         justify-content: center;
+        width: 35%;
 
         a {
             width: 20%;
@@ -30,38 +30,16 @@ nav {
     }
 }
 
-//@media(max-width:578px) element
-.nav-button {
-    visibility: hidden;
-    position: relative;
-    display: inline-block;
-    z-index: 1;
-    width: 50px;
-    height: 40px;
-    margin-right: 10px;
-    color: $primary-color;
-    text-align: center;
-    font-size: 1.5em;
-    cursor: pointer;
-    filter: drop-shadow(5px 4px 4px $common-color);
-
-    &:hover {
-        color: $secondary-color;
-    }
-}
-
+//logo-container
 .logo-layout {
-    position: relative;
-    display: inline-block;
     width: 500px;
     height: 80px;
     margin-left: 20%;
 }
 
+//logo img
 .logo {
-    display: inline-block;
     width: 20%;
-   
 
     img {
         width: 100px;
@@ -69,13 +47,13 @@ nav {
     }
 }
 
+//logo ride side text
 .logo-title {
-    display: inline-block;
     width: 75%;
     height: 100%;
-    vertical-align: top;
     margin-left: 10px;
     margin-top: 20px;
+    vertical-align: top;
 
     h5 {
         margin: 0;
@@ -84,37 +62,36 @@ nav {
     }
 
     .logo-title-number {
-        font-style: italic;
         margin-left: -5px;
+        font-style: italic;
     }
 }
 
+//slogan container
 .slogan {
-    position: relative;
-    display: inline-block;
     width: 50%;
     height: 30%;
     margin-left: 20%;
     margin-top: 5%;
+}
 
-    .slogan-content {
-        width: 395px;
-        color: $secondary-color;
+.slogan-content {
+    width: 395px;
+    color: $secondary-color;
 
-        h1 {
-            margin: 0;
-            padding-bottom: 10px;
-            border-bottom: 1px solid $secondary-color;
-            text-align: center;
-        }
+    h1 {
+        margin: 0;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $secondary-color;
+        text-align: center;
+    }
 
-        p {
-            width: 99%;
-            margin-top: 20px;
-            padding-left: 15px;
-            font-size: 0.9rem;
-            border-left: 3px solid $primary-color;
-            text-shadow: 1px 1px 2px $common-color, 0 0 15px $common-color, 0 0 5px $common-color;
-        }
+    p {
+        width: 99%;
+        margin-top: 20px;
+        padding-left: 15px;
+        font-size: 0.9rem;
+        border-left: 3px solid $primary-color;
+        text-shadow: 1px 1px 2px $common-color, 0 0 15px $common-color, 0 0 5px $common-color;
     }
 }

@@ -1,0 +1,79 @@
+//--各區塊style--
+//目前代理平台名
+.form-agent-name-item {
+    p {
+        margin: 0;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    textarea {
+        width: 100%;
+    }
+}
+
+//radio 
+//radio區塊
+.form-radio-item {
+    label:nth-of-type(1) {
+        display: inline-block;
+        line-height: 25px;
+    }
+}
+
+//radio選取區塊
+.form-radio-item-option {
+    position: relative;
+    width: 45%;
+    max-width: 115px;
+    float: right;
+    text-align: right;
+
+    @include clearfix;
+}
+
+//checkbox 選取區塊
+.form-checkbox-item-option {
+    position: relative;
+    width: 395px;
+    line-height: 39px;
+}
+
+
+//附言區塊
+.form-textarea {
+    p {
+        display: inline-block;
+        margin: 0;
+        height: 55px;
+        line-height: 55px;
+    }
+
+    #message {
+        width: 96%;
+        float: right;
+    }
+
+    //0-100 style
+    .message-character {
+        width: 50px;
+        height: 20px;
+        line-height: 20px;
+        margin-top: 20px;
+        float: right;
+        text-align: right;
+        font-size: 0.8rem;
+        color: $common-color;
+    }
+
+    i {
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+        font-size: 24px;
+        color: $common-color;
+    }
+
+    @include clearfix;
+}
+
